@@ -101,20 +101,20 @@ void Queue_Main() {
 		case 2:
 			Deque(&queue, &temp);
 			printf("%d\n", temp);
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 3:
 			Peek(&queue, &temp);
 			printf("%d\n", temp);
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 4:
 			printf("%s\n", isEmpty(&queue) ? "True" : "False");
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 5:
 			printf("%s\n", isFull(&queue) ? "True" : "False");
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 6:
 			Clear(&queue);
@@ -123,12 +123,12 @@ void Queue_Main() {
 			printf("Enter the number that yo want to search\n");
 			printf(">>"); scanf("%d", &input);
 			printf("%s\n", Search(&queue, input) ? "Exist" : "Non-Exist");
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 8:
 			Terminate(&queue);
 			printf("Queue Terminated\n");
-			Sleep(1500);
+			sleep(1500);
 			goto ENDLOOP;
 			break;
 		default: break;

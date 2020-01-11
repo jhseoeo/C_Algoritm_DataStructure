@@ -7,7 +7,7 @@ Set implemented by list and a series of associated functions.
 
 #include "../../Base/Base.h"
 
-// Set implemented using list.
+// Set implemented by using list.
 typedef struct {
 	int max;	// maximum number of value
 	int size;	// current number of value
@@ -27,7 +27,10 @@ static void Print(const ListSet* s);	// print all value of s
 static void Terminate(ListSet* s);	// remove s
 static ListSet MakeListSet(int size); // Make an initialized ListSet.
 
-void GetSetNum(int& i);
+static ListSet* SymmetricDifference(ListSet* s1, const ListSet* s2, const ListSet* s3);
+static int IsSubset(const ListSet* s1, const ListSet* s2);
+
+static void GetSetNum(int& i);
 void ListSetMain();
 
 #endif

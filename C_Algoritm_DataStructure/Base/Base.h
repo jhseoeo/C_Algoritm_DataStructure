@@ -12,7 +12,14 @@ const int ARR_LEN = 9;
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <Windows.h>
+
+#if defined(_WIN32) || defined(_WIN64)
+	#include <Windows.h>
+	#define sleep(X) Sleep(X)
+#elif defined(__linux)
+#endif
+
+
 
 // Change two values of variables by passing py reference.
 void swap(int &a, int &b);

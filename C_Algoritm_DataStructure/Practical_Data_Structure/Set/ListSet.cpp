@@ -1,4 +1,4 @@
-#include "ListSet.h"
+﻿#include "ListSet.h"
 
 static ListSet MakeListSet(int size) {
 	ListSet a;
@@ -87,7 +87,20 @@ static void Terminate(ListSet* s) {
 	s->size = s->max = 0;
 }
 
-void GetSetNum(int& i) {
+static ListSet* SymmetricDifference(ListSet* s1, const ListSet* s2, const ListSet* s3) {
+	Difference(s1, Union(&MakeListSet(10), s2, s3), Intersection(&MakeListSet(10), s2, s3));
+	return s1;
+}
+
+static int IsSubset(const ListSet* s1, const ListSet* s2) {
+	for (int i = 0; i < s1->size; i++) {
+		if(isMember(s2, s1->set[i]) == -1)
+			return 0;
+	}
+	return 1;
+}
+
+static void GetSetNum(int& i) {
 	printf("Enter the number of stack you want to do action\n");
 	printf(">> "); scanf("%d", &i); i--;
 }
@@ -112,7 +125,9 @@ void ListSetMain() {
 		printf("6. Union\n");
 		printf("7. Intersection\n");
 		printf("8. Difference\n");
-		printf("9. End\n");
+		printf("9. Symmetric Difference\n");
+		printf("10. Subset\n");
+		printf("0. End\n");
 		printf(">> "); scanf("%d", &input); putchar('\n');
 
 		switch (input) {
@@ -133,7 +148,7 @@ void ListSetMain() {
 		case 3:
 			GetSetNum(i);
 			printf("Size of set %d : %d", i+1, Size(&s[i]));
-			Sleep(1500);
+			sleep(1500);
 			break;
 
 		case 4:
@@ -145,18 +160,18 @@ void ListSetMain() {
 
 		case 5:
 			printf("%s\n", Equal(&s[0], &s[1]) ? "True" : "False");
-			Sleep(1500);
+			sleep(1500);
 			break;
 
 		case 6:
 			Union(&s[2], &s[0], &s[1]);
 			printf("Union : "); Print(&s[2]); printf("\n");
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 7:
 			Intersection(&s[2], &s[0], &s[1]);
 			printf("Intersection : "); Print(&s[2]); printf("\n");
-			Sleep(1500);
+			sleep(1500);
 			break;
 
 		case 8:
@@ -166,9 +181,26 @@ void ListSetMain() {
 			if (input == 1) Difference(&s[2], &s[0], &s[1]);
 			if (input == 2) Difference(&s[2], &s[1], &s[2]);
 			printf("Difference : "); Print(&s[2]); printf("\n");
-			Sleep(1500);
+			sleep(1500);
+			break;
 
 		case 9:
+			SymmetricDifference(&s[2], &s[0], &s[1]);
+			printf("Symmetric Difference : "); Print(&s[2]); printf("\n");
+			sleep(1500);
+			break;
+
+		case 10:
+			printf("1 : set1 ⊆ set2\n");
+			printf("2 : set2 ⊆ set1\n");
+			printf("Choose one : "); scanf("%d", &input); printf("\n");
+			if (input == 1) input = IsSubset(&s[1], &s[0]);
+			if (input == 2) input = IsSubset(&s[0], &s[1]);
+			printf("%s\n", input ? "True" : "False" ); 
+			sleep(1500);
+			break;
+
+		case 0:
 			Terminate(&s[0]);
 			Terminate(&s[1]);
 			Terminate(&s[2]);

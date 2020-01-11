@@ -103,6 +103,9 @@
       <Filter>Practical_Data_Structure\Set</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Practical_Data_Structure\Set\SortedListSet.cpp">
+      <Filter>Practical_Data_Structure\Set</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -166,6 +169,9 @@
       <Filter>Practical_Data_Structure\Set</Filter>
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\Set\Set.h">
+      <Filter>Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_Data_Structure\Set\SortedListSet.h">
       <Filter>Practical_Data_Structure\Set</Filter>
     </ClInclude>
   </ItemGroup>

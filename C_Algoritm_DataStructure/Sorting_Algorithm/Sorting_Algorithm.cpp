@@ -73,7 +73,7 @@ void Sorting_Algorithm() {
 
 		printf("AFTER SORT  : ");
 		PrintArr(a, ARR_LEN);
-		Sleep(1500);
+		sleep(1500);
 		
 					RUNAGAIN:
 		printf("run again? (Y/N)\n");
