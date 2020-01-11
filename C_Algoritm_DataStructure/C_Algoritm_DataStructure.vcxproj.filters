@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Base">
+      <UniqueIdentifier>{433461e0-a072-4f40-9d87-e6561e1d41ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linked_Structure">
+      <UniqueIdentifier>{f4499897-0d94-4950-98a1-cfd32253df09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Practical_Data_Structure">
+      <UniqueIdentifier>{498e6b76-e114-4539-a07a-631abd86654f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Practical_Data_Structure\Set">
+      <UniqueIdentifier>{368cdf82-d28d-48f5-8ca3-46b88721e0df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Recursion_Algorithm">
+      <UniqueIdentifier>{dda84d62-bcdc-4ed5-91cd-467c5275a9ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search_Algorithm">
+      <UniqueIdentifier>{bbd4f5a6-14ef-44d7-91c2-28f9e3b2dc17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simple_Data_Structure">
+      <UniqueIdentifier>{456b65da-8618-44b1-9cdb-43e19bb1c9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simple_Data_Structure\Stack">
+      <UniqueIdentifier>{d690698c-0c89-48ad-9701-79a29356332f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simple_Data_Structure\Queue">
+      <UniqueIdentifier>{f35f37bb-a724-4b15-9ddc-1d9e9f12b2d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sorting_Algorithm">
+      <UniqueIdentifier>{d7072586-6ed9-4005-a7fc-733b00888b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sorting_Algorithm\Complicated_Sorting">
+      <UniqueIdentifier>{63a57d89-fa19-489c-abf5-a840d5f6c79e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sorting_Algorithm\Simple_Sorting">
+      <UniqueIdentifier>{660fd7d1-b412-47b2-8233-2a6568dee4fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Base\Base.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Recursion_Algorithm\Five_Queen_Problem.cpp">
+      <Filter>Recursion_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Recursion_Algorithm\Recursion_Algorithm.cpp">
+      <Filter>Recursion_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Search_Algorithm\Search_Algorithm.cpp">
+      <Filter>Search_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Search_Algorithm\BinarySearch.cpp">
+      <Filter>Search_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Search_Algorithm\LinearSearch.cpp">
+      <Filter>Search_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\Simple_Data_Structure.cpp">
+      <Filter>Simple_Data_Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\Queue\Queue.cpp">
+      <Filter>Simple_Data_Structure\Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\Stack\Stack.cpp">
+      <Filter>Simple_Data_Structure\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Sorting_Algorithm.cpp">
+      <Filter>Sorting_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\FrequencySort.cpp">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\HeapSort.cpp">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\MergeSort.cpp">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\QuickSort.cpp">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\BubbleSort.cpp">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\InsertionSort.cpp">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.cpp">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\ShellSort.cpp">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_Data_Structure\Practical_Data_Structure.cpp">
+      <Filter>Practical_Data_Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_Data_Structure\Set\ListSet.cpp">
+      <Filter>Practical_Data_Structure\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="Practical_Data_Structure\Set\Set.cpp">
+      <Filter>Practical_Data_Structure\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base\Base.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion_Algorithm\Five_Queen_Problem.h">
+      <Filter>Recursion_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Recursion_Algorithm\Recursion_Algorithm.h">
+      <Filter>Recursion_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Search_Algorithm\Search_Algorithm.h">
+      <Filter>Search_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Search_Algorithm\BinarySearch.h">
+      <Filter>Search_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Search_Algorithm\LinearSearch.h">
+      <Filter>Search_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\Simple_Data_Structure.h">
+      <Filter>Simple_Data_Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\Queue\Queue.h">
+      <Filter>Simple_Data_Structure\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\Stack\Stack.h">
+      <Filter>Simple_Data_Structure\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Sorting_Algorithm.h">
+      <Filter>Sorting_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\FrequencySort.h">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\HeapSort.h">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\MergeSort.h">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\QuickSort.h">
+      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\BubbleSort.h">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\InsertionSort.h">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.h">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\ShellSort.h">
+      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_Data_Structure\Practical_Data_Structure.h">
+      <Filter>Practical_Data_Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_Data_Structure\Set\ListSet.h">
+      <Filter>Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_Data_Structure\Set\Set.h">
+      <Filter>Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
