@@ -14,18 +14,28 @@ static int isMember(const SortedListSet* s, int n) {
 
 static void Add(SortedListSet* s, int n) {
 	if (s->size < s->max && isMember(s, n) == -1) {
-		int idx = BinarySearchS(n, s->set, s->size) == -1 ? 0 : BinarySearchS(n, s->set, s->size);
-		for (int i = s->size++; i > idx; i--) {
+		int idx = 0;
+		for (int i = 0; i < s->size;) {
+			idx = i;
+			if (n < s->set[i]) break;
+			else idx = ++i;
+		}
+		for (int i = s->size; i > idx; i--) {
 			s->set[i] = s->set[i - 1];
 		}
+		s->size++;
 		s->set[idx] = n;
 	}
 }
 
 static void Remove(SortedListSet* s, int n) {
-	int idx = isMember(s, n);
-	if (idx != -1)
-		s->set[idx] = s->set[--s->size];
+	if (s->size > 0 && isMember(s, n) != -1) {
+		int idx = isMember(s, n);
+		for (int i = idx+1; i < s->size; i++) {
+			s->set[i - 1] = s->set[i];
+		}
+		s->size--;
+	}
 }
 
 static int Size(const SortedListSet* s) {
@@ -46,10 +56,7 @@ static int Equal(const SortedListSet* s1, const SortedListSet* s2) {
 	if (s1->size != s2->size) return 0;
 
 	for (int i = 0; i < s1->size; i++) {
-		for (int j = 0; j < s2->size; j++) {
-			if (s1->set[i] == s2->set[j]) break;
-			if (j == s2->size)	return 0;
-		}
+		if (s1->set[i] != s2->set[i]) return 0;
 	}
 	return 1;
 }

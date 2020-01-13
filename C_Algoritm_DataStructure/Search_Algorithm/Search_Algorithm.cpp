@@ -1,6 +1,6 @@
 #include "Search_Algorithm.h"
 
-void Search_Algorithm(int (*prev)()) {
+void Search_Algorithm() {
 	while(1) {
 		int* a = makeRandArr();
 		int* b = makeSortedArr();
@@ -13,7 +13,6 @@ void Search_Algorithm(int (*prev)()) {
 		PrintArr(b, ARR_LEN);
 	
 		printf("\nEnter the array name that you use\n");
-		printf("Enter p to go prev page\n");
 		printf(">> "); char arrName = getchar();
 	
 		switch(arrName) {
@@ -23,8 +22,6 @@ void Search_Algorithm(int (*prev)()) {
 			case 'b':
 				c = b;
 				break;
-			case 'p':
-				(*prev)();
 			default: break;
 		}
 	
@@ -34,7 +31,6 @@ void Search_Algorithm(int (*prev)()) {
 		printf("\nSelect the Search Algorithm\n");
 		printf("1. Linear Search\n");
 		printf("2. Binary Search\n");
-		printf("3. Binary Search S\n");
 		printf("...\n");
 		printf(">> "); int n; scanf("%d", &n); getchar();
 	
@@ -45,9 +41,6 @@ void Search_Algorithm(int (*prev)()) {
 				break;
 			case 2:
 				idx = BinarySearch(v, c, ARR_LEN);	
-				break;
-			case 3:
-				idx = BinarySearchS(v, c, ARR_LEN);
 				break;
 			default: break;
 		}

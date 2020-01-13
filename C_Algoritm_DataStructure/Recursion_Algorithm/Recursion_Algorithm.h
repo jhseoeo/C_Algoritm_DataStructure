@@ -8,6 +8,6 @@ Main function and a sort of functions to test series of recursion algorithms.
 #include "../Base/Base.h"
 
 // Main function to test series of search algorithms.
-void Recursion_Algorithm(int (*prev)());
+void Recursion_Algorithm();
 
 #endif

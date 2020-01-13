@@ -21,14 +21,13 @@ int main(void) {
 	printf("5. Practical Data Structure ( Set )\n");
 	printf(">> "); 
 	int n; scanf("%d", &n); getchar(); printf("\n");
-	
-	int (*prev)() = &main;
+
 	switch(n) {
 		case 1:
-			Search_Algorithm(prev);
+			Search_Algorithm();
 			break;
 		case 2:
-			Recursion_Algorithm(prev);
+			Recursion_Algorithm();
 			break;
 		case 3:
 			Sorting_Algorithm();
