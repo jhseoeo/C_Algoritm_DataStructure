@@ -101,7 +101,7 @@ static int IsSubset(const ListSet* s1, const ListSet* s2) {
 }
 
 static void GetSetNum(int& i) {
-	printf("Enter the number of stack you want to do action\n");
+	printf("Enter the number of set you want to do action\n");
 	printf(">> "); scanf("%d", &i); i--;
 }
 
@@ -113,8 +113,8 @@ void ListSetMain() {
 	while (1) {
 		system("cls");
 		printf("Current State\n");
-		printf("Stack 1 : "); Print(&s[0]); printf("\n");
-		printf("Stack 2 : "); Print(&s[1]); printf("\n");
+		printf("Set 1 : "); Print(&s[0]); printf("\n");
+		printf("Set 2 : "); Print(&s[1]); printf("\n");
 		printf("\n");
 		printf("Menu\n");
 		printf("1. Add\n");
@@ -191,8 +191,8 @@ void ListSetMain() {
 			break;
 
 		case 10:
-			printf("1 : set1 ⊆ set2\n");
-			printf("2 : set2 ⊆ set1\n");
+			printf("1 : set1 is subset of set2\n");
+			printf("2 : set2 is subset of set1\n");
 			printf("Choose one : "); scanf("%d", &input); printf("\n");
 			if (input == 1) input = IsSubset(&s[1], &s[0]);
 			if (input == 2) input = IsSubset(&s[0], &s[1]);

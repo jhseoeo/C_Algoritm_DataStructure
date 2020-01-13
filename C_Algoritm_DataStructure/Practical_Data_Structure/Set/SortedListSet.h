@@ -6,6 +6,7 @@ Set implemented by SORTED list and a series of associated functions.
 #define SORTEDLISTSET_H
 
 #include "../../Base/Base.h"
+#include "../../Search_Algorithm/BinarySearch.h"
 
 // Set implemented by using SORTED list.
 typedef struct {
@@ -25,12 +26,12 @@ static SortedListSet* Intersection(SortedListSet* s1, const SortedListSet* s2, c
 static SortedListSet* Difference(SortedListSet* s1, const SortedListSet* s2, const SortedListSet* s3);	// assign s2 difference s3 into s1
 static void Print(const SortedListSet* s);	// print all value of s
 static void Terminate(SortedListSet* s);	// remove s
-static SortedListSet MakeListSet(int size); // Make an initialized ListSet.
+static SortedListSet MakeSortedListSet(int size); // Make an initialized  ListSet.
 
 static SortedListSet* SymmetricDifference(SortedListSet* s1, const SortedListSet* s2, const SortedListSet* s3);
 static int IsSubset(const SortedListSet* s1, const SortedListSet* s2);
 
 static void GetSetNum(int& i);
-void ListSetMain();
+void SortedListSetMain();
 
 #endif

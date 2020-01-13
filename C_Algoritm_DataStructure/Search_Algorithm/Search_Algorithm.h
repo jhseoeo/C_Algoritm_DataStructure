@@ -9,6 +9,6 @@ Main function to test series of search algorithms.
 #include "LinearSearch.h"
 
 // Main function to test series of search algorithms.
-void Search_Algorithm();
+void Search_Algorithm(int (*prev)());
 
 #endif
