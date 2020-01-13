@@ -21,7 +21,7 @@ int main(void) {
 	printf("5. Practical Data Structure ( Set )\n");
 	printf(">> "); 
 	int n; scanf("%d", &n); getchar(); printf("\n");
-	
+
 	switch(n) {
 		case 1:
 			Search_Algorithm();

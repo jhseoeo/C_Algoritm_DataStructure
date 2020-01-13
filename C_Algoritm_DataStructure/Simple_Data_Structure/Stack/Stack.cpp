@@ -93,20 +93,20 @@ void Stack_Main() {
 		case 2:
 			Pop(&stack, &temp);
 			printf("%d\n", temp);
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 3:
 			Peek(&stack, &temp);
 			printf("%d\n", temp);
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 4:
 			printf("%s\n", isEmpty(&stack) ? "True" : "False");
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 5:
 			printf("%s\n", isFull(&stack) ? "True" : "False");
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 6:
 			Clear(&stack);
@@ -115,12 +115,12 @@ void Stack_Main() {
 			printf("Enter the number that yo want to search\n");
 			printf(">>"); scanf("%d", &input);
 			printf("%s\n", Search(&stack, input) ? "Exist" : "Non-Exist");
-			Sleep(1500);
+			sleep(1500);
 			break;
 		case 8:
 			Terminate(&stack);
 			printf("Stack Terminated\n");
-			Sleep(1500);
+			sleep(1500);
 			goto ENDLOOP;
 			break;
 		default: break;

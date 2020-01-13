@@ -11,5 +11,6 @@ void Practical_DS() {
 		case 1:
 			Set_Main();
 			break;
+		default: break;
 	}
 }

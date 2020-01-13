@@ -6,12 +6,13 @@ void Recursion_Algorithm() {
 	system("cls");
 	printf("Select the algorithm to run\n");
 	printf("1. 5-Queen Problem\n");
-	printf(">>> "); scanf("%d", &n);
+	printf(">>> "); scanf("%d", &n); getchar();
 	
 	switch(n) {
 		case 1:
 			Five_Queen_Problem();
 			break;
+		default: break;
 	}
 }
 

@@ -15,5 +15,6 @@ void Simple_DS() {
 		case 2:
 			Queue_Main();
 			break;
+		default: break;
 	}
 }

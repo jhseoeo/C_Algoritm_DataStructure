@@ -5,7 +5,7 @@ void Search_Algorithm() {
 		int* a = makeRandArr();
 		int* b = makeSortedArr();
 		int* c = 0;
-	
+
 		system("cls");
 		printf("a : ");
 		PrintArr(a, ARR_LEN);
@@ -26,13 +26,13 @@ void Search_Algorithm() {
 		}
 	
 		printf("\nEnter the number that you want to find\n");
-		printf(">> "); int v; scanf("%d", &v);
+		printf(">> "); int v; scanf("%d", &v); getchar();
 	
 		printf("\nSelect the Search Algorithm\n");
 		printf("1. Linear Search\n");
 		printf("2. Binary Search\n");
 		printf("...\n");
-		printf(">> "); int n; scanf("%d", &n);
+		printf(">> "); int n; scanf("%d", &n); getchar();
 	
 		int idx = 0;
 		switch(n) {
@@ -45,13 +45,13 @@ void Search_Algorithm() {
 			default: break;
 		}
 	
-		printf("Index of number : %d\n", idx);
+		printf("\nIndex of number : %d\n", idx);
 		free(a);
 		free(b);
 
-		printf("1 : Try again\n");
+		printf("\n1 : Try again\n");
 		printf("2 : End\n");
-		printf(">> "); n; scanf("%d", &n);
+		printf(">> "); n; scanf("%d", &n); getchar();
 		if (n == 2) break;
 	}
 }

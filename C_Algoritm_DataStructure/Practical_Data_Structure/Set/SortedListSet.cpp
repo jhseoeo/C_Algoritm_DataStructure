@@ -1,100 +1,109 @@
-﻿#include "ListSet.h"
+﻿#include "SortedListSet.h"
 
-static ListSet MakeListSet(int size) {
-	ListSet a;
+static SortedListSet MakeSortedListSet(int size) {
+	SortedListSet a;
 	a.max = size;
 	a.size = 0;
 	a.set = (int*)malloc(size * sizeof(int));
 	return a;
 }
 
-static int isMember(const ListSet *s, int n) {
-	for(int i = 0; i < s->size; i++)
-		if(s->set[i] == n)
-			return i;
-	return -1;
+static int isMember(const SortedListSet* s, int n) {
+	return BinarySearch(n, s->set, s->size);
 }
 
-static void Add(ListSet *s, int n) {
-	if( s->size < s->max && isMember(s, n) == -1 )
-		s->set[s->size++] = n;
+static void Add(SortedListSet* s, int n) {
+	if (s->size < s->max && isMember(s, n) == -1) {
+		int idx = 0;
+		for (int i = 0; i < s->size;) {
+			idx = i;
+			if (n < s->set[i]) break;
+			else idx = ++i;
+		}
+		for (int i = s->size; i > idx; i--) {
+			s->set[i] = s->set[i - 1];
+		}
+		s->size++;
+		s->set[idx] = n;
+	}
 }
 
-static void Remove(ListSet *s, int n) {
-	int idx = isMember(s, n);
-	if( idx != -1 )
-		s->set[idx] = s->set[--s->size];	
+static void Remove(SortedListSet* s, int n) {
+	if (s->size > 0 && isMember(s, n) != -1) {
+		int idx = isMember(s, n);
+		for (int i = idx+1; i < s->size; i++) {
+			s->set[i - 1] = s->set[i];
+		}
+		s->size--;
+	}
 }
 
-static int Size(const ListSet* s) {
+static int Size(const SortedListSet* s) {
 	return s->size;
 }
 
-static void Assign(ListSet* s1, const ListSet* s2) {
+static void Assign(SortedListSet* s1, const SortedListSet* s2) {
 	s1->max = s2->max;
 	s1->size = s2->size;
-	if(s1->set != NULL) free(s1->set);
+	if (s1->set != NULL) free(s1->set);
 	s1->set = (int*)malloc(s1->max * sizeof(int));
-	for(int i = 0; i < s2->size; i++) {
+	for (int i = 0; i < s2->size; i++) {
 		s1->set[i] = s2->set[i];
 	}
 }
 
-static int Equal(const ListSet* s1, const ListSet* s2) {
+static int Equal(const SortedListSet* s1, const SortedListSet* s2) {
 	if (s1->size != s2->size) return 0;
-	
-	for(int i = 0; i < s1->size; i++) {
-		for(int j = 0; j < s2->size; j++) {
-			if(s1->set[i] == s2->set[j]) break;
-			if(j == s2->size)	return 0;
-		}
+
+	for (int i = 0; i < s1->size; i++) {
+		if (s1->set[i] != s2->set[i]) return 0;
 	}
 	return 1;
 }
 
-static ListSet* Union(ListSet* s1, const ListSet* s2, const ListSet* s3) {
+static SortedListSet* Union(SortedListSet* s1, const SortedListSet* s2, const SortedListSet* s3) {
 	Assign(s1, s2);
-	for(int i = 0; i < s3->size; i++)
+	for (int i = 0; i < s3->size; i++)
 		Add(s1, s3->set[i]);
 	return s1;
 }
 
-static ListSet* Intersection(ListSet* s1, const ListSet* s2, const ListSet* s3) {
+static SortedListSet* Intersection(SortedListSet* s1, const SortedListSet* s2, const SortedListSet* s3) {
 	s1->size = 0;
-	for(int i = 0; i < s2->size; i++) {
-		if(isMember(s3, s2->set[i]) != -1)
+	for (int i = 0; i < s2->size; i++) {
+		if (isMember(s3, s2->set[i]) != -1)
 			Add(s1, s2->set[i]);
 	}
 	return s1;
 }
 
-static ListSet* Difference(ListSet* s1, const ListSet* s2, const ListSet* s3) {
+static SortedListSet* Difference(SortedListSet* s1, const SortedListSet* s2, const SortedListSet* s3) {
 	s1->size = 0;
-	for(int i = 0; i < s2->size; i++) {
-		if(isMember(s3, s2->set[i]) == -1)
+	for (int i = 0; i < s2->size; i++) {
+		if (isMember(s3, s2->set[i]) == -1)
 			Add(s1, s2->set[i]);
 	}
 	return s1;
 }
 
-static void Print(const ListSet* s) {
-	for(int i = 0; i < s->size; i++)
+static void Print(const SortedListSet* s) {
+	for (int i = 0; i < s->size; i++)
 		printf("%d ", s->set[i]);
 }
 
-static void Terminate(ListSet* s) {
-	if(s->set != NULL) free(s->set);
+static void Terminate(SortedListSet* s) {
+	if (s->set != NULL) free(s->set);
 	s->size = s->max = 0;
 }
 
-static ListSet* SymmetricDifference(ListSet* s1, const ListSet* s2, const ListSet* s3) {
-	Difference(s1, Union(&MakeListSet(10), s2, s3), Intersection(&MakeListSet(10), s2, s3));
+static SortedListSet* SymmetricDifference(SortedListSet* s1, const SortedListSet* s2, const SortedListSet* s3) {
+	Difference(s1, Union(&MakeSortedListSet(10), s2, s3), Intersection(&MakeSortedListSet(10), s2, s3));
 	return s1;
 }
 
-static int IsSubset(const ListSet* s1, const ListSet* s2) {
+static int IsSubset(const SortedListSet* s1, const SortedListSet* s2) {
 	for (int i = 0; i < s1->size; i++) {
-		if(isMember(s2, s1->set[i]) == -1)
+		if (isMember(s2, s1->set[i]) == -1)
 			return 0;
 	}
 	return 1;
@@ -105,9 +114,9 @@ static void GetSetNum(int& i) {
 	printf(">> "); scanf("%d", &i); i--;
 }
 
-void ListSetMain() {
-	ListSet s[3];
-	s[0] = MakeListSet(10); s[1] = MakeListSet(10); s[2] = MakeListSet(10);
+void SortedListSetMain() {
+	SortedListSet s[3];
+	s[0] = MakeSortedListSet(10); s[1] = MakeSortedListSet(10); s[2] = MakeSortedListSet(10);
 	printf("Two sets created.\n");
 	int input, i;
 	while (1) {
@@ -147,7 +156,7 @@ void ListSetMain() {
 
 		case 3:
 			GetSetNum(i);
-			printf("Size of set %d : %d", i+1, Size(&s[i]));
+			printf("Size of set %d : %d", i + 1, Size(&s[i]));
 			sleep(1500);
 			break;
 
@@ -196,7 +205,7 @@ void ListSetMain() {
 			printf("Choose one : "); scanf("%d", &input); printf("\n");
 			if (input == 1) input = IsSubset(&s[1], &s[0]);
 			if (input == 2) input = IsSubset(&s[0], &s[1]);
-			printf("%s\n", input ? "True" : "False" ); 
+			printf("%s\n", input ? "True" : "False");
 			sleep(1500);
 			break;
 

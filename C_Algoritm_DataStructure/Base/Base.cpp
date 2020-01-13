@@ -23,8 +23,8 @@ RESET:
 
 int* makeSortedArr() {
 	int* b = (int*)malloc(ARR_LEN * sizeof(int));
-	for(int i = 0; i < ARR_LEN; i++)
-		b[i] = i+1;
+	for (int i = 0; i < ARR_LEN; i++)
+		b[i] = i < 7 ? i : i + 1;
 	return b;
 }
 
