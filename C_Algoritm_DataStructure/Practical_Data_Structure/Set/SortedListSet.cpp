@@ -213,7 +213,7 @@ void SortedListSetMain() {
 			Terminate(&s[0]);
 			Terminate(&s[1]);
 			Terminate(&s[2]);
-			printf("Stack Terminated\n");
+			printf("Set Terminated\n");
 			goto ENDLOOP;
 			break;
 
