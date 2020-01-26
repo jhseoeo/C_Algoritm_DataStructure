@@ -22,6 +22,7 @@
     <ClCompile Include="Base\Base.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Practical_Data_Structure\Practical_Data_Structure.cpp" />
+    <ClCompile Include="Practical_Data_Structure\Set\BitVectorSet.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\ListSet.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\Set.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\SortedListSet.cpp" />
@@ -46,6 +47,7 @@
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
     <ClInclude Include="Practical_Data_Structure\Practical_Data_Structure.h" />
+    <ClInclude Include="Practical_Data_Structure\Set\BitVectorSet.h" />
     <ClInclude Include="Practical_Data_Structure\Set\ListSet.h" />
     <ClInclude Include="Practical_Data_Structure\Set\Set.h" />
     <ClInclude Include="Practical_Data_Structure\Set\SortedListSet.h" />
