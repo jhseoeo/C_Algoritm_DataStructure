@@ -3,7 +3,7 @@
 
 void Recursion_Algorithm() {
 	int n;
-	system("cls");
+	system(CLEAR);
 	printf("Select the algorithm to run\n");
 	printf("1. 5-Queen Problem\n");
 	printf(">>> "); scanf("%d", &n); getchar();

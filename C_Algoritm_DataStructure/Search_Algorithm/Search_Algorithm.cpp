@@ -6,7 +6,7 @@ void Search_Algorithm() {
 		int* b = makeSortedArr();
 		int* c = 0;
 
-		system("cls");
+		system(CLEAR);
 		printf("a : ");
 		PrintArr(a, ARR_LEN);
 		printf("b : ");

@@ -7,6 +7,7 @@ Main function to test Set.
 
 #include "../Base/Base.h"
 #include "./Set/Set.h"
+#include "./String/String.h"
 
 void Practical_DS();
 

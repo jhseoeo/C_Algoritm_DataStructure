@@ -2,7 +2,7 @@
 
 void Set_Main() {
 	int n;
-	system("cls");
+	system(CLEAR);
 	printf("Choose the type of set to run\n");
 	printf("1. List-based set.\n");
 	printf("2. SortedList-based set.\n");

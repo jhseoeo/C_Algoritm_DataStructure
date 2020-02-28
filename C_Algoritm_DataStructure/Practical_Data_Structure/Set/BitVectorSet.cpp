@@ -75,7 +75,7 @@ void BitVectorSetMain() {
 	printf("Two sets created.\n");
 	int input, i;
 	while (1) {
-		system("cls");
+		system(CLEAR);
 		printf("Current State\n");
 		printf("Set 1 : "); Print(s[0]); printf("\n");
 		printf("Set 2 : "); Print(s[1]); printf("\n");

@@ -1,6 +1,6 @@
 #include "String.h"
 
-int bf_match(const char* txt, const char* pat) {
+static int bf_match(const char* txt, const char* pat) {
     int txtp = 0, patp = 0;
     
     while(txt[txtp] != '\0' && pat[patp] != '\0') {
@@ -17,22 +17,26 @@ int bf_match(const char* txt, const char* pat) {
     return -1;
 }
 
-int bm_match(const char* txt, const char* pat) {
-    int txtl = strlen(txt), int patl = strlen(pat);
+static int bm_match(const char* txt, const char* pat) {
+    int txtl = strlen(txt); int patl = strlen(pat);
     int txtp = 0, patp = patl-1;
+    int skip[UCHAR_MAX + 1];
     
-    while(txtp > txtl) {
-        if(txt[txtp + patp] == pat[patp]) {
-            patp--;    
-        } else {
-            txtp += patp + 1;
-            patp = patl - 1;
+    for (txtp = 0; txtp < UCHAR_MAX; txtp++)
+        skip[txtp] = patl;
+    for (txtp = 0; txtp < patl; txtp++)
+        skip[pat[txtp]] = patl - txtp - 1;
+
+    while (txtp < txtl) {
+        patp = patl - 1;
+        while (txt[txtp] == pat[patp]) {
+            if (patp == 0)
+                return txtp;
+            patp--;
+            txtp--;
         }
-        
-        if(patp == -1)
-            return txtp;
+        txtp += (skip[txt[txtp]] > patl - patp) ? skip[txt[txtp]] : patl - patp;
     }
-    
     return -1;
 }
 
@@ -43,9 +47,9 @@ int String_Main() {
 	system(CLEAR);
     printf("A : %s\n", A);
     printf("B : %s\n", B);
-    printf("1. BF");
-    printf("2. BM");
-	int n; scanf("%d", &n); getchar(); printf("\n");
+    printf("1. BF\n");
+    printf("2. BM\n");
+    printf(">> ");  int n; scanf("%d", &n); getchar(); printf("\n");
     
     switch(n) {
     case 1:

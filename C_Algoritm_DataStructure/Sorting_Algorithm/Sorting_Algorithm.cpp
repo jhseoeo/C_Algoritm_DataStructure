@@ -8,7 +8,7 @@ void Sorting_Algorithm() {
 	while(1) {
 		a = makeRandArr();
 
-		system("cls");
+		system(CLEAR);
 		printf("Select the sorting algorithm to run\n");
 		printf("1. Bubble Sort\n");
 		printf("11. Cocktail Sort(Improved Bubble Sort)\n");

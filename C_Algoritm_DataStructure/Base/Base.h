@@ -17,7 +17,7 @@ const int ARR_LEN = 9;
 	#include <Windows.h>
 	#define sleep(X) Sleep(X)
     #define OS "WINDOW"
-    #define CLEAR "cls"
+    #define CLEAR CLEAR
 #elif defined(__linux)
     #include <unistd.h>
     #define sleep(X) usleep(X)

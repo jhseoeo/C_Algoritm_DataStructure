@@ -20,12 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp" />
+    <ClCompile Include="Linked_Structure\Linear List\Linear_List.cpp" />
+    <ClCompile Include="Linked_Structure\Linked_Structure.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Practical_Data_Structure\Practical_Data_Structure.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\BitVectorSet.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\ListSet.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\Set.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\SortedListSet.cpp" />
+    <ClCompile Include="Practical_Data_Structure\String\String.cpp" />
     <ClCompile Include="Recursion_Algorithm\Five_Queen_Problem.cpp" />
     <ClCompile Include="Recursion_Algorithm\Recursion_Algorithm.cpp" />
     <ClCompile Include="Search_Algorithm\BinarySearch.cpp" />
@@ -46,11 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Linked_Structure\Linear List\Linear_List.h" />
+    <ClInclude Include="Linked_Structure\Linked_Structure.h" />
     <ClInclude Include="Practical_Data_Structure\Practical_Data_Structure.h" />
     <ClInclude Include="Practical_Data_Structure\Set\BitVectorSet.h" />
     <ClInclude Include="Practical_Data_Structure\Set\ListSet.h" />
     <ClInclude Include="Practical_Data_Structure\Set\Set.h" />
     <ClInclude Include="Practical_Data_Structure\Set\SortedListSet.h" />
+    <ClInclude Include="Practical_Data_Structure\String\String.h" />
     <ClInclude Include="Recursion_Algorithm\Five_Queen_Problem.h" />
     <ClInclude Include="Recursion_Algorithm\Recursion_Algorithm.h" />
     <ClInclude Include="Search_Algorithm\BinarySearch.h" />

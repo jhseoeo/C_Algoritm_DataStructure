@@ -37,6 +37,12 @@
     <Filter Include="Sorting_Algorithm\Simple_Sorting">
       <UniqueIdentifier>{660fd7d1-b412-47b2-8233-2a6568dee4fa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Practical_Data_Structure\String">
+      <UniqueIdentifier>{499d4643-c8a9-4f37-b725-a10517fd8eba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linked_Structure\Linear List">
+      <UniqueIdentifier>{29b4ed50-21f3-4c05-ab83-f518c36c7096}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp">
@@ -109,6 +115,15 @@
     <ClCompile Include="Practical_Data_Structure\Set\BitVectorSet.cpp">
       <Filter>Practical_Data_Structure\Set</Filter>
     </ClCompile>
+    <ClCompile Include="Practical_Data_Structure\String\String.cpp">
+      <Filter>Practical_Data_Structure\String</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked_Structure\Linear List\Linear_List.cpp">
+      <Filter>Linked_Structure\Linear List</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked_Structure\Linked_Structure.cpp">
+      <Filter>Linked_Structure</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -179,6 +194,15 @@
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\Set\BitVectorSet.h">
       <Filter>Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="Practical_Data_Structure\String\String.h">
+      <Filter>Practical_Data_Structure\String</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_Structure\Linear List\Linear_List.h">
+      <Filter>Linked_Structure\Linear List</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_Structure\Linked_Structure.h">
+      <Filter>Linked_Structure</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

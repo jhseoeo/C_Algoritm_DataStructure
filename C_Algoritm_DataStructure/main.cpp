@@ -12,13 +12,13 @@ This container is for algorithms and data structures
 
 // Main function that tests many kind of searching/sorting algorithms and data structures.
 int main(void) {
-	system("cls");
+	system(CLEAR);
 	printf("Enter the algorithm list to run\n");
 	printf("1. Search Algorithm\n");
 	printf("2. Recursion Algorithm\n");
 	printf("3. Sorting Algorithm\n");
 	printf("4. Simple Data Structure ( Stack, Queue )\n");
-	printf("5. Practical Data Structure ( Set )\n");
+	printf("5. Practical Data Structure ( Set, String )\n");
 	printf(">> "); 
 	int n; scanf("%d", &n); getchar(); printf("\n");
 

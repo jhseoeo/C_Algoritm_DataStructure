@@ -79,7 +79,7 @@ void Queue_Main() {
 	printf("Queue Created.\n");
 	int input, temp;
 	while (1) {
-		system("cls");
+		system(CLEAR);
 		Print(&queue); printf("\n");
 		printf("Menu\n");
 		printf("1. Push\n");

@@ -2,7 +2,7 @@
 
 void Simple_DS() {
 	int n;
-	system("cls");
+	system(CLEAR);
 	printf("Select the data structure to run\n");
 	printf("1. Stack\n");
 	printf("2. Queue\n");
