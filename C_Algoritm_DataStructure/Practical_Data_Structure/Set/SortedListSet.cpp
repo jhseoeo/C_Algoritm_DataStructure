@@ -97,7 +97,8 @@ static void Terminate(SortedListSet* s) {
 }
 
 static SortedListSet* SymmetricDifference(SortedListSet* s1, const SortedListSet* s2, const SortedListSet* s3) {
-	Difference(s1, Union(&MakeSortedListSet(10), s2, s3), Intersection(&MakeSortedListSet(10), s2, s3));
+    SortedListSet t1 = MakeSortedListSet(10), t2 = MakeSortedListSet(10);
+	Difference(s1, Union(&t1, s2, s3), Intersection(&t2, s2, s3));
 	return s1;
 }
 
@@ -120,7 +121,7 @@ void SortedListSetMain() {
 	printf("Two sets created.\n");
 	int input, i;
 	while (1) {
-		system("cls");
+		system(CLEAR);
 		printf("Current State\n");
 		printf("Set 1 : "); Print(&s[0]); printf("\n");
 		printf("Set 2 : "); Print(&s[1]); printf("\n");
