@@ -6,7 +6,7 @@ void Simple_DS() {
 	printf("Select the data structure to run\n");
 	printf("1. Stack\n");
 	printf("2. Queue\n");
-	printf(">>> "); scanf("%d", &n);
+	printf(">>> "); scanf("%d", &n); getchar(); printf("\n");
 	
 	switch(n) {
 		case 1:

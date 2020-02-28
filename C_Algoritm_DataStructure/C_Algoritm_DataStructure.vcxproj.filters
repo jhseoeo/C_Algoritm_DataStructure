@@ -40,7 +40,7 @@
     <Filter Include="Practical_Data_Structure\String">
       <UniqueIdentifier>{499d4643-c8a9-4f37-b725-a10517fd8eba}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Linked_Structure\Linear List">
+    <Filter Include="Linked_Structure\Pointer_Based_Linear_List">
       <UniqueIdentifier>{29b4ed50-21f3-4c05-ab83-f518c36c7096}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -118,11 +118,11 @@
     <ClCompile Include="Practical_Data_Structure\String\String.cpp">
       <Filter>Practical_Data_Structure\String</Filter>
     </ClCompile>
-    <ClCompile Include="Linked_Structure\Linear List\Linear_List.cpp">
-      <Filter>Linked_Structure\Linear List</Filter>
-    </ClCompile>
     <ClCompile Include="Linked_Structure\Linked_Structure.cpp">
       <Filter>Linked_Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.cpp">
+      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -198,11 +198,11 @@
     <ClInclude Include="Practical_Data_Structure\String\String.h">
       <Filter>Practical_Data_Structure\String</Filter>
     </ClInclude>
-    <ClInclude Include="Linked_Structure\Linear List\Linear_List.h">
-      <Filter>Linked_Structure\Linear List</Filter>
-    </ClInclude>
     <ClInclude Include="Linked_Structure\Linked_Structure.h">
       <Filter>Linked_Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.h">
+      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
