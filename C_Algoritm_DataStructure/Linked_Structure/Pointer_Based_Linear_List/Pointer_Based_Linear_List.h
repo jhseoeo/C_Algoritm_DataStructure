@@ -1,5 +1,5 @@
 /*
-
+	Linked list implementation based on pointer.
 */
 
 #ifndef POINTER_BASED_LINEAR_LIST
