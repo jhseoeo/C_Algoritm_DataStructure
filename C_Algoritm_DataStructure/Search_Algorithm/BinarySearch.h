@@ -9,6 +9,5 @@ a series of binary search algoritms.
 
 // Basic binary search. only works on sorted(ascending order) array.
 int BinarySearch(int v, const int* a, int n);
-int BinarySearchS(int v, const int* a, int n);
 
 #endif

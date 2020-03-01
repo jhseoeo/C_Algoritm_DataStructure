@@ -9,6 +9,7 @@ Main function to test Stack and Queue.
 #include "./Stack/Stack.h"
 #include "./Queue/Queue.h"
 
+// Main function to test Stack and Queue.
 void Simple_DS();
 
 #endif

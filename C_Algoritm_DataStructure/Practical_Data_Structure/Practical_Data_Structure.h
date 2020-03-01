@@ -1,5 +1,5 @@
 /*
-Main function to test Set.
+Main function to test some practical data structure.
 */
 
 #ifndef PRACTICAL_DATA_STRUCTURE
@@ -9,6 +9,7 @@ Main function to test Set.
 #include "./Set/Set.h"
 #include "./String/String.h"
 
+// Main function to test some practical data structure.
 void Practical_DS();
 
 #endif

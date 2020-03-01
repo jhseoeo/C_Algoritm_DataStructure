@@ -9,8 +9,13 @@
 #include <string.h>
 #include <limits.h>
 
-static int bf_match(const char* txt, const char* pat); // Brute-force method.
-static int bm_match(const char* txt, const char* pat); // Boyer-Moore method. Commonly used.
+// Brute-force method.
+static int bf_match(const char* txt, const char* pat); 
+
+// Boyer-Moore method. Commonly used.
+static int bm_match(const char* txt, const char* pat); 
+
+// Main function to test some of string search method.
 int String_Main();
 
 #endif

@@ -10,7 +10,7 @@ const char* POSITION[8] = {
 	"□□□□□□■□",
 	"□□□□□□□■" };
 
-void set(int i) {
+static void set(int i) {
 	static int pos[8] = {0, };
 	static int flag[8] = {0, };
 	static int flag1[15] = {0, };
@@ -31,7 +31,7 @@ void set(int i) {
 	}
 }
 
-void print(int* pos, int n) {
+static void print(int* pos, int n) {
 	for(int i = 0; i < n; i++) {
 		printf("%s\n", POSITION[pos[i]]);
 	}

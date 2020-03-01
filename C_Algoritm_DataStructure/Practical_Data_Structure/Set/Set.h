@@ -1,5 +1,5 @@
 /*
-Simple data structure Queue and a series of associated functions.
+	
 */
 
 #ifndef SET_H
@@ -10,6 +10,7 @@ Simple data structure Queue and a series of associated functions.
 #include "SortedListSet.h"
 #include "BitVectorSet.h"
 
+// Main function to test some types of sets.
 void Set_Main();
 
 #endif

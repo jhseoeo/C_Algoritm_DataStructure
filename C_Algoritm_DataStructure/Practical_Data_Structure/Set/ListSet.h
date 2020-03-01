@@ -14,23 +14,53 @@ typedef struct {
 	int* set; 	// array
 } ListSet;
 
-static int isMember(const ListSet *s, int n);	// check if n is member of s
-static void Add(ListSet *s, int n);	// Add n into s
-static void Remove(ListSet *s, int n);	// Remove n from s
-static int Size(const ListSet* s);	// get the size of s
-static void Assign(ListSet* s1, const ListSet* s2);	// assign s2 into s1 
-static int Equal(const ListSet* s1, const ListSet* s2);	// check if s1 is same with s2
-static ListSet* Union(ListSet* s1, const ListSet* s2, const ListSet* s3);	// assign the union of s2 and s3 into s1
-static ListSet* Intersection(ListSet* s1, const ListSet* s2, const ListSet* s3);	// assign the intersection of s2 and s3 into s1
-static ListSet* Difference(ListSet* s1, const ListSet* s2, const ListSet* s3);	// assign s2 difference s3 into s1
-static void Print(const ListSet* s);	// print all value of s
-static void Terminate(ListSet* s);	// remove s
-static ListSet MakeListSet(int size); // Make an initialized ListSet.
+// check if n is member of s
+static int isMember(const ListSet *s, int n);	
 
+// Add n into s
+static void Add(ListSet *s, int n);	
+
+// Remove n from s
+static void Remove(ListSet *s, int n);	
+
+// get the size of s
+static int Size(const ListSet* s);	
+
+// assign s2 into s1 
+static void Assign(ListSet* s1, const ListSet* s2);
+
+// check if s1 is same with s2
+static int Equal(const ListSet* s1, const ListSet* s2);	
+
+// assign the union of s2 and s3 into s1
+static ListSet* Union(ListSet* s1, const ListSet* s2, const ListSet* s3);	
+
+// assign the intersection of s2 and s3 into s1
+static ListSet* Intersection(ListSet* s1, const ListSet* s2, const ListSet* s3);	
+
+// assign s2 difference s3 into s1
+static ListSet* Difference(ListSet* s1, const ListSet* s2, const ListSet* s3);	
+
+// print all value of s
+static void Print(const ListSet* s);	
+
+// remove s
+static void Terminate(ListSet* s);	
+
+// Make an initialized ListSet.
+static ListSet MakeListSet(int size); 
+
+// return the symmetric difference of s1 and s2
 static ListSet* SymmetricDifference(ListSet* s1, const ListSet* s2, const ListSet* s3);
+
+// Check if s2 is subset of s1
 static int IsSubset(const ListSet* s1, const ListSet* s2);
 
+
+// temorary
 static void GetSetNum(int& i);
+
+// Main function of set implemented by array
 void ListSetMain();
 
 #endif

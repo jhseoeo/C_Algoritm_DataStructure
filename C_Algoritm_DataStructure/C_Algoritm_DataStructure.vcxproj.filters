@@ -124,6 +124,9 @@
     <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.cpp">
       <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClCompile>
+    <ClCompile Include="Linked_Structure\Node.cpp">
+      <Filter>Linked_Structure</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -203,6 +206,9 @@
     </ClInclude>
     <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.h">
       <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_Structure\Node.h">
+      <Filter>Linked_Structure</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
