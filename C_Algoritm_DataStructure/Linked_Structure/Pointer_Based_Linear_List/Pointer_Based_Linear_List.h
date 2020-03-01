@@ -8,15 +8,11 @@
 #include "../../Base/Base.h"
 #include "../Node.h"
 
-
-
 // Linked linear list implemented by pointer
 typedef struct {
 	Node* head;
 	Node* cur;
 } Ptr_LinearList;
-
-
 
 
 // Search the value x with function compare
@@ -41,7 +37,7 @@ static void RemoveCurrunt(Ptr_LinearList* list);
 static void Clear(Ptr_LinearList* list);
 
 // Move Cursor of list
-static void MoveCur(Ptr_LinearList* list);
+static void MoveCur(Ptr_LinearList* list, int x);
 
 // Print the value that pointed by cursor of list
 static void PrintCur(const Ptr_LinearList &list);
