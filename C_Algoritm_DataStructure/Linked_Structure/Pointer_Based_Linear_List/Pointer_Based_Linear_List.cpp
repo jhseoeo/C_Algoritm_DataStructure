@@ -1,13 +1,6 @@
 #include "Pointer_Based_Linear_List.h"
 
-static Node* AllocNode(void) {
-	return (Node*)malloc(sizeof(Node));
-}
 
-static void SetNode(Node* n, const int x, Node* next) {
-	n->data = x;
-	n->next = next;
-}
 
 static Ptr_LinearList MakePtrLinearList() {
 	Ptr_LinearList list;
@@ -17,8 +10,9 @@ static Ptr_LinearList MakePtrLinearList() {
 static Node* Search(const Ptr_LinearList &list, int x) {
 	Node* ptr = list.head;
 	while (ptr != NULL) {
-		if (ptr->data == x)
+		if (ptr->data == x) {
 			return ptr;
+		}
 		ptr = ptr->next;
 	}
 	return NULL;
@@ -33,8 +27,7 @@ static void InsertFront(Ptr_LinearList* list, int x) {
 static void InsertRear(Ptr_LinearList* list, int x) {
 	if (list->head == NULL) {
 		InsertFront(list, x);
-	}
-	else {
+	} else {
 		Node* ptr = list->head;
 		while (ptr->next != NULL)
 			ptr = ptr->next;
@@ -44,11 +37,51 @@ static void InsertRear(Ptr_LinearList* list, int x) {
 }
 
 static void RemoveFront(Ptr_LinearList* list) {
-
+	if (list->head != NULL) {
+		Node* ptr = list->head;
+		list->head = list->head->next;
+		free(ptr);
+	}
 }
 
 static void RemoveRear(Ptr_LinearList* list) {
+	if (list->head != NULL) {
+		if (list->head->next == NULL) {
+			RemoveFront(list);
+		} else {
+			Node* ptr = list->head;
+			while (ptr->next->next != NULL) ptr = ptr->next;
+			Node* del = ptr->next;
+			ptr->next = NULL;
+			free(del);
+		}
+	} 
+}
 
+static void RemoveCurrunt(Ptr_LinearList* list) {
+	if (list->head = list->cur) {
+		RemoveFront(list);
+	} else {
+		Node* ptr = list->head;
+		while (ptr->next != list->cur) ptr = ptr->next;
+		ptr->next = list->cur->next;
+		free(list->cur);
+		list->cur = list->head;
+	}
+}
+
+static void Clear(Ptr_LinearList* list) {
+	while (list->head != NULL) {
+		RemoveFront(list);
+	}
+	list->cur = NULL;
+}
+
+
+
+
+static void Terminate(Ptr_LinearList* list) {
+	Clear(list);
 }
 
 void Pointer_Based_Linear_List_Main() {

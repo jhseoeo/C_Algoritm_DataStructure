@@ -8,11 +8,7 @@
 #include "../../Base/Base.h"
 #include "../Node.h"
 
-// Node dataType
-typedef struct __node {
-	int data;
-	struct __node* next;
-} Node;
+
 
 // Linked linear list implemented by pointer
 typedef struct {
@@ -21,9 +17,6 @@ typedef struct {
 } Ptr_LinearList;
 
 
-//
-static Node* AllocNode(void);
-static void SetNode(Node* n, const int x, Node* next);
 
 
 // Search the value x with function compare
@@ -47,15 +40,23 @@ static void RemoveCurrunt(Ptr_LinearList* list);
 // Delete all nodes of list
 static void Clear(Ptr_LinearList* list);
 
+// Move Cursor of list
+static void MoveCur(Ptr_LinearList* list);
+
 // Print the value that pointed by cursor of list
 static void PrintCur(const Ptr_LinearList &list);
 
 // Print the all value of list
 static void PrintAll(const Ptr_LinearList &list);
 
+// Remove list
+static void Terminate(Ptr_LinearList* list);
+
 // Make an initialized linear list based on pointer
 static Ptr_LinearList MakePtrLinearList(); 
 
+
+// Main function of linear list implemented by pointer.
 void Pointer_Based_Linear_List_Main();
 
 #endif
