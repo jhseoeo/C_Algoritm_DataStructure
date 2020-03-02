@@ -1,11 +1,10 @@
 /*
 	Node datatype. Basic unit of linked structure
 */
-
-#include "../Base/Base.h"
-
 #ifndef NODE_H
 #define NODE_H
+
+#include "../Base/Base.h"
 
 // Node datatype. Basic unit of linked structure
 typedef struct __node {

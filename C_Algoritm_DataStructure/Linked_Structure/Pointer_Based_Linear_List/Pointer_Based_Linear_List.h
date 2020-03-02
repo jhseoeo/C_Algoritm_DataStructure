@@ -31,7 +31,7 @@ static void RemoveFront(Ptr_LinearList* list);
 static void RemoveRear(Ptr_LinearList* list);
 
 // Delete the node that pointed by cursor
-static void RemoveCurrunt(Ptr_LinearList* list);
+static void RemoveCursor(Ptr_LinearList* list);
 
 // Delete all nodes of list
 static void Clear(Ptr_LinearList* list);

@@ -7,6 +7,7 @@ This container is for algorithms and data structures
 #include "./Sorting_Algorithm/Sorting_Algorithm.h"
 #include "./Simple_Data_Structure/Simple_Data_Structure.h"
 #include "./Practical_Data_Structure/Practical_Data_Structure.h"
+#include "./Linked_Structure/Linked_Structure.h"
 
 // Main function that tests many kind of searching/sorting algorithms and data structures.
 int main(void) {
@@ -17,6 +18,7 @@ int main(void) {
 	printf("3. Sorting Algorithm\n");
 	printf("4. Simple Data Structure ( Stack, Queue )\n");
 	printf("5. Practical Data Structure ( Set, String )\n");
+	printf("6. Linked Structure\n");
 	printf(">> "); 
 	int n; scanf("%d", &n); getchar(); printf("\n");
 
@@ -35,6 +37,9 @@ int main(void) {
 			break;
 		case 5:
 			Practical_DS();
+			break;
+		case 6:
+			Linked_Structure();
 			break;
 		default:
 			break;

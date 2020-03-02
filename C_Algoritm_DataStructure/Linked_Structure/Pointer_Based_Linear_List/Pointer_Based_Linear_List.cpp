@@ -51,15 +51,19 @@ static void RemoveRear(Ptr_LinearList* list) {
 	} 
 }
 
-static void RemoveCurrunt(Ptr_LinearList* list) {
-	if (list->head = list->cur) {
+static void RemoveCursor(Ptr_LinearList* list) {
+	if (list->cur == NULL)
+		return;
+	else if (list->head == list->cur) {
 		RemoveFront(list);
+		list->cur = NULL;
 	} else {
 		Node* ptr = list->head;
-		while (ptr->next != list->cur) ptr = ptr->next;
+		while (ptr->next != list->cur)
+			ptr = ptr->next;
 		ptr->next = list->cur->next;
 		free(list->cur);
-		list->cur = list->head;
+		list->cur = NULL;
 	}
 }
 
@@ -75,7 +79,10 @@ static void MoveCur(Ptr_LinearList* list, int x) {
 }
 
 static void PrintCur(const Ptr_LinearList& list) {
-	printf("%d", list.cur->data);
+	if (list.cur != NULL)
+		printf("%d", list.cur->data);
+	else
+		printf("NULL");
 }
 
 static void PrintAll(const Ptr_LinearList& list) {
@@ -90,6 +97,7 @@ static void Terminate(Ptr_LinearList* list) {
 static Ptr_LinearList MakePtrLinearList() {
 	Ptr_LinearList list;
 	list.cur = list.head = NULL;
+	return list;
 }
 
 
@@ -112,6 +120,41 @@ void Pointer_Based_Linear_List_Main() {
 		printf("6. Clear\n");
 		printf("7. Move Cursor\n");
 		printf("0. End\n");
-	}
+		printf(">> "); scanf("%d", &input); putchar('\n');
 
+		switch (input) {
+		case 1:
+			printf("Enter the value that you want to insert into list\n");
+			printf(">> "); scanf("%d", &input); printf("\n");
+			InsertFront(&list, input);
+			break;
+		case 2:
+			printf("Enter the value that you want to insert into list\n");
+			printf(">> "); scanf("%d", &input); printf("\n");
+			InsertRear(&list, input);
+			break;
+		case 3:
+			RemoveFront(&list);
+			break;
+		case 4:
+			RemoveRear(&list);
+			break;
+		case 5:
+			RemoveCursor(&list);
+			break;
+		case 6:
+			Clear(&list);
+			break;
+		case 7:
+			printf("Enter the value that you want to search\n");
+			printf(">> "); scanf("%d", &input); printf("\n");
+			MoveCur(&list, input);
+			break;
+		case 0:
+			Terminate(&list);
+			break;
+		default:
+			break;
+		}
+	}
 }	
