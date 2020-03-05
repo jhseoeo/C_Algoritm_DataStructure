@@ -127,11 +127,14 @@
     <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.cpp">
       <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClCompile>
-    <ClCompile Include="Linked_Structure\Node.cpp">
-      <Filter>Linked_Structure</Filter>
-    </ClCompile>
     <ClCompile Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.cpp">
       <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked_Structure\Array_Based_Linear_List\Node.cpp">
+      <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClCompile>
+    <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\Node.cpp">
+      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -213,11 +216,14 @@
     <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.h">
       <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClInclude>
-    <ClInclude Include="Linked_Structure\Node.h">
-      <Filter>Linked_Structure</Filter>
-    </ClInclude>
     <ClInclude Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.h">
       <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_Structure\Array_Based_Linear_List\Node.h">
+      <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClInclude>
+    <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\Node.h">
+      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

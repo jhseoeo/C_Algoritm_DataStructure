@@ -6,17 +6,17 @@
 #define POINTER_BASED_LINEAR_LIST
 
 #include "../../Base/Base.h"
-#include "../Node.h"
+#include "Node.h"
 
 // Linked linear list implemented by pointer
 typedef struct {
-	Node* head;
-	Node* cur;
+	pllNode* head;
+	pllNode* cur;
 } Ptr_LinearList;
 
 
 // Search the value x with function compare
-static Node* Search(const Ptr_LinearList &list, int x); 
+static pllNode* Search(const Ptr_LinearList &list, int x); 
 
 // Insert x in the foremost point of list
 static void InsertFront(Ptr_LinearList* list, int x);
