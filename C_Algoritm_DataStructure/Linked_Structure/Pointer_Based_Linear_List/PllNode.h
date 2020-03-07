@@ -1,8 +1,8 @@
 /*
 	Node datatype . Basic unit of pointer based linear linked list.
 */
-#ifndef NODE_H
-#define NODE_H
+#ifndef PLLNODE_H
+#define PLLNODE_H
 
 #include "../../Base/Base.h"
 

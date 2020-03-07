@@ -152,9 +152,10 @@ void Pointer_Based_Linear_List_Main() {
 			break;
 		case 0:
 			Terminate(&list);
+			goto ENDLOOP;
 			break;
 		default:
 			break;
 		}
-	}
+	} ENDLOOP: ;
 }	

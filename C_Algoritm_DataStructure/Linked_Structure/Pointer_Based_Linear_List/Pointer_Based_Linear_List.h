@@ -6,7 +6,7 @@
 #define POINTER_BASED_LINEAR_LIST
 
 #include "../../Base/Base.h"
-#include "Node.h"
+#include "PllNode.h"
 
 // Linked linear list implemented by pointer
 typedef struct {

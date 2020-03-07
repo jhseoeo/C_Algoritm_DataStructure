@@ -6,12 +6,12 @@
 #define ARRAY_BASED_LINEAR_LIST
 
 #include "../../Base/Base.h"
-#include "Node.h"
+#include "AllNode.h"
 
 #define SIZE 10
 
 typedef struct {
-	Node* n;
+	AllNode* n;
 	Index Head;
 	Index deleted;
 	Index cur;
@@ -52,5 +52,8 @@ static void Terminate(Arr_LinearList* list);
 
 // Make an initialized linear list based on pointer
 static Arr_LinearList MakeArrLinearList();
+
+// Main function of linear list implemented by array.
+void Array_Based_Linear_List_Main();
 
 #endif

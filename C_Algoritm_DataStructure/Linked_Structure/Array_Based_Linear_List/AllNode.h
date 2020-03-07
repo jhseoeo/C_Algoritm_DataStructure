@@ -1,8 +1,8 @@
 /*
 	Node datatype. Basic unit of array based linear linked list.
 */
-#ifndef NODE_H
-#define NODE_H
+#ifndef ALLNODE_H
+#define ALLNODE_H
 
 #include "../../Base/Base.h"
 
@@ -16,6 +16,6 @@ typedef int Index;
 typedef struct {
 	int data;
 	Index next;
-} Node;
+} AllNode;
 
 #endif
