@@ -97,8 +97,9 @@ static void PrintAll(const Arr_LinearList& list) {
 	if (list.Head == EMPTY)
 		return;
 	else {
+		printf("%d ", list.n[list.Head].data);
 		for (Index i = list.Head; list.n[i].next != EMPTY; i = list.n[i].next)
-			printf("%d ", list.n[i].data);
+			printf("%d ", list.n[list.n[i].next].data);
 	}
 }
 

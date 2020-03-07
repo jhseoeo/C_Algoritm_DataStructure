@@ -10,13 +10,13 @@
 
 // Linked linear list implemented by pointer
 typedef struct {
-	pllNode* head;
-	pllNode* cur;
+	PllNode* head;
+	PllNode* cur;
 } Ptr_LinearList;
 
 
 // Search the value x with function compare
-static pllNode* Search(const Ptr_LinearList &list, int x); 
+static PllNode* Search(const Ptr_LinearList &list, int x); 
 
 // Insert x in the foremost point of list
 static void InsertFront(Ptr_LinearList* list, int x);

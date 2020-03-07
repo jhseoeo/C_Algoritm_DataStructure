@@ -1,10 +1,10 @@
 #include "PllNode.h"
 
-pllNode* AllocNode(void) {
-	return (pllNode*)malloc(sizeof(pllNode));
+PllNode* AllocpllNode(void) {
+	return (PllNode*)malloc(sizeof(PllNode));
 }
 
-void SetNode(pllNode* n, const int x, pllNode* next) {
+void SetPllNode(PllNode* n, const int x, PllNode* next) {
 	n->data = x;
 	n->next = next;
 }

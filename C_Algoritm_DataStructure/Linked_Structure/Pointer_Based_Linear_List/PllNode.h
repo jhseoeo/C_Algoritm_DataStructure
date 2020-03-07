@@ -10,12 +10,12 @@
 typedef struct __node {
 	int data;
 	struct __node* next;
-} pllNode;
+} PllNode;
 
 // Allocate new empty node
-pllNode* AllocNode(void);
+PllNode* AllocPllNode(void);
 
 // Set node's data.
-void SetNode(pllNode* n, const int x, pllNode* next);
+void SetPllNode(PllNode* n, const int x, PllNode* next);
 
 #endif

@@ -1,7 +1,7 @@
 #include "Pointer_Based_Linear_List.h"
 
-static pllNode* Search(const Ptr_LinearList &list, int x) {
-	pllNode* ptr = list.head;
+static PllNode* Search(const Ptr_LinearList &list, int x) {
+	PllNode* ptr = list.head;
 	while (ptr != NULL) {
 		if (ptr->data == x) {
 			return ptr;
@@ -12,8 +12,8 @@ static pllNode* Search(const Ptr_LinearList &list, int x) {
 }
 
 static void InsertFront(Ptr_LinearList* list, int x) {
-	pllNode* newNode = AllocNode();
-	SetNode(newNode, x, list->head);
+	PllNode* newNode = AllocpllNode();
+	SetPllNode(newNode, x, list->head);
 	list->head = newNode;
 }
 
@@ -21,17 +21,17 @@ static void InsertRear(Ptr_LinearList* list, int x) {
 	if (list->head == NULL) {
 		InsertFront(list, x);
 	} else {
-		pllNode* ptr = list->head;
+		PllNode* ptr = list->head;
 		while (ptr->next != NULL)
 			ptr = ptr->next;
-		ptr->next = AllocNode();
-		SetNode(ptr->next, x, NULL);
+		ptr->next = AllocpllNode();
+		SetPllNode(ptr->next, x, NULL);
 	}
 }
 
 static void RemoveFront(Ptr_LinearList* list) {
 	if (list->head != NULL) {
-		pllNode* ptr = list->head;
+		PllNode* ptr = list->head;
 		list->head = list->head->next;
 		free(ptr);
 	}
@@ -42,9 +42,9 @@ static void RemoveRear(Ptr_LinearList* list) {
 		if (list->head->next == NULL) {
 			RemoveFront(list);
 		} else {
-			pllNode* ptr = list->head;
+			PllNode* ptr = list->head;
 			while (ptr->next->next != NULL) ptr = ptr->next;
-			pllNode* del = ptr->next;
+			PllNode* del = ptr->next;
 			ptr->next = NULL;
 			free(del);
 		}
@@ -58,7 +58,7 @@ static void RemoveCursor(Ptr_LinearList* list) {
 		RemoveFront(list);
 		list->cur = NULL;
 	} else {
-		pllNode* ptr = list->head;
+		PllNode* ptr = list->head;
 		while (ptr->next != list->cur)
 			ptr = ptr->next;
 		ptr->next = list->cur->next;
@@ -86,7 +86,7 @@ static void PrintCur(const Ptr_LinearList& list) {
 }
 
 static void PrintAll(const Ptr_LinearList& list) {
-	for(pllNode* ptr = list.head; ptr != NULL; ptr = ptr->next)
+	for(PllNode* ptr = list.head; ptr != NULL; ptr = ptr->next)
 		printf("%d ", ptr->data);
 }
 
