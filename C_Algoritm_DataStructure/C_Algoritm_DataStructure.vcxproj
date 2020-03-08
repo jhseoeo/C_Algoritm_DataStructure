@@ -22,8 +22,8 @@
     <ClCompile Include="Base\Base.cpp" />
     <ClCompile Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.cpp" />
     <ClCompile Include="Linked_Structure\Array_Based_Linear_List\AllNode.cpp" />
-    <ClCompile Include="Linked_Structure\Doubly_Circular_Linked_List\DcllNode.cpp" />
-    <ClCompile Include="Linked_Structure\Doubly_Circular_Linked_List\Doubly_Linked_List.cpp" />
+    <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp" />
+    <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.cpp" />
     <ClCompile Include="Linked_Structure\Linked_Structure.cpp" />
     <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.cpp" />
     <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.cpp" />
@@ -56,8 +56,8 @@
     <ClInclude Include="Base\Base.h" />
     <ClInclude Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.h" />
     <ClInclude Include="Linked_Structure\Array_Based_Linear_List\AllNode.h" />
-    <ClInclude Include="Linked_Structure\Doubly_Circular_Linked_List\DcllNode.h" />
-    <ClInclude Include="Linked_Structure\Doubly_Circular_Linked_List\Doubly_Linked_List.h" />
+    <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h" />
+    <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.h" />
     <ClInclude Include="Linked_Structure\Linked_Structure.h" />
     <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.h" />
     <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.h" />

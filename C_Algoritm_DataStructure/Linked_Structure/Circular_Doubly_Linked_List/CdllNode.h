@@ -2,21 +2,22 @@
 	Node datatype. Basic unit of pointer based linear linked list.
 */
 
-#ifndef PLLNODE_H
-#define PLLNODE_H
+#ifndef DCLLNODE_H
+#define DCLLNODE_H
 
 #include "../../Base/Base.h"
 
 // Node datatype. Basic unit of pointer based linear linked list.
 typedef struct __node {
+	__node* next;
+	__node* prev;
 	int data;
-	struct __node* next;
-} PllNode;
+} CdllNode;
 
 // Allocate new empty node
-PllNode* AllocPllNode(void);
+CdllNode* AllocCdllNode(void);
 
 // Set node's data.
-void SetPllNode(PllNode* n, const int x, PllNode* next);
+void SetCdllNode(CdllNode* n, const int x, CdllNode* next, CdllNode* prev);
 
 #endif

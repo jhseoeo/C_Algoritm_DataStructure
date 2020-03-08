@@ -46,7 +46,7 @@
     <Filter Include="Linked_Structure\Array_Based_Linear_List">
       <UniqueIdentifier>{16d17c0e-c377-44c7-b293-a80f64df8532}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Linked_Structure\Doubly_Circular_Linked_List">
+    <Filter Include="Linked_Structure\Circular_Doubly_Linked_List">
       <UniqueIdentifier>{0f53f4a4-ccf1-424a-88df-54d5018f7a33}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -139,11 +139,11 @@
     <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.cpp">
       <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClCompile>
-    <ClCompile Include="Linked_Structure\Doubly_Circular_Linked_List\Doubly_Linked_List.cpp">
-      <Filter>Linked_Structure\Doubly_Circular_Linked_List</Filter>
+    <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.cpp">
+      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClCompile>
-    <ClCompile Include="Linked_Structure\Doubly_Circular_Linked_List\DcllNode.cpp">
-      <Filter>Linked_Structure\Doubly_Circular_Linked_List</Filter>
+    <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp">
+      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -234,11 +234,11 @@
     <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.h">
       <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClInclude>
-    <ClInclude Include="Linked_Structure\Doubly_Circular_Linked_List\Doubly_Linked_List.h">
-      <Filter>Linked_Structure\Doubly_Circular_Linked_List</Filter>
+    <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.h">
+      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClInclude>
-    <ClInclude Include="Linked_Structure\Doubly_Circular_Linked_List\DcllNode.h">
-      <Filter>Linked_Structure\Doubly_Circular_Linked_List</Filter>
+    <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h">
+      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

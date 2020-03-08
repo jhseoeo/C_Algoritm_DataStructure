@@ -12,7 +12,7 @@ static PllNode* Search(const Ptr_LinearList &list, int x) {
 }
 
 static void InsertFront(Ptr_LinearList* list, int x) {
-	PllNode* newNode = AllocpllNode();
+	PllNode* newNode = AllocPllNode();
 	SetPllNode(newNode, x, list->head);
 	list->head = newNode;
 }
@@ -24,7 +24,7 @@ static void InsertRear(Ptr_LinearList* list, int x) {
 		PllNode* ptr = list->head;
 		while (ptr->next != NULL)
 			ptr = ptr->next;
-		ptr->next = AllocpllNode();
+		ptr->next = AllocPllNode();
 		SetPllNode(ptr->next, x, NULL);
 	}
 }
