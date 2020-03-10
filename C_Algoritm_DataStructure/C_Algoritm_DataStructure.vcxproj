@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp" />
+    <ClCompile Include="Binary Search Tree\Binary_Search_Tree.cpp" />
+    <ClCompile Include="Binary Search Tree\BSTNode.cpp" />
     <ClCompile Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.cpp" />
     <ClCompile Include="Linked_Structure\Array_Based_Linear_List\AllNode.cpp" />
     <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp" />
@@ -54,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Binary Search Tree\Binary_Search_Tree.h" />
+    <ClInclude Include="Binary Search Tree\BSTNode.h" />
     <ClInclude Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.h" />
     <ClInclude Include="Linked_Structure\Array_Based_Linear_List\AllNode.h" />
     <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h" />

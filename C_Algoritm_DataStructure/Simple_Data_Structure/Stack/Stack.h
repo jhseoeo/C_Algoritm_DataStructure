@@ -9,20 +9,20 @@ Simple data structure stack and a series of associated functions.
 
 // Stack. It has attribute of Last In First Out.
 typedef struct {
-	int max;
-	int idx;
-	int* stk;
+	int max;	// The number of maximum elements of stack.
+	int idx;	// Index of arr that points out top element of stack.
+	Data* stk;	// Allocated stack array.
 } Stack;
 
 
 // Push value to stack.
-static int Push(Stack *stack, int value); 
+static int Push(Stack *stack, Data value);
 
 // Pop value from stack.
-static int Pop(Stack *stack, int* value); 
+static int Pop(Stack *stack, Data* value);
 
 // See the value of Stack's highest point.
-static int Peek(const Stack *stack, int* value);
+static int Peek(const Stack *stack, Data* value);
 
 // Clear the all value from stack.
 static void Clear(Stack *stack); 
@@ -34,7 +34,7 @@ static int isEmpty(const Stack *stack);
 static int isFull(const Stack *stack);
 
 // Search the given value from stack. 
-static int Search(const Stack *stack, int value);
+static int Search(const Stack *stack, Data value);
 
 // Print out the all value of stack.
 static void Print(const Stack *stack);

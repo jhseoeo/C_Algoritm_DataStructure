@@ -1,6 +1,6 @@
 #include "Queue.h"
 
-static int Enque(Queue *que, int value) {
+static int Enque(Queue *que, Data value) {
 	if((que->rear + 1) % que->max != que->front) {
 		que->queue[que->rear] = value;
 		que->rear = (que->rear + 1) % que->max;
@@ -10,7 +10,7 @@ static int Enque(Queue *que, int value) {
 	}
 }
 
-static int Deque(Queue *que, int* value) {
+static int Deque(Queue *que, Data* value) {
 	if(que->front != que->rear) {
 		*value = que->queue[que->front];
 		que->front = (que->front + 1) % que->max;
@@ -20,7 +20,7 @@ static int Deque(Queue *que, int* value) {
 	}
 }
 
-static int Peek(const Queue *que, int* value) {
+static int Peek(const Queue *que, Data* value) {
 	if(que->front != que->rear) {
 		*value = que->queue[que->front];
 		return 1;
@@ -45,7 +45,7 @@ static int isFull(const Queue *que) {
 	return (que->rear + 1) % que->max == que->front;
 }
 
-static int Search(const Queue *que, int value) {
+static int Search(const Queue *que, Data value) {
 	for(int i = que->front; i % que->max != que->rear; i = (i + 1) % que->max) {
 		if(que->queue[i] == value)
 			return 1;	

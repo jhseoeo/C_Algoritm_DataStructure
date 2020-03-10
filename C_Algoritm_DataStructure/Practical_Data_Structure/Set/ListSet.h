@@ -15,13 +15,13 @@ typedef struct {
 } ListSet;
 
 // check if n is member of s
-static int isMember(const ListSet *s, int n);	
+static int isMember(const ListSet *s, Data n);
 
 // Add n into s
-static void Add(ListSet *s, int n);	
+static void Add(ListSet *s, Data n);
 
 // Remove n from s
-static void Remove(ListSet *s, int n);	
+static void Remove(ListSet *s, Data n);
 
 // get the size of s
 static int Size(const ListSet* s);	

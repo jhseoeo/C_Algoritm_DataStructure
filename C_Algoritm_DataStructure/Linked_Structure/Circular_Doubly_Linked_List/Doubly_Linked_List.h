@@ -10,18 +10,18 @@
 
 // Circular doulby linked list implemented by pointer
 typedef struct {
-	CdllNode* head;
-	CdllNode* cur;
+	CdllNode* head;	// First node of list.
+	CdllNode* cur;	// Cursor that can be used for an amounts of ways.
 } CircularLinkedList;
 
 // Search the value x with function compare
-static CdllNode* Search(const CircularLinkedList& list, int x);
+static CdllNode* Search(const CircularLinkedList& list, Data x);
 
 // Insert x in the foremost point of list
-static void InsertFront(CircularLinkedList* list, int x);
+static void InsertFront(CircularLinkedList* list, Data x);
 
 // Insert x in rearest point of list
-static void InsertRear(CircularLinkedList* list, int x);
+static void InsertRear(CircularLinkedList* list, Data x);
 
 // Delete the node at foremost point of list
 static void RemoveFront(CircularLinkedList* list);
@@ -36,7 +36,7 @@ static void RemoveCursor(CircularLinkedList* list);
 static void Clear(CircularLinkedList* list);
 
 // Move Cursor of list
-static void MoveCur(CircularLinkedList* list, int x);
+static void MoveCur(CircularLinkedList* list, Data x);
 
 // Print the value that pointed by cursor of list
 static void PrintCur(const CircularLinkedList& list);

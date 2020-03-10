@@ -25,7 +25,7 @@ const int ARR_LEN = 9;
     #define CLEAR "clear"
 #endif
 
-
+typedef int Data;
 
 // Change two values of variables by passing py reference.
 void swap(int &a, int &b);

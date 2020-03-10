@@ -16,13 +16,13 @@ typedef struct {
 } SortedListSet;
 
 // check if n is member of s
-static int isMember(const SortedListSet* s, int n);	
+static int isMember(const SortedListSet* s, Data n);
 
 // Add n into s
-static void Add(SortedListSet* s, int n);	
+static void Add(SortedListSet* s, Data n);
 
 // Remove n from s
-static void Remove(SortedListSet* s, int n);	
+static void Remove(SortedListSet* s, Data n);
 
 // get the size of s
 static int Size(const SortedListSet* s);	

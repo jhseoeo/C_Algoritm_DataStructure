@@ -1,20 +1,20 @@
 #include "BitVectorSet.h"
 
-static int CheckSize(int n) {
+static int CheckSize(Data n) {
 	return BitSetMin < n && n < BitSetMax;
 }
 
-static int IsMember(const BitSet& s, int n) {
+static int IsMember(const BitSet& s, Data n) {
 	if(CheckSize(n))
 		return s & SetOf(n);
 }
 
-static void Add(BitSet* s, int n) {
+static void Add(BitSet* s, Data n) {
 	if (CheckSize(n))
 		*s |= SetOf(n);
 }
 
-static void Remove(BitSet* s, int n) {
+static void Remove(BitSet* s, Data n) {
 	if (CheckSize(n))
 		*s &= ~SetOf(n);
 }

@@ -1,6 +1,6 @@
 #include "Pointer_Based_Linear_List.h"
 
-static PllNode* Search(const Ptr_LinearList &list, int x) {
+static PllNode* Search(const Ptr_LinearList &list, Data x) {
 	PllNode* ptr = list.head;
 	while (ptr != NULL) {
 		if (ptr->data == x) {
@@ -11,13 +11,13 @@ static PllNode* Search(const Ptr_LinearList &list, int x) {
 	return NULL;
 }
 
-static void InsertFront(Ptr_LinearList* list, int x) {
+static void InsertFront(Ptr_LinearList* list, Data x) {
 	PllNode* newNode = AllocPllNode();
 	SetPllNode(newNode, x, list->head);
 	list->head = newNode;
 }
 
-static void InsertRear(Ptr_LinearList* list, int x) {
+static void InsertRear(Ptr_LinearList* list, Data x) {
 	if (list->head == NULL) {
 		InsertFront(list, x);
 	} else {
@@ -74,7 +74,7 @@ static void Clear(Ptr_LinearList* list) {
 	list->cur = NULL;
 }
 
-static void MoveCur(Ptr_LinearList* list, int x) {
+static void MoveCur(Ptr_LinearList* list, Data x) {
 	list->cur = Search(*list, x);
 }
 

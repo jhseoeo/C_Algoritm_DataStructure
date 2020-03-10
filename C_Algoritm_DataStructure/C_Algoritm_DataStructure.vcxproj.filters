@@ -49,6 +49,9 @@
     <Filter Include="Linked_Structure\Circular_Doubly_Linked_List">
       <UniqueIdentifier>{0f53f4a4-ccf1-424a-88df-54d5018f7a33}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Binary Search Tree">
+      <UniqueIdentifier>{916a105b-5048-474f-9fa4-5325c0c91e95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp">
@@ -145,6 +148,12 @@
     <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp">
       <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClCompile>
+    <ClCompile Include="Binary Search Tree\Binary_Search_Tree.cpp">
+      <Filter>Binary Search Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Binary Search Tree\BSTNode.cpp">
+      <Filter>Binary Search Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -239,6 +248,12 @@
     </ClInclude>
     <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h">
       <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary Search Tree\BSTNode.h">
+      <Filter>Binary Search Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Binary Search Tree\Binary_Search_Tree.h">
+      <Filter>Binary Search Tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

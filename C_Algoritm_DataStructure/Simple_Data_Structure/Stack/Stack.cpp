@@ -1,6 +1,6 @@
 #include "Stack.h"
 
-static Stack MakeStack(int size) {
+static Stack MakeStack(Data size) {
 	Stack stack;
 	stack.max = size;
 	stack.idx = 0;
@@ -8,7 +8,7 @@ static Stack MakeStack(int size) {
 	return stack;
 }
 
-static int Push(Stack *stack, int value) {
+static int Push(Stack *stack, Data value) {
 	if (stack->idx < stack->max) {
 		stack->stk[stack->idx++] = value;
 		return 1;
@@ -17,7 +17,7 @@ static int Push(Stack *stack, int value) {
 	}
 }
 
-static int Pop(Stack *stack, int* value) {
+static int Pop(Stack *stack, Data* value) {
 	if (stack->idx > 0) {
 		*value = stack->stk[--stack->idx];
 		return 1;	
@@ -26,7 +26,7 @@ static int Pop(Stack *stack, int* value) {
 	}
 }
 
-static int Peek(const Stack *stack, int* value) {
+static int Peek(const Stack *stack, Data* value) {
 	if (stack->idx > 0) {
 		*value = stack->stk[stack->idx - 1];
 		return 1;	
@@ -47,7 +47,7 @@ static int isFull(const Stack *stack) {
 	return (stack->idx == stack->max);	
 }
 
-static int Search(const Stack *stack, int value) {
+static int Search(const Stack *stack, Data value) {
 	for(int i = 0; i < stack->idx; i++) 
 		if (stack->stk[i] == value)
 			return 1;

@@ -10,19 +10,18 @@
 
 // Linked linear list implemented by pointer
 typedef struct {
-	PllNode* head;
-	PllNode* cur;
+	PllNode* head;	// First node of list.
+	PllNode* cur;	// Cursor that can be used for an amounts of ways.
 } Ptr_LinearList;
 
-
 // Search the value x with function compare
-static PllNode* Search(const Ptr_LinearList &list, int x); 
+static PllNode* Search(const Ptr_LinearList &list, Data x);
 
 // Insert x in the foremost point of list
-static void InsertFront(Ptr_LinearList* list, int x);
+static void InsertFront(Ptr_LinearList* list, Data x);
 
 // Insert x in rearest point of list
-static void InsertRear(Ptr_LinearList* list, int x);
+static void InsertRear(Ptr_LinearList* list, Data x);
 
 // Delete the node at foremost point of list
 static void RemoveFront(Ptr_LinearList* list);
@@ -37,7 +36,7 @@ static void RemoveCursor(Ptr_LinearList* list);
 static void Clear(Ptr_LinearList* list);
 
 // Move Cursor of list
-static void MoveCur(Ptr_LinearList* list, int x);
+static void MoveCur(Ptr_LinearList* list, Data x);
 
 // Print the value that pointed by cursor of list
 static void PrintCur(const Ptr_LinearList &list);

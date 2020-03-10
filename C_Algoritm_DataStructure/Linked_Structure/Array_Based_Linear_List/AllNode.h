@@ -14,8 +14,8 @@ typedef int Index;
 
 // Node datatype. Basic unit of array based linear linked list.
 typedef struct {
-	int data;
-	Index next;
+	Data data;	// Data that node contains
+	Index next;	// Index variable that points out next node.
 } AllNode;
 
 #endif

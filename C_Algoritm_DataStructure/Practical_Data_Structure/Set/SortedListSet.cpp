@@ -8,11 +8,11 @@ static SortedListSet MakeSortedListSet(int size) {
 	return a;
 }
 
-static int isMember(const SortedListSet* s, int n) {
+static int isMember(const SortedListSet* s, Data n) {
 	return BinarySearch(n, s->set, s->size);
 }
 
-static void Add(SortedListSet* s, int n) {
+static void Add(SortedListSet* s, Data n) {
 	if (s->size < s->max && isMember(s, n) == -1) {
 		int idx = 0;
 		for (int i = 0; i < s->size;) {
@@ -28,7 +28,7 @@ static void Add(SortedListSet* s, int n) {
 	}
 }
 
-static void Remove(SortedListSet* s, int n) {
+static void Remove(SortedListSet* s, Data n) {
 	if (s->size > 0 && isMember(s, n) != -1) {
 		int idx = isMember(s, n);
 		for (int i = idx+1; i < s->size; i++) {

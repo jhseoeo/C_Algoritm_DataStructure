@@ -8,19 +8,19 @@ static ListSet MakeListSet(int size) {
 	return a;
 }
 
-static int isMember(const ListSet *s, int n) {
+static int isMember(const ListSet *s, Data n) {
 	for(int i = 0; i < s->size; i++)
 		if(s->set[i] == n)
 			return i;
 	return -1;
 }
 
-static void Add(ListSet *s, int n) {
+static void Add(ListSet *s, Data n) {
 	if( s->size < s->max && isMember(s, n) == -1 )
 		s->set[s->size++] = n;
 }
 
-static void Remove(ListSet *s, int n) {
+static void Remove(ListSet *s, Data n) {
 	int idx = isMember(s, n);
 	if( idx != -1 )
 		s->set[idx] = s->set[--s->size];	

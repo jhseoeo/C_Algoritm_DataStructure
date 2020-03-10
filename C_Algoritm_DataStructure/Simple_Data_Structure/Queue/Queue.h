@@ -7,22 +7,22 @@ Simple data structure Queue and a series of associated functions.
 
 #include "../../Base/Base.h"
 
-// Stack. It has attribute of First In First Out.
+// Queue. It has attribute of First In First Out. And has circular architecture.
 typedef struct {
-	int front;
-	int rear;
-	int max;
-	int* queue;
+	int front;	// Index of arr that points out foremost element of queue.
+	int rear;	// Index of arr that points out rearest element of queue.
+	int max;	// The number of maximum elements of queue.
+	Data* queue;	// Allocated queue array.
 } Queue;
 
 // Enque the value to queue.
-static int Enque(Queue *que, int value); 
+static int Enque(Queue *que, Data value);
 
 // Deque the value from queue.
-static int Deque(Queue *que, int* value);
+static int Deque(Queue *que, Data* value);
 
 // See the value of rearest point of queue.
-static int Peek(const Queue *que, int* value);
+static int Peek(const Queue *que, Data* value);
 
 // Clear the all value from queue.
 static void Clear(Queue *que); 
@@ -37,7 +37,7 @@ static int isEmpty(const Queue *que);
 static int isFull(const Queue *que); 
 
 // Search the given value from queue. 
-static int Search(const Queue *que, int value);
+static int Search(const Queue *que, Data value);
 
 // Print out all the value of queue.
 static void Print(const Queue *que);

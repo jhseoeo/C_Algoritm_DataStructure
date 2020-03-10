@@ -11,20 +11,20 @@
 #define SIZE 10
 
 typedef struct {
-	AllNode* n;
-	Index Head;
-	Index deleted;
-	Index cur;
+	AllNode* n;		// Array of nodes.
+	Index Head;		// First index of used nodes.
+	Index deleted;	// First index of deleted nodes.
+	Index cur;		// cursor that can be used for an amounts of ways.
 } Arr_LinearList;
 
 // Search the value x with function compare
-static Index Search(Arr_LinearList* list, int x);
+static Index Search(Arr_LinearList* list, Data x);
 
 // Insert x in the foremost point of list
-static void InsertFront(Arr_LinearList* list, int x);
+static void InsertFront(Arr_LinearList* list, Data x);
 
 // Insert x in rearest point of list
-static void InsertRear(Arr_LinearList* list, int x);
+static void InsertRear(Arr_LinearList* list, Data x);
 
 // Delete the node at foremost point of list
 static void RemoveFront(Arr_LinearList* list);
@@ -39,7 +39,7 @@ static void RemoveCursor(Arr_LinearList* list);
 static void Clear(Arr_LinearList* list);
 
 // Move Cursor of list
-static void MoveCur(Arr_LinearList* list, int x);
+static void MoveCur(Arr_LinearList* list, Data x);
 
 // Print the value that pointed by cursor of list
 static void PrintCur(const Arr_LinearList& list);

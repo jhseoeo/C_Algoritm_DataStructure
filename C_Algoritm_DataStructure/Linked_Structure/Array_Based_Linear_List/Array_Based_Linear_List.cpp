@@ -1,6 +1,6 @@
 #include "Array_Based_Linear_List.h"
 
-static Index Search(Arr_LinearList* list, int x) {
+static Index Search(Arr_LinearList* list, Data x) {
 	for (Index i = 0; i < SIZE; i++) {
 		if (list->n[i].data == x)
 			return i;
@@ -8,7 +8,7 @@ static Index Search(Arr_LinearList* list, int x) {
 	return EMPTY;
 }
 
-static void InsertFront(Arr_LinearList* list, int x) {
+static void InsertFront(Arr_LinearList* list, Data x) {
 	if (list->deleted == EMPTY)
 		return;
 	
@@ -19,7 +19,7 @@ static void InsertFront(Arr_LinearList* list, int x) {
 	list->n[idx].data = x;
 }
 
-static void InsertRear(Arr_LinearList* list, int x) {
+static void InsertRear(Arr_LinearList* list, Data x) {
 	if (list->deleted == EMPTY)
 		return;
 
@@ -82,7 +82,7 @@ static void Clear(Arr_LinearList* list) {
 	list->n[SIZE - 1].next = EMPTY;
 }
 
-static void MoveCur(Arr_LinearList* list, int x) {
+static void MoveCur(Arr_LinearList* list, Data x) {
 	list->cur = Search(list, x);
 }
 
