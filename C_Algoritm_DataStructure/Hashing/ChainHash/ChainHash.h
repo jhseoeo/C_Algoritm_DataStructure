@@ -7,7 +7,6 @@
 #ifndef CHAIN_HASHING_H
 #define CHAIN_HASHING_H
 
-
 #define EMPTY -1	// symbol of empty value.
 
 // Node that represents individual bukkit.
