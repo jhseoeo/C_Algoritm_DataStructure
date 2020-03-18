@@ -9,12 +9,12 @@ void Hashing_Main() {
 	printf(">>> "); scanf("%d", &n);
 
 	switch (n) {
-	//case 1:
-	//	Set_Main();
-	//	break;
-	//case 2:
-	//	String_Main();
-	//	break;
+	case 1:
+		ChainHashMain();
+		break;
+	case 2:
+		ClosedHashMain();
+		break;
 	default: break;
 	}
 }

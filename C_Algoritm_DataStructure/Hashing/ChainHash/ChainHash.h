@@ -7,31 +7,29 @@
 #ifndef CHAIN_HASHING_H
 #define CHAIN_HASHING_H
 
-#define EMPTY -1	// symbol of empty value.
-
 // Node that represents individual bukkit.
 typedef struct __node {
 	Data data;
 	struct __node* next;
-} CHNode;
+} ChainNode;
 
 // Allocate new CHNode
-static CHNode* MakeCHNode();
+static ChainNode* MakeCHNode();
 
 // Set values of CHNode
-static void SetCHNode(CHNode* node, Data data, CHNode* next);
+static void SetCHNode(ChainNode* node, Data data, ChainNode* next);
 
 // Hash Table implemented in Chain Hashing.
 typedef struct {
 	int size;
-	CHNode** Table;
+	ChainNode** Table;
 } ChainHash;
 
 // Hash function
 static int Hash(Data data, int size);
 
 // Search the value from hash table. If there is node that has same value with parameter, return the address of node. Otherwise return NULL.
-static CHNode* Search(const ChainHash* h, Data data);
+static ChainNode* Search(const ChainHash* h, Data data);
 
 // Add the new node that has same data with parameter. If there already is, do not execte it.
 static int Add(ChainHash* h, Data data);
@@ -47,5 +45,8 @@ static void Clear(ChainHash* h);
 
 // Make new Chain hash table and return it.
 static ChainHash MakeChainHash(int size);
+
+// Main function of Hashing implemented Chain Hashing.
+void ChainHashMain();
 
 #endif
