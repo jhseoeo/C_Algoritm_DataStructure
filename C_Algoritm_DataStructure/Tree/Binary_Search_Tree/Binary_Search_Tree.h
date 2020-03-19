@@ -5,7 +5,7 @@
 #ifndef BINARY_SEARCH_TREE_H
 #define BINARY_SEARCH_TREE_H
 
-#include "../Base/Base.h"
+#include "../../Base/Base.h"
 
 // Node datatype of Binary search tree. Basic unit of Binary search tree.
 typedef struct __bnode {

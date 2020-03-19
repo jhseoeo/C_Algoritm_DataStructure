@@ -8,7 +8,7 @@ This container is for algorithms and data structures
 #include "./Simple_Data_Structure/Simple_Data_Structure.h"
 #include "./Practical_Data_Structure/Practical_Data_Structure.h"
 #include "./Linked_Structure/Linked_Structure.h"
-#include "./Binary_Search_Tree/Binary_Search_Tree.h"
+#include "./Tree/Tree.h"
 #include "./Hashing/Hashing.h"
 
 

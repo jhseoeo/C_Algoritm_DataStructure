@@ -1,5 +1,5 @@
 /*
-Simple data structure Queue and a series of associated functions.
+	Simple data structure Queue and a series of associated functions.
 */
 
 #ifndef QUEUE_H

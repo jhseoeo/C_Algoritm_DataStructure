@@ -20,7 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp" />
-    <ClCompile Include="Binary_Search_Tree\Binary_Search_Tree.cpp" />
     <ClCompile Include="Hashing\ChainHash\ChainHash.cpp" />
     <ClCompile Include="Hashing\ClosedHash\ClosedHash.cpp" />
     <ClCompile Include="Hashing\Hashing.cpp" />
@@ -43,6 +42,12 @@
     <ClCompile Include="Search_Algorithm\BinarySearch.cpp" />
     <ClCompile Include="Search_Algorithm\LinearSearch.cpp" />
     <ClCompile Include="Search_Algorithm\Search_Algorithm.cpp" />
+    <ClCompile Include="Simple_Data_Structure\Deque\Deque.cpp" />
+    <ClCompile Include="Simple_Data_Structure\Deque\DequeNode.cpp" />
+    <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.cpp" />
+    <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.cpp" />
+    <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStack.cpp" />
+    <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.cpp" />
     <ClCompile Include="Simple_Data_Structure\Queue\Queue.cpp" />
     <ClCompile Include="Simple_Data_Structure\Simple_Data_Structure.cpp" />
     <ClCompile Include="Simple_Data_Structure\Stack\Stack.cpp" />
@@ -55,10 +60,11 @@
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.cpp" />
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\ShellSort.cpp" />
     <ClCompile Include="Sorting_Algorithm\Sorting_Algorithm.cpp" />
+    <ClCompile Include="Tree\Binary_Search_Tree\Binary_Search_Tree.cpp" />
+    <ClCompile Include="Tree\Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
-    <ClInclude Include="Binary_Search_Tree\Binary_Search_Tree.h" />
     <ClInclude Include="Hashing\ChainHash\ChainHash.h" />
     <ClInclude Include="Hashing\ClosedHash\ClosedHash.h" />
     <ClInclude Include="Hashing\Hashing.h" />
@@ -80,6 +86,12 @@
     <ClInclude Include="Search_Algorithm\BinarySearch.h" />
     <ClInclude Include="Search_Algorithm\LinearSearch.h" />
     <ClInclude Include="Search_Algorithm\Search_Algorithm.h" />
+    <ClInclude Include="Simple_Data_Structure\Deque\Deque.h" />
+    <ClInclude Include="Simple_Data_Structure\Deque\DequeNode.h" />
+    <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.h" />
+    <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.h" />
+    <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStack.h" />
+    <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.h" />
     <ClInclude Include="Simple_Data_Structure\Queue\Queue.h" />
     <ClInclude Include="Simple_Data_Structure\Simple_Data_Structure.h" />
     <ClInclude Include="Simple_Data_Structure\Stack\Stack.h" />
@@ -92,6 +104,8 @@
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.h" />
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\ShellSort.h" />
     <ClInclude Include="Sorting_Algorithm\Sorting_Algorithm.h" />
+    <ClInclude Include="Tree\Binary_Search_Tree\Binary_Search_Tree.h" />
+    <ClInclude Include="Tree\Tree.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

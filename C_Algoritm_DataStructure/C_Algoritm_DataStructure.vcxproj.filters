@@ -49,9 +49,6 @@
     <Filter Include="Linked_Structure\Circular_Doubly_Linked_List">
       <UniqueIdentifier>{0f53f4a4-ccf1-424a-88df-54d5018f7a33}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Binary_Search_Tree">
-      <UniqueIdentifier>{05d0e1ac-9482-4036-ab26-b7e9edf286cc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Hashing">
       <UniqueIdentifier>{06465aba-8c75-47c4-ab9a-dd632950790e}</UniqueIdentifier>
     </Filter>
@@ -60,6 +57,24 @@
     </Filter>
     <Filter Include="Hashing\ChainHash">
       <UniqueIdentifier>{9f4f4145-a60d-4f85-a2d1-9f7da2933e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tree">
+      <UniqueIdentifier>{05d0e1ac-9482-4036-ab26-b7e9edf286cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tree\Binary_Search_Tree">
+      <UniqueIdentifier>{6f853f2f-a56c-49d5-b585-df14ada1443a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simple_Data_Structure\LinkedQueue">
+      <UniqueIdentifier>{a09f3d4b-84a0-4800-81d3-38f58295317c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simple_Data_Structure\LinkedStack">
+      <UniqueIdentifier>{4ec77223-7e22-45fd-a92b-07ad3c042998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simple_Data_Structure\Deque">
+      <UniqueIdentifier>{de10dbf9-23cc-41f4-ade1-5e255b138879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{5b89441f-1caf-4594-9324-d4846e288634}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -157,9 +172,6 @@
     <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp">
       <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClCompile>
-    <ClCompile Include="Binary_Search_Tree\Binary_Search_Tree.cpp">
-      <Filter>Binary_Search_Tree</Filter>
-    </ClCompile>
     <ClCompile Include="Hashing\Hashing.cpp">
       <Filter>Hashing</Filter>
     </ClCompile>
@@ -168,6 +180,30 @@
     </ClCompile>
     <ClCompile Include="Hashing\ChainHash\ChainHash.cpp">
       <Filter>Hashing\ChainHash</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\Binary_Search_Tree\Binary_Search_Tree.cpp">
+      <Filter>Tree\Binary_Search_Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\Tree.cpp">
+      <Filter>Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\Deque\Deque.cpp">
+      <Filter>Simple_Data_Structure\Deque</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\Deque\DequeNode.cpp">
+      <Filter>Simple_Data_Structure\Deque</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.cpp">
+      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.cpp">
+      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStack.cpp">
+      <Filter>Simple_Data_Structure\LinkedStack</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.cpp">
+      <Filter>Simple_Data_Structure\LinkedStack</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -264,9 +300,6 @@
     <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h">
       <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClInclude>
-    <ClInclude Include="Binary_Search_Tree\Binary_Search_Tree.h">
-      <Filter>Binary_Search_Tree</Filter>
-    </ClInclude>
     <ClInclude Include="Hashing\Hashing.h">
       <Filter>Hashing</Filter>
     </ClInclude>
@@ -275,6 +308,30 @@
     </ClInclude>
     <ClInclude Include="Hashing\ChainHash\ChainHash.h">
       <Filter>Hashing\ChainHash</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\Binary_Search_Tree\Binary_Search_Tree.h">
+      <Filter>Tree\Binary_Search_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\Tree.h">
+      <Filter>Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\Deque\DequeNode.h">
+      <Filter>Simple_Data_Structure\Deque</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\Deque\Deque.h">
+      <Filter>Simple_Data_Structure\Deque</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.h">
+      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.h">
+      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStack.h">
+      <Filter>Simple_Data_Structure\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.h">
+      <Filter>Simple_Data_Structure\LinkedStack</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
