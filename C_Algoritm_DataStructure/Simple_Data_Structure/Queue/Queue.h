@@ -1,5 +1,5 @@
 /*
-	Simple data structure Queue and a series of associated functions.
+	Simple data structure Queue implemented by array and a series of associated functions.
 */
 
 #ifndef QUEUE_H
@@ -45,7 +45,7 @@ static void Print(const Queue *que);
 // Delete the queue and all the contents of it.
 static void Terminate(Queue *que); 
 
-// Make an initialized stack.
+// Make an initialized queue.
 static Queue MakeQueue(int size); 
 
 

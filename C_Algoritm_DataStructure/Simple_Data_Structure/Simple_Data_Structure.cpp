@@ -6,6 +6,8 @@ void Simple_DS() {
 	printf("Select the data structure to run\n");
 	printf("1. Stack\n");
 	printf("2. Queue\n");
+	printf("3. Linked Stack\n");
+	printf("4. Linked Queue\n");
 	printf(">>> "); scanf("%d", &n); getchar(); printf("\n");
 	
 	switch(n) {
@@ -14,6 +16,12 @@ void Simple_DS() {
 			break;
 		case 2:
 			Queue_Main();
+			break;
+		case 3:
+			LinkedStack_Main();
+			break;
+		case 4:
+			LinkedQueue_Main();
 			break;
 		default: break;
 	}

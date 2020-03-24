@@ -10,6 +10,7 @@
 // Node datatype of deque. Basic unit of deque.
 typedef struct __dequenode {
 	struct __dequenode* next;
+	struct __dequenode* prev;
 	Data data;
 } DequeNode;
 
@@ -17,6 +18,6 @@ typedef struct __dequenode {
 DequeNode* AllocDequeNode();
 
 // Set deque node's data.
-void SetDequeNode(DequeNode* node, DequeNode* next, Data data);
+void SetDequeNode(DequeNode* node, DequeNode* next, DequeNode* prev, Data data);
 
 #endif

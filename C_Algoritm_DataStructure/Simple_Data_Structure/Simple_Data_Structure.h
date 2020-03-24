@@ -8,6 +8,8 @@ Main function to test Stack and Queue.
 #include "../Base/Base.h"
 #include "./Stack/Stack.h"
 #include "./Queue/Queue.h"
+#include "./LinkedStack/LinkedStack.h"
+#include "./LinkedQueue/LinkedQueue.h"
 
 // Main function to test Stack and Queue.
 void Simple_DS();

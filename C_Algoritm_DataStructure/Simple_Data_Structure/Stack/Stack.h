@@ -1,5 +1,5 @@
 /*
-Simple data structure stack and a series of associated functions.
+	Simple data structure stack implemented by array and a series of associated functions.
 */
 
 #ifndef STACK_H
@@ -7,7 +7,7 @@ Simple data structure stack and a series of associated functions.
 
 #include "../../Base/Base.h"
 
-// Stack. It has attribute of Last In First Out.
+// Stack. It has attribute of Last In First Out. Implemented by array.
 typedef struct {
 	int max;	// The number of maximum elements of stack.
 	int idx;	// Index of arr that points out top element of stack.
