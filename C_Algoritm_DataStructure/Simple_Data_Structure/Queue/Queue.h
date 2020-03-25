@@ -49,7 +49,7 @@ static void Terminate(Queue *que);
 static Queue MakeQueue(int size); 
 
 
-// The main function to test stack.
+// The main function to test queue.
 void Queue_Main(); 
 
 #endif

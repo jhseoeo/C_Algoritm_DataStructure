@@ -8,6 +8,7 @@ void Simple_DS() {
 	printf("2. Queue\n");
 	printf("3. Linked Stack\n");
 	printf("4. Linked Queue\n");
+	printf("5. Deque\n");
 	printf(">>> "); scanf("%d", &n); getchar(); printf("\n");
 	
 	switch(n) {
@@ -22,6 +23,9 @@ void Simple_DS() {
 			break;
 		case 4:
 			LinkedQueue_Main();
+			break;
+		case 5:
+			Deque_Main();
 			break;
 		default: break;
 	}

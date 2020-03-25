@@ -42,7 +42,7 @@ static void Terminate(LinkedStack* stack);
 static LinkedStack MakeLinkedStack();
 
 
-// The main function to test stack.
+// The main function to test linked stack.
 void LinkedStack_Main();
 
 #endif

@@ -46,7 +46,7 @@ static void Terminate(LinkedQueue* que);
 static LinkedQueue MakeLinkedQueue();
 
 
-// The main function to test stack.
+// The main function to test linked queue.
 void LinkedQueue_Main();
 
 #endif

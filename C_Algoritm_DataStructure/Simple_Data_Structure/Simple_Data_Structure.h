@@ -10,6 +10,7 @@ Main function to test Stack and Queue.
 #include "./Queue/Queue.h"
 #include "./LinkedStack/LinkedStack.h"
 #include "./LinkedQueue/LinkedQueue.h"
+#include "./Deque/Deque.h"
 
 // Main function to test Stack and Queue.
 void Simple_DS();
