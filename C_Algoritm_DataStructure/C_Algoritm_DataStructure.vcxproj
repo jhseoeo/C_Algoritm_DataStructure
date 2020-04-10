@@ -61,6 +61,8 @@
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\ShellSort.cpp" />
     <ClCompile Include="Sorting_Algorithm\Sorting_Algorithm.cpp" />
     <ClCompile Include="Tree\Binary_Search_Tree\Binary_Search_Tree.cpp" />
+    <ClCompile Include="Tree\Heap\Heap.cpp" />
+    <ClCompile Include="Tree\Heap\Priority_Queue.cpp" />
     <ClCompile Include="Tree\Tree.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -105,6 +107,8 @@
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\ShellSort.h" />
     <ClInclude Include="Sorting_Algorithm\Sorting_Algorithm.h" />
     <ClInclude Include="Tree\Binary_Search_Tree\Binary_Search_Tree.h" />
+    <ClInclude Include="Tree\Heap\Heap.h" />
+    <ClInclude Include="Tree\Heap\Priority_Queue.h" />
     <ClInclude Include="Tree\Tree.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

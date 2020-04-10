@@ -76,6 +76,9 @@
     <Filter Include="Graph">
       <UniqueIdentifier>{5b89441f-1caf-4594-9324-d4846e288634}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tree\Heap">
+      <UniqueIdentifier>{743db58a-8213-4232-abf6-306755307cb1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp">
@@ -205,6 +208,12 @@
     <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.cpp">
       <Filter>Simple_Data_Structure\LinkedStack</Filter>
     </ClCompile>
+    <ClCompile Include="Tree\Heap\Heap.cpp">
+      <Filter>Tree\Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\Heap\Priority_Queue.cpp">
+      <Filter>Tree\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -332,6 +341,12 @@
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.h">
       <Filter>Simple_Data_Structure\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\Heap\Heap.h">
+      <Filter>Tree\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\Heap\Priority_Queue.h">
+      <Filter>Tree\Heap</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
