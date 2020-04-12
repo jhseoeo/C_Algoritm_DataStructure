@@ -82,8 +82,8 @@ void Queue_Main() {
 		system(CLEAR);
 		Print(&queue); printf("\n");
 		printf("Menu\n");
-		printf("1. Push\n");
-		printf("2. Pop\n");
+		printf("1. Enque\n");
+		printf("2. Deque\n");
 		printf("3. Peek\n");
 		printf("4. isEmpty\n");
 		printf("5. isFull\n");

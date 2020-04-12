@@ -47,7 +47,7 @@ int main(void) {
 			Linked_Structure();
 			break;
 		case 7:
-			Binary_Search_Tree_Main();
+			Tree_Main();
 			break;
 		case 8:
 			Hashing_Main();
