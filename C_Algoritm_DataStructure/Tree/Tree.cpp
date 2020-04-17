@@ -6,6 +6,7 @@ void Tree_Main() {
 	printf("Select the data structure to run\n");
 	printf("1. Binary Search Tree\n");
 	printf("2. Priority Queue\n");
+	printf("3. AVL Tree\n");
 	printf(">>> "); scanf("%d", &n); getchar(); printf("\n");
 
 	switch (n) {
@@ -14,6 +15,9 @@ void Tree_Main() {
 		break;
 	case 2:
 		PriorityQueue_Main();
+		break;
+	case 3:
+		AVL_Tree_Main();
 		break;
 	default: break;
 	}

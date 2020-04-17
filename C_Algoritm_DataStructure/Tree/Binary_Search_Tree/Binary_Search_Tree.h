@@ -17,7 +17,6 @@ typedef struct __bnode {
 // Retype bst
 typedef BSTNode* BinarySearchTree;
 
-
 // Allocate new empty binary search tree node.
 BSTNode* AllocBSTNode();
 
@@ -28,7 +27,7 @@ void SetBSTNode(BSTNode* node, BSTNode* leftChild, BSTNode* rightChild, Data dat
 static BSTNode* Search(BSTNode* p, const Data n);
 
 // Add new data.
-static void Add(BSTNode* &p, const Data n);
+static void Add(BSTNode** p, const Data n);
 
 // Remove data while keep it as binary search tree.
 static void Remove(BSTNode** root, BSTNode* p);

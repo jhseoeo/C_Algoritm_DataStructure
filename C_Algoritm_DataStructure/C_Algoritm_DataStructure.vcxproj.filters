@@ -79,6 +79,9 @@
     <Filter Include="Tree\Heap">
       <UniqueIdentifier>{743db58a-8213-4232-abf6-306755307cb1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tree\AVL_Tree">
+      <UniqueIdentifier>{10478f6c-bd5f-4db5-86dd-c9b8385f5c4f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp">
@@ -214,6 +217,12 @@
     <ClCompile Include="Tree\Heap\Priority_Queue.cpp">
       <Filter>Tree\Heap</Filter>
     </ClCompile>
+    <ClCompile Include="Tree\AVL_Tree\AVL_Tree.cpp">
+      <Filter>Tree\AVL_Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="Tree\AVL_Tree\AVL_TreeNode.cpp">
+      <Filter>Tree\AVL_Tree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -347,6 +356,12 @@
     </ClInclude>
     <ClInclude Include="Tree\Heap\Priority_Queue.h">
       <Filter>Tree\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\AVL_Tree\AVL_Tree.h">
+      <Filter>Tree\AVL_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\AVL_Tree\AVL_TreeNode.h">
+      <Filter>Tree\AVL_Tree</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

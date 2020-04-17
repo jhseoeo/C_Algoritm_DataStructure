@@ -60,6 +60,8 @@
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.cpp" />
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\ShellSort.cpp" />
     <ClCompile Include="Sorting_Algorithm\Sorting_Algorithm.cpp" />
+    <ClCompile Include="Tree\AVL_Tree\AVL_Tree.cpp" />
+    <ClCompile Include="Tree\AVL_Tree\AVL_TreeNode.cpp" />
     <ClCompile Include="Tree\Binary_Search_Tree\Binary_Search_Tree.cpp" />
     <ClCompile Include="Tree\Heap\Heap.cpp" />
     <ClCompile Include="Tree\Heap\Priority_Queue.cpp" />
@@ -106,6 +108,8 @@
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.h" />
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\ShellSort.h" />
     <ClInclude Include="Sorting_Algorithm\Sorting_Algorithm.h" />
+    <ClInclude Include="Tree\AVL_Tree\AVL_Tree.h" />
+    <ClInclude Include="Tree\AVL_Tree\AVL_TreeNode.h" />
     <ClInclude Include="Tree\Binary_Search_Tree\Binary_Search_Tree.h" />
     <ClInclude Include="Tree\Heap\Heap.h" />
     <ClInclude Include="Tree\Heap\Priority_Queue.h" />

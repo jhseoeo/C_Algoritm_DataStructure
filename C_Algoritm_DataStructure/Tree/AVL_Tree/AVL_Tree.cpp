@@ -1,11 +1,10 @@
-#include "Binary_Search_Tree.h"
+#include "AVL_Tree.h"
 
-static void Add(BSTNode** p, const Data n) {
-	if(n == 0) {
+static void Add(AVLNode** p, const Data n) {
+	if (n == 0) {
 		return;
 	} else if (*p == NULL) {
-		*p = AllocBSTNode();
-		SetBSTNode(*p, NULL, NULL, n);
+		*p = AllocAVLNode(n, NULL, NULL);
 	} else if ((*p)->data > n) {
 		Add(&(*p)->left, n);
 	} else if ((*p)->data < n) {
@@ -13,13 +12,18 @@ static void Add(BSTNode** p, const Data n) {
 	} else {
 		return;
 	}
+
+	Rebalance(p);
 }
 
-static void Remove(BSTNode** root, BSTNode* p) {
-	BSTNode* fRoot = AllocBSTNode();
-	BSTNode* pNode = fRoot;
-	BSTNode* cNode = *root;
-	BSTNode* dNode;
+static void Remove(AVLNode** root, AVLNode* p) {
+	if (p == NULL)
+		return;
+
+	AVLNode* fRoot = AllocAVLNode(NULL, NULL, NULL);
+	AVLNode* pNode = fRoot;
+	AVLNode* cNode = *root;
+	AVLNode* dNode;
 
 	fRoot->right = *root;
 
@@ -38,13 +42,13 @@ static void Remove(BSTNode** root, BSTNode* p) {
 	if (dNode->left == NULL && dNode->right == NULL) {
 		if (pNode->left == dNode)
 			pNode->left = NULL;
-		else 
+		else
 			pNode->right = NULL;
-		
+
 		free(dNode);
 
 	} else if (dNode->left == NULL || dNode->right == NULL) {
-		BSTNode* dcNode;
+		AVLNode* dcNode;
 
 		if (dNode->left != NULL)
 			dcNode = dNode->left;
@@ -53,16 +57,16 @@ static void Remove(BSTNode** root, BSTNode* p) {
 
 		if (pNode->left == dNode)
 			pNode->left = dcNode;
-		else 
+		else
 			pNode->right = dcNode;
-		
+
 		free(dNode);
 
 	} else {
-		BSTNode* aNode = dNode->right;
-		BSTNode* apNode = dNode;
+		AVLNode* aNode = dNode->right;
+		AVLNode* apNode = dNode;
 
-		while(aNode->left != NULL) {
+		while (aNode->left != NULL) {
 			apNode = aNode;
 			aNode = aNode->left;
 		}
@@ -70,21 +74,22 @@ static void Remove(BSTNode** root, BSTNode* p) {
 		dNode->data = aNode->data;
 
 		if (apNode->left == aNode)
-			apNode->left = aNode->right;	
-		else 
+			apNode->left = aNode->right;
+		else
 			apNode->right = aNode->right;
-		
-		
+
+
 		free(aNode);
 	}
-	
+
 	if (fRoot->right != *root)
 		*root = fRoot->right;
 
 	free(fRoot);
+	Rebalance(root);
 }
 
-static BSTNode* Search(BSTNode* p, const Data n) {
+static AVLNode* Search(AVLNode* p, const Data n) {
 	if (p == NULL) {
 		return NULL;
 	} else if (p->data > n) {
@@ -96,7 +101,7 @@ static BSTNode* Search(BSTNode* p, const Data n) {
 	}
 }
 
-static void Print(BSTNode* p) {
+static void Print(AVLNode* p) {
 	if (p != NULL) {
 		Print(p->left);
 		printf("%d ", p->data);
@@ -104,7 +109,7 @@ static void Print(BSTNode* p) {
 	}
 }
 
-static void Clear(BSTNode* p) {
+static void Clear(AVLNode* p) {
 	if (p != NULL) {
 		Clear(p->left);
 		Clear(p->right);
@@ -112,21 +117,8 @@ static void Clear(BSTNode* p) {
 	}
 }
 
-BSTNode* AllocBSTNode() {
-	BSTNode* node = (BSTNode*)malloc(sizeof(BSTNode));
-	node->left = node->right = NULL;
-	node->data = NULL;
-	return node;
-}
-
-void SetBSTNode(BSTNode* node, BSTNode* leftChild, BSTNode* rightChild, Data data) {
-	node->data = data;
-	node->left = leftChild;
-	node->right = rightChild;
-}
-
-void Binary_Search_Tree_Main() {
-	BinarySearchTree bst = NULL;
+void AVL_Tree_Main() {
+	AVLTree bst = NULL;
 	printf("Binary Search Tree Created.\n");
 	int input;
 	while (1) {
