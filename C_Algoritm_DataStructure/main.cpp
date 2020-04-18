@@ -10,7 +10,7 @@ This container is for algorithms and data structures
 #include "./Linked_Structure/Linked_Structure.h"
 #include "./Tree/Tree.h"
 #include "./Hashing/Hashing.h"
-
+#include "./Graph/Graph.h"
 
 // Main function that tests many kind of searching/sorting algorithms and data structures.
 int main(void) {
@@ -24,6 +24,7 @@ int main(void) {
 	printf("6. Linked Structure\n");
 	printf("7. Tree\n");
 	printf("8. Hashing\n");
+	printf("9. Graph\n");
 	printf(">> "); 
 	int n; scanf("%d", &n); getchar(); printf("\n");
 
@@ -51,6 +52,9 @@ int main(void) {
 			break;
 		case 8:
 			Hashing_Main();
+			break;
+		case 9:
+			Graph_Main();
 			break;
 		default:
 			break;

@@ -1,5 +1,5 @@
 /*
-	Binary Search Tree. Using feature of binary search, It has relatively faster insertion, delete, and finding of a data.
+	Binary Search Tree. Using feature of binary search, It has relatively faster in insertion, delete, and finding of a data.
 */
 
 #ifndef BINARY_SEARCH_TREE_H

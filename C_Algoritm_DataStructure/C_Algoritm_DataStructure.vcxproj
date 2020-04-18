@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp" />
+    <ClCompile Include="Graph\Graph.cpp" />
     <ClCompile Include="Hashing\ChainHash\ChainHash.cpp" />
     <ClCompile Include="Hashing\ClosedHash\ClosedHash.cpp" />
     <ClCompile Include="Hashing\Hashing.cpp" />
@@ -69,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h" />
+    <ClInclude Include="Graph\Graph.h" />
     <ClInclude Include="Hashing\ChainHash\ChainHash.h" />
     <ClInclude Include="Hashing\ClosedHash\ClosedHash.h" />
     <ClInclude Include="Hashing\Hashing.h" />

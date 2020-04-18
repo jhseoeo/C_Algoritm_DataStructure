@@ -74,8 +74,8 @@ static void Clear(Ptr_LinearList* list) {
 	list->cur = NULL;
 }
 
-static void MoveCur(Ptr_LinearList* list, Data x) {
-	list->cur = Search(*list, x);
+static PllNode* MoveCur(Ptr_LinearList* list, Data x) {
+	return list->cur = Search(*list, x);
 }
 
 static void PrintCur(const Ptr_LinearList& list) {
@@ -159,3 +159,28 @@ void Pointer_Based_Linear_List_Main() {
 		}
 	} ENDLOOP: ;
 }	
+
+Ptr_LinearList MakePtrLinearList_p() {
+	return MakePtrLinearList();
+}
+
+void InsertRear_p(Ptr_LinearList* list, Data x) {
+	InsertRear(list, x);
+}
+
+void RemoveCursor_p(Ptr_LinearList* list) {
+	RemoveCursor(list);
+}
+
+PllNode* MoveCur_p(Ptr_LinearList* list, Data x) {
+	return MoveCur(list, x);
+}
+
+void PrintAll_p(const Ptr_LinearList& list) {
+	for (PllNode* ptr = list.head; ptr != NULL; ptr = ptr->next)
+		printf("%c ", 'A' + ptr->data);
+}
+
+void Terminate_p(Ptr_LinearList* list) {
+	Terminate(list);
+}

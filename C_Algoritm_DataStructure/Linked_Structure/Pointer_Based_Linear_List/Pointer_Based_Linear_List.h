@@ -36,7 +36,7 @@ static void RemoveCursor(Ptr_LinearList* list);
 static void Clear(Ptr_LinearList* list);
 
 // Move Cursor of list
-static void MoveCur(Ptr_LinearList* list, Data x);
+static PllNode* MoveCur(Ptr_LinearList* list, Data x);
 
 // Print the value that pointed by cursor of list
 static void PrintCur(const Ptr_LinearList &list);
@@ -53,5 +53,13 @@ static Ptr_LinearList MakePtrLinearList();
 
 // Main function of linear list implemented by pointer.
 void Pointer_Based_Linear_List_Main();
+
+
+Ptr_LinearList MakePtrLinearList_p();
+void InsertRear_p(Ptr_LinearList* list, Data x);
+void RemoveCursor_p(Ptr_LinearList* list);
+PllNode* MoveCur_p(Ptr_LinearList* list, Data x);
+void PrintAll_p(const Ptr_LinearList &list);
+void Terminate_p(Ptr_LinearList* list);
 
 #endif

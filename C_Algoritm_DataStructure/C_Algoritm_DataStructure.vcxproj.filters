@@ -82,6 +82,9 @@
     <Filter Include="Tree\AVL_Tree">
       <UniqueIdentifier>{10478f6c-bd5f-4db5-86dd-c9b8385f5c4f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graph\NewFilter1">
+      <UniqueIdentifier>{ec404b06-78e9-452c-a269-f04bdd256866}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp">
@@ -223,6 +226,9 @@
     <ClCompile Include="Tree\AVL_Tree\AVL_TreeNode.cpp">
       <Filter>Tree\AVL_Tree</Filter>
     </ClCompile>
+    <ClCompile Include="Graph\Graph.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
@@ -362,6 +368,9 @@
     </ClInclude>
     <ClInclude Include="Tree\AVL_Tree\AVL_TreeNode.h">
       <Filter>Tree\AVL_Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\Graph.h">
+      <Filter>Graph</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
