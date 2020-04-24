@@ -5,9 +5,13 @@ static Graph MakeGraph(int nodeSize) {
 	graph.numV = nodeSize;
 	graph.numE = 0;
 	graph.adjList = (Ptr_LinearList*)malloc(sizeof(Ptr_LinearList) * nodeSize);
+	graph.visitInfo = (int*)malloc(sizeof(int) * nodeSize);
 	for (int i = 0; i < nodeSize; i++) {
 		graph.adjList[i] = MakePtrLinearList_p();
+		graph.visitInfo[i] = 0;
 	}
+	
+	
 	return graph;
 }
 
@@ -68,7 +72,8 @@ void Graph_Main() {
 		printf("Menu\n");
 		printf("1. Add Edge\n");
 		printf("2. Remove Edge\n");
-		printf("3. End\n");
+		printf("3. Depth-First Search\n");
+		printf("5. End\n");
 		printf(">> "); scanf("%d", &input); getchar(); printf("\n");
 
 		switch (input) {
@@ -85,6 +90,18 @@ void Graph_Main() {
 			RemoveEdge(&graph, a1, a2);
 			break;
 		case 3:
+			printf("Enter the starting point\n");
+			printf(">> "); scanf("%c", &temp1); getchar(); 
+			a1 = (VertexType)(temp1 - 'A');
+			Depth_First_Search(&graph, a1);
+			break;
+		case 4:
+			printf("Enter the starting point\n");
+			printf(">> "); scanf("%c", &temp1); getchar();
+			a1 = (VertexType)(temp1 - 'A');
+			Breadth_First_Search(&graph, a1);
+			break;
+		case 5:
 			Terminate(&graph);
 			goto ENDLOOP;
 			break;

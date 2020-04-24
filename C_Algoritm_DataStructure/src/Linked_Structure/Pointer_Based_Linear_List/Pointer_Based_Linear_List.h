@@ -12,6 +12,7 @@
 typedef struct {
 	PllNode* head;	// First node of list.
 	PllNode* cur;	// Cursor that can be used for an amounts of ways.
+	int size;
 } Ptr_LinearList;
 
 // Search the value x with function compare

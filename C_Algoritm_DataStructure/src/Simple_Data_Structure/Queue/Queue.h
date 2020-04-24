@@ -52,4 +52,10 @@ static Queue MakeQueue(int size);
 // The main function to test queue.
 void Queue_Main(); 
 
+
+Queue MakeQueue_q(int size);
+int Enque_q(Queue* que, Data value);
+int Deque_q(Queue* que, Data* value);
+void Terminate_q(Queue* que);
+
 #endif

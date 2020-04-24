@@ -1,376 +1,384 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Base">
-      <UniqueIdentifier>{433461e0-a072-4f40-9d87-e6561e1d41ca}</UniqueIdentifier>
+    <Filter Include="src">
+      <UniqueIdentifier>{3c98f109-b212-4e6c-878e-d9a519b8ff97}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Linked_Structure">
-      <UniqueIdentifier>{f4499897-0d94-4950-98a1-cfd32253df09}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Practical_Data_Structure">
+    <Filter Include="src\Practical_Data_Structure">
       <UniqueIdentifier>{498e6b76-e114-4539-a07a-631abd86654f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Practical_Data_Structure\Set">
+    <Filter Include="src\Practical_Data_Structure\Set">
       <UniqueIdentifier>{368cdf82-d28d-48f5-8ca3-46b88721e0df}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Recursion_Algorithm">
-      <UniqueIdentifier>{dda84d62-bcdc-4ed5-91cd-467c5275a9ca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Search_Algorithm">
-      <UniqueIdentifier>{bbd4f5a6-14ef-44d7-91c2-28f9e3b2dc17}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simple_Data_Structure">
-      <UniqueIdentifier>{456b65da-8618-44b1-9cdb-43e19bb1c9fe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simple_Data_Structure\Stack">
-      <UniqueIdentifier>{d690698c-0c89-48ad-9701-79a29356332f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simple_Data_Structure\Queue">
-      <UniqueIdentifier>{f35f37bb-a724-4b15-9ddc-1d9e9f12b2d3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sorting_Algorithm">
-      <UniqueIdentifier>{d7072586-6ed9-4005-a7fc-733b00888b09}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sorting_Algorithm\Complicated_Sorting">
-      <UniqueIdentifier>{63a57d89-fa19-489c-abf5-a840d5f6c79e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sorting_Algorithm\Simple_Sorting">
-      <UniqueIdentifier>{660fd7d1-b412-47b2-8233-2a6568dee4fa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Practical_Data_Structure\String">
+    <Filter Include="src\Practical_Data_Structure\String">
       <UniqueIdentifier>{499d4643-c8a9-4f37-b725-a10517fd8eba}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Linked_Structure\Pointer_Based_Linear_List">
-      <UniqueIdentifier>{29b4ed50-21f3-4c05-ab83-f518c36c7096}</UniqueIdentifier>
+    <Filter Include="src\Recursion_Algorithm">
+      <UniqueIdentifier>{dda84d62-bcdc-4ed5-91cd-467c5275a9ca}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Linked_Structure\Array_Based_Linear_List">
-      <UniqueIdentifier>{16d17c0e-c377-44c7-b293-a80f64df8532}</UniqueIdentifier>
+    <Filter Include="src\Search_Algorithm">
+      <UniqueIdentifier>{bbd4f5a6-14ef-44d7-91c2-28f9e3b2dc17}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Linked_Structure\Circular_Doubly_Linked_List">
-      <UniqueIdentifier>{0f53f4a4-ccf1-424a-88df-54d5018f7a33}</UniqueIdentifier>
+    <Filter Include="src\Simple_Data_Structure">
+      <UniqueIdentifier>{456b65da-8618-44b1-9cdb-43e19bb1c9fe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Hashing">
-      <UniqueIdentifier>{06465aba-8c75-47c4-ab9a-dd632950790e}</UniqueIdentifier>
+    <Filter Include="src\Simple_Data_Structure\Stack">
+      <UniqueIdentifier>{d690698c-0c89-48ad-9701-79a29356332f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Hashing\ClosedHash">
-      <UniqueIdentifier>{20cdf9b5-6e3b-4978-8485-6a5e14b29256}</UniqueIdentifier>
+    <Filter Include="src\Simple_Data_Structure\Queue">
+      <UniqueIdentifier>{f35f37bb-a724-4b15-9ddc-1d9e9f12b2d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Hashing\ChainHash">
-      <UniqueIdentifier>{9f4f4145-a60d-4f85-a2d1-9f7da2933e43}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Tree">
-      <UniqueIdentifier>{05d0e1ac-9482-4036-ab26-b7e9edf286cc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Tree\Binary_Search_Tree">
-      <UniqueIdentifier>{6f853f2f-a56c-49d5-b585-df14ada1443a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Simple_Data_Structure\LinkedQueue">
+    <Filter Include="src\Simple_Data_Structure\LinkedQueue">
       <UniqueIdentifier>{a09f3d4b-84a0-4800-81d3-38f58295317c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Simple_Data_Structure\LinkedStack">
+    <Filter Include="src\Simple_Data_Structure\LinkedStack">
       <UniqueIdentifier>{4ec77223-7e22-45fd-a92b-07ad3c042998}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Simple_Data_Structure\Deque">
+    <Filter Include="src\Simple_Data_Structure\Deque">
       <UniqueIdentifier>{de10dbf9-23cc-41f4-ade1-5e255b138879}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graph">
-      <UniqueIdentifier>{5b89441f-1caf-4594-9324-d4846e288634}</UniqueIdentifier>
+    <Filter Include="src\Sorting_Algorithm">
+      <UniqueIdentifier>{d7072586-6ed9-4005-a7fc-733b00888b09}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tree\Heap">
+    <Filter Include="src\Sorting_Algorithm\Complicated_Sorting">
+      <UniqueIdentifier>{63a57d89-fa19-489c-abf5-a840d5f6c79e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Sorting_Algorithm\Simple_Sorting">
+      <UniqueIdentifier>{660fd7d1-b412-47b2-8233-2a6568dee4fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tree">
+      <UniqueIdentifier>{05d0e1ac-9482-4036-ab26-b7e9edf286cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tree\Binary_Search_Tree">
+      <UniqueIdentifier>{6f853f2f-a56c-49d5-b585-df14ada1443a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Tree\Heap">
       <UniqueIdentifier>{743db58a-8213-4232-abf6-306755307cb1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tree\AVL_Tree">
+    <Filter Include="src\Tree\AVL_Tree">
       <UniqueIdentifier>{10478f6c-bd5f-4db5-86dd-c9b8385f5c4f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graph\NewFilter1">
-      <UniqueIdentifier>{ec404b06-78e9-452c-a269-f04bdd256866}</UniqueIdentifier>
+    <Filter Include="src\Linked_Structure">
+      <UniqueIdentifier>{f4499897-0d94-4950-98a1-cfd32253df09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Linked_Structure\Pointer_Based_Linear_List">
+      <UniqueIdentifier>{29b4ed50-21f3-4c05-ab83-f518c36c7096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Linked_Structure\Array_Based_Linear_List">
+      <UniqueIdentifier>{16d17c0e-c377-44c7-b293-a80f64df8532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Linked_Structure\Circular_Doubly_Linked_List">
+      <UniqueIdentifier>{0f53f4a4-ccf1-424a-88df-54d5018f7a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base">
+      <UniqueIdentifier>{433461e0-a072-4f40-9d87-e6561e1d41ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Graph">
+      <UniqueIdentifier>{5b89441f-1caf-4594-9324-d4846e288634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hashing">
+      <UniqueIdentifier>{06465aba-8c75-47c4-ab9a-dd632950790e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hashing\ClosedHash">
+      <UniqueIdentifier>{20cdf9b5-6e3b-4978-8485-6a5e14b29256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hashing\ChainHash">
+      <UniqueIdentifier>{9f4f4145-a60d-4f85-a2d1-9f7da2933e43}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Base\Base.cpp">
-      <Filter>Base</Filter>
+      <Filter>src\Base</Filter>
     </ClCompile>
     <ClCompile Include="Recursion_Algorithm\Five_Queen_Problem.cpp">
-      <Filter>Recursion_Algorithm</Filter>
+      <Filter>src\Recursion_Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="Recursion_Algorithm\Recursion_Algorithm.cpp">
-      <Filter>Recursion_Algorithm</Filter>
+      <Filter>src\Recursion_Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="Search_Algorithm\Search_Algorithm.cpp">
-      <Filter>Search_Algorithm</Filter>
+      <Filter>src\Search_Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="Search_Algorithm\BinarySearch.cpp">
-      <Filter>Search_Algorithm</Filter>
+      <Filter>src\Search_Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="Search_Algorithm\LinearSearch.cpp">
-      <Filter>Search_Algorithm</Filter>
+      <Filter>src\Search_Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\Simple_Data_Structure.cpp">
-      <Filter>Simple_Data_Structure</Filter>
+      <Filter>src\Simple_Data_Structure</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\Queue\Queue.cpp">
-      <Filter>Simple_Data_Structure\Queue</Filter>
+      <Filter>src\Simple_Data_Structure\Queue</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\Stack\Stack.cpp">
-      <Filter>Simple_Data_Structure\Stack</Filter>
+      <Filter>src\Simple_Data_Structure\Stack</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Sorting_Algorithm.cpp">
-      <Filter>Sorting_Algorithm</Filter>
+      <Filter>src\Sorting_Algorithm</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\FrequencySort.cpp">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\HeapSort.cpp">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\MergeSort.cpp">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\QuickSort.cpp">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\BubbleSort.cpp">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\InsertionSort.cpp">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.cpp">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Sorting_Algorithm\Simple_Sorting\ShellSort.cpp">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClCompile>
     <ClCompile Include="Practical_Data_Structure\Practical_Data_Structure.cpp">
-      <Filter>Practical_Data_Structure</Filter>
+      <Filter>src\Practical_Data_Structure</Filter>
     </ClCompile>
     <ClCompile Include="Practical_Data_Structure\Set\ListSet.cpp">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClCompile>
     <ClCompile Include="Practical_Data_Structure\Set\Set.cpp">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="Practical_Data_Structure\Set\SortedListSet.cpp">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClCompile>
     <ClCompile Include="Practical_Data_Structure\Set\BitVectorSet.cpp">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClCompile>
     <ClCompile Include="Practical_Data_Structure\String\String.cpp">
-      <Filter>Practical_Data_Structure\String</Filter>
+      <Filter>src\Practical_Data_Structure\String</Filter>
     </ClCompile>
     <ClCompile Include="Linked_Structure\Linked_Structure.cpp">
-      <Filter>Linked_Structure</Filter>
+      <Filter>src\Linked_Structure</Filter>
     </ClCompile>
     <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.cpp">
-      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClCompile>
     <ClCompile Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.cpp">
-      <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
     </ClCompile>
     <ClCompile Include="Linked_Structure\Array_Based_Linear_List\AllNode.cpp">
-      <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
     </ClCompile>
     <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.cpp">
-      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClCompile>
     <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.cpp">
-      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClCompile>
     <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp">
-      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClCompile>
     <ClCompile Include="Hashing\Hashing.cpp">
-      <Filter>Hashing</Filter>
+      <Filter>src\Hashing</Filter>
     </ClCompile>
     <ClCompile Include="Hashing\ClosedHash\ClosedHash.cpp">
-      <Filter>Hashing\ClosedHash</Filter>
+      <Filter>src\Hashing\ClosedHash</Filter>
     </ClCompile>
     <ClCompile Include="Hashing\ChainHash\ChainHash.cpp">
-      <Filter>Hashing\ChainHash</Filter>
+      <Filter>src\Hashing\ChainHash</Filter>
     </ClCompile>
     <ClCompile Include="Tree\Binary_Search_Tree\Binary_Search_Tree.cpp">
-      <Filter>Tree\Binary_Search_Tree</Filter>
+      <Filter>src\Tree\Binary_Search_Tree</Filter>
     </ClCompile>
     <ClCompile Include="Tree\Tree.cpp">
-      <Filter>Tree</Filter>
+      <Filter>src\Tree</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\Deque\Deque.cpp">
-      <Filter>Simple_Data_Structure\Deque</Filter>
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\Deque\DequeNode.cpp">
-      <Filter>Simple_Data_Structure\Deque</Filter>
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.cpp">
-      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.cpp">
-      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStack.cpp">
-      <Filter>Simple_Data_Structure\LinkedStack</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
     </ClCompile>
     <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.cpp">
-      <Filter>Simple_Data_Structure\LinkedStack</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
     </ClCompile>
     <ClCompile Include="Tree\Heap\Heap.cpp">
-      <Filter>Tree\Heap</Filter>
+      <Filter>src\Tree\Heap</Filter>
     </ClCompile>
     <ClCompile Include="Tree\Heap\Priority_Queue.cpp">
-      <Filter>Tree\Heap</Filter>
+      <Filter>src\Tree\Heap</Filter>
     </ClCompile>
     <ClCompile Include="Tree\AVL_Tree\AVL_Tree.cpp">
-      <Filter>Tree\AVL_Tree</Filter>
+      <Filter>src\Tree\AVL_Tree</Filter>
     </ClCompile>
     <ClCompile Include="Tree\AVL_Tree\AVL_TreeNode.cpp">
-      <Filter>Tree\AVL_Tree</Filter>
+      <Filter>src\Tree\AVL_Tree</Filter>
     </ClCompile>
     <ClCompile Include="Graph\Graph.cpp">
-      <Filter>Graph</Filter>
+      <Filter>src\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph\Search.cpp">
+      <Filter>src\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base\Base.h">
-      <Filter>Base</Filter>
+      <Filter>src\Base</Filter>
     </ClInclude>
     <ClInclude Include="Recursion_Algorithm\Five_Queen_Problem.h">
-      <Filter>Recursion_Algorithm</Filter>
+      <Filter>src\Recursion_Algorithm</Filter>
     </ClInclude>
     <ClInclude Include="Recursion_Algorithm\Recursion_Algorithm.h">
-      <Filter>Recursion_Algorithm</Filter>
+      <Filter>src\Recursion_Algorithm</Filter>
     </ClInclude>
     <ClInclude Include="Search_Algorithm\Search_Algorithm.h">
-      <Filter>Search_Algorithm</Filter>
+      <Filter>src\Search_Algorithm</Filter>
     </ClInclude>
     <ClInclude Include="Search_Algorithm\BinarySearch.h">
-      <Filter>Search_Algorithm</Filter>
+      <Filter>src\Search_Algorithm</Filter>
     </ClInclude>
     <ClInclude Include="Search_Algorithm\LinearSearch.h">
-      <Filter>Search_Algorithm</Filter>
+      <Filter>src\Search_Algorithm</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\Simple_Data_Structure.h">
-      <Filter>Simple_Data_Structure</Filter>
+      <Filter>src\Simple_Data_Structure</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\Queue\Queue.h">
-      <Filter>Simple_Data_Structure\Queue</Filter>
+      <Filter>src\Simple_Data_Structure\Queue</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\Stack\Stack.h">
-      <Filter>Simple_Data_Structure\Stack</Filter>
+      <Filter>src\Simple_Data_Structure\Stack</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Sorting_Algorithm.h">
-      <Filter>Sorting_Algorithm</Filter>
+      <Filter>src\Sorting_Algorithm</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\FrequencySort.h">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\HeapSort.h">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\MergeSort.h">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\QuickSort.h">
-      <Filter>Sorting_Algorithm\Complicated_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\BubbleSort.h">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\InsertionSort.h">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.h">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Sorting_Algorithm\Simple_Sorting\ShellSort.h">
-      <Filter>Sorting_Algorithm\Simple_Sorting</Filter>
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\Practical_Data_Structure.h">
-      <Filter>Practical_Data_Structure</Filter>
+      <Filter>src\Practical_Data_Structure</Filter>
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\Set\ListSet.h">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\Set\Set.h">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\Set\SortedListSet.h">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\Set\BitVectorSet.h">
-      <Filter>Practical_Data_Structure\Set</Filter>
+      <Filter>src\Practical_Data_Structure\Set</Filter>
     </ClInclude>
     <ClInclude Include="Practical_Data_Structure\String\String.h">
-      <Filter>Practical_Data_Structure\String</Filter>
+      <Filter>src\Practical_Data_Structure\String</Filter>
     </ClInclude>
     <ClInclude Include="Linked_Structure\Linked_Structure.h">
-      <Filter>Linked_Structure</Filter>
+      <Filter>src\Linked_Structure</Filter>
     </ClInclude>
     <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.h">
-      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClInclude>
     <ClInclude Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.h">
-      <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
     </ClInclude>
     <ClInclude Include="Linked_Structure\Array_Based_Linear_List\AllNode.h">
-      <Filter>Linked_Structure\Array_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
     </ClInclude>
     <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.h">
-      <Filter>Linked_Structure\Pointer_Based_Linear_List</Filter>
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
     </ClInclude>
     <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.h">
-      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClInclude>
     <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h">
-      <Filter>Linked_Structure\Circular_Doubly_Linked_List</Filter>
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
     </ClInclude>
     <ClInclude Include="Hashing\Hashing.h">
-      <Filter>Hashing</Filter>
+      <Filter>src\Hashing</Filter>
     </ClInclude>
     <ClInclude Include="Hashing\ClosedHash\ClosedHash.h">
-      <Filter>Hashing\ClosedHash</Filter>
+      <Filter>src\Hashing\ClosedHash</Filter>
     </ClInclude>
     <ClInclude Include="Hashing\ChainHash\ChainHash.h">
-      <Filter>Hashing\ChainHash</Filter>
+      <Filter>src\Hashing\ChainHash</Filter>
     </ClInclude>
     <ClInclude Include="Tree\Binary_Search_Tree\Binary_Search_Tree.h">
-      <Filter>Tree\Binary_Search_Tree</Filter>
+      <Filter>src\Tree\Binary_Search_Tree</Filter>
     </ClInclude>
     <ClInclude Include="Tree\Tree.h">
-      <Filter>Tree</Filter>
+      <Filter>src\Tree</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\Deque\DequeNode.h">
-      <Filter>Simple_Data_Structure\Deque</Filter>
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\Deque\Deque.h">
-      <Filter>Simple_Data_Structure\Deque</Filter>
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.h">
-      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.h">
-      <Filter>Simple_Data_Structure\LinkedQueue</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStack.h">
-      <Filter>Simple_Data_Structure\LinkedStack</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
     </ClInclude>
     <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.h">
-      <Filter>Simple_Data_Structure\LinkedStack</Filter>
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
     </ClInclude>
     <ClInclude Include="Tree\Heap\Heap.h">
-      <Filter>Tree\Heap</Filter>
+      <Filter>src\Tree\Heap</Filter>
     </ClInclude>
     <ClInclude Include="Tree\Heap\Priority_Queue.h">
-      <Filter>Tree\Heap</Filter>
+      <Filter>src\Tree\Heap</Filter>
     </ClInclude>
     <ClInclude Include="Tree\AVL_Tree\AVL_Tree.h">
-      <Filter>Tree\AVL_Tree</Filter>
+      <Filter>src\Tree\AVL_Tree</Filter>
     </ClInclude>
     <ClInclude Include="Tree\AVL_Tree\AVL_TreeNode.h">
-      <Filter>Tree\AVL_Tree</Filter>
+      <Filter>src\Tree\AVL_Tree</Filter>
     </ClInclude>
     <ClInclude Include="Graph\Graph.h">
-      <Filter>Graph</Filter>
+      <Filter>src\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\Search.h">
+      <Filter>src\Graph</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

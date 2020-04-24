@@ -7,8 +7,9 @@
 
 #include "../Base/Base.h"
 #include "../Linked_Structure/Pointer_Based_Linear_List/Pointer_Based_Linear_List.h"
+#include "./Search.h"
 
-// Constant-ualized vertices name.
+// Constantualized vertices name.
 enum VertexType {A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z};
 
 // Graph datatype. implemented as Adjacency list, and it is undirected graph
@@ -16,6 +17,7 @@ typedef struct {
 	int numV;	// Number of vertex
 	int numE;	// Number of edges
 	Ptr_LinearList* adjList;	// Information of edges
+	int* visitInfo;
 } Graph;
 
 // Make and return an initialized graph.

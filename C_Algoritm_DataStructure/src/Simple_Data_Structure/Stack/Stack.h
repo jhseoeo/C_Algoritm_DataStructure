@@ -49,4 +49,11 @@ static Stack MakeStack(int size);
 // The main function to test stack.
 void Stack_Main();
 
+
+Stack MakeStack_s(int size);
+int Push_s(Stack* stack, Data value);
+int Pop_s(Stack* stack, Data* value);
+int isEmpty_s(const Stack* stack);
+void Terminate_s(Stack* stack);
+
 #endif

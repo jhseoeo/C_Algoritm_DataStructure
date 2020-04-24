@@ -15,6 +15,7 @@ static void InsertFront(Ptr_LinearList* list, Data x) {
 	PllNode* newNode = AllocPllNode();
 	SetPllNode(newNode, x, list->head);
 	list->head = newNode;
+	list->size++;
 }
 
 static void InsertRear(Ptr_LinearList* list, Data x) {
@@ -26,6 +27,7 @@ static void InsertRear(Ptr_LinearList* list, Data x) {
 			ptr = ptr->next;
 		ptr->next = AllocPllNode();
 		SetPllNode(ptr->next, x, NULL);
+		list->size++;
 	}
 }
 
@@ -34,6 +36,7 @@ static void RemoveFront(Ptr_LinearList* list) {
 		PllNode* ptr = list->head;
 		list->head = list->head->next;
 		free(ptr);
+		list->size--;
 	}
 }
 
@@ -47,6 +50,7 @@ static void RemoveRear(Ptr_LinearList* list) {
 			PllNode* del = ptr->next;
 			ptr->next = NULL;
 			free(del);
+			list->size--;
 		}
 	} 
 }
@@ -64,6 +68,7 @@ static void RemoveCursor(Ptr_LinearList* list) {
 		ptr->next = list->cur->next;
 		free(list->cur);
 		list->cur = NULL;
+		list->size--;
 	}
 }
 
@@ -72,6 +77,7 @@ static void Clear(Ptr_LinearList* list) {
 		RemoveFront(list);
 	}
 	list->cur = NULL;
+	list->size = 0;
 }
 
 static PllNode* MoveCur(Ptr_LinearList* list, Data x) {
@@ -97,6 +103,7 @@ static void Terminate(Ptr_LinearList* list) {
 static Ptr_LinearList MakePtrLinearList() {
 	Ptr_LinearList list;
 	list.cur = list.head = NULL;
+	list.size = 0;
 	return list;
 }
 
