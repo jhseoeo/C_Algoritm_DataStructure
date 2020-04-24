@@ -87,298 +87,298 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Base\Base.cpp">
+    <ClCompile Include="src\Base\Base.cpp">
       <Filter>src\Base</Filter>
     </ClCompile>
-    <ClCompile Include="Recursion_Algorithm\Five_Queen_Problem.cpp">
-      <Filter>src\Recursion_Algorithm</Filter>
+    <ClCompile Include="src\Graph\Graph.cpp">
+      <Filter>src\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="Recursion_Algorithm\Recursion_Algorithm.cpp">
-      <Filter>src\Recursion_Algorithm</Filter>
+    <ClCompile Include="src\Graph\Search.cpp">
+      <Filter>src\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="Search_Algorithm\Search_Algorithm.cpp">
-      <Filter>src\Search_Algorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="Search_Algorithm\BinarySearch.cpp">
-      <Filter>src\Search_Algorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="Search_Algorithm\LinearSearch.cpp">
-      <Filter>src\Search_Algorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\Simple_Data_Structure.cpp">
-      <Filter>src\Simple_Data_Structure</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\Queue\Queue.cpp">
-      <Filter>src\Simple_Data_Structure\Queue</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\Stack\Stack.cpp">
-      <Filter>src\Simple_Data_Structure\Stack</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Sorting_Algorithm.cpp">
-      <Filter>src\Sorting_Algorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\FrequencySort.cpp">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\HeapSort.cpp">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\MergeSort.cpp">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Complicated_Sorting\QuickSort.cpp">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\BubbleSort.cpp">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\InsertionSort.cpp">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.cpp">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Sorting_Algorithm\Simple_Sorting\ShellSort.cpp">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_Data_Structure\Practical_Data_Structure.cpp">
-      <Filter>src\Practical_Data_Structure</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_Data_Structure\Set\ListSet.cpp">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_Data_Structure\Set\Set.cpp">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_Data_Structure\Set\SortedListSet.cpp">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_Data_Structure\Set\BitVectorSet.cpp">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClCompile>
-    <ClCompile Include="Practical_Data_Structure\String\String.cpp">
-      <Filter>src\Practical_Data_Structure\String</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_Structure\Linked_Structure.cpp">
-      <Filter>src\Linked_Structure</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.cpp">
-      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.cpp">
-      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_Structure\Array_Based_Linear_List\AllNode.cpp">
-      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.cpp">
-      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.cpp">
-      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
-    </ClCompile>
-    <ClCompile Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp">
-      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
-    </ClCompile>
-    <ClCompile Include="Hashing\Hashing.cpp">
+    <ClCompile Include="src\Hashing\Hashing.cpp">
       <Filter>src\Hashing</Filter>
     </ClCompile>
-    <ClCompile Include="Hashing\ClosedHash\ClosedHash.cpp">
-      <Filter>src\Hashing\ClosedHash</Filter>
-    </ClCompile>
-    <ClCompile Include="Hashing\ChainHash\ChainHash.cpp">
+    <ClCompile Include="src\Hashing\ChainHash\ChainHash.cpp">
       <Filter>src\Hashing\ChainHash</Filter>
     </ClCompile>
-    <ClCompile Include="Tree\Binary_Search_Tree\Binary_Search_Tree.cpp">
-      <Filter>src\Tree\Binary_Search_Tree</Filter>
+    <ClCompile Include="src\Hashing\ClosedHash\ClosedHash.cpp">
+      <Filter>src\Hashing\ClosedHash</Filter>
     </ClCompile>
-    <ClCompile Include="Tree\Tree.cpp">
+    <ClCompile Include="src\Linked_Structure\Linked_Structure.cpp">
+      <Filter>src\Linked_Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Linked_Structure\Array_Based_Linear_List\AllNode.cpp">
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.cpp">
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Linked_Structure\Circular_Doubly_Linked_List\CdllNode.cpp">
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.cpp">
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Linked_Structure\Pointer_Based_Linear_List\PllNode.cpp">
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.cpp">
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Practical_Data_Structure\Practical_Data_Structure.cpp">
+      <Filter>src\Practical_Data_Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Practical_Data_Structure\Set\BitVectorSet.cpp">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Practical_Data_Structure\Set\ListSet.cpp">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Practical_Data_Structure\Set\Set.cpp">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Practical_Data_Structure\Set\SortedListSet.cpp">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Practical_Data_Structure\String\String.cpp">
+      <Filter>src\Practical_Data_Structure\String</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Recursion_Algorithm\Five_Queen_Problem.cpp">
+      <Filter>src\Recursion_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Recursion_Algorithm\Recursion_Algorithm.cpp">
+      <Filter>src\Recursion_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Search_Algorithm\BinarySearch.cpp">
+      <Filter>src\Search_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Search_Algorithm\LinearSearch.cpp">
+      <Filter>src\Search_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Search_Algorithm\Search_Algorithm.cpp">
+      <Filter>src\Search_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\Simple_Data_Structure.cpp">
+      <Filter>src\Simple_Data_Structure</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\Deque\Deque.cpp">
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\Deque\DequeNode.cpp">
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\LinkedQueue\LinkedQueue.cpp">
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\LinkedQueue\LinkedQueueNode.cpp">
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\LinkedStack\LinkedStack.cpp">
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\LinkedStack\LinkedStackNode.cpp">
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\Queue\Queue.cpp">
+      <Filter>src\Simple_Data_Structure\Queue</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Simple_Data_Structure\Stack\Stack.cpp">
+      <Filter>src\Simple_Data_Structure\Stack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Sorting_Algorithm.cpp">
+      <Filter>src\Sorting_Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Complicated_Sorting\FrequencySort.cpp">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Complicated_Sorting\HeapSort.cpp">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Complicated_Sorting\MergeSort.cpp">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Complicated_Sorting\QuickSort.cpp">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Simple_Sorting\BubbleSort.cpp">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Simple_Sorting\InsertionSort.cpp">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Simple_Sorting\SelectionSort.cpp">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sorting_Algorithm\Simple_Sorting\ShellSort.cpp">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tree\Tree.cpp">
       <Filter>src\Tree</Filter>
     </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\Deque\Deque.cpp">
-      <Filter>src\Simple_Data_Structure\Deque</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\Deque\DequeNode.cpp">
-      <Filter>src\Simple_Data_Structure\Deque</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.cpp">
-      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.cpp">
-      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStack.cpp">
-      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
-    </ClCompile>
-    <ClCompile Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.cpp">
-      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
-    </ClCompile>
-    <ClCompile Include="Tree\Heap\Heap.cpp">
-      <Filter>src\Tree\Heap</Filter>
-    </ClCompile>
-    <ClCompile Include="Tree\Heap\Priority_Queue.cpp">
-      <Filter>src\Tree\Heap</Filter>
-    </ClCompile>
-    <ClCompile Include="Tree\AVL_Tree\AVL_Tree.cpp">
+    <ClCompile Include="src\Tree\AVL_Tree\AVL_Tree.cpp">
       <Filter>src\Tree\AVL_Tree</Filter>
     </ClCompile>
-    <ClCompile Include="Tree\AVL_Tree\AVL_TreeNode.cpp">
+    <ClCompile Include="src\Tree\AVL_Tree\AVL_TreeNode.cpp">
       <Filter>src\Tree\AVL_Tree</Filter>
     </ClCompile>
-    <ClCompile Include="Graph\Graph.cpp">
-      <Filter>src\Graph</Filter>
+    <ClCompile Include="src\Tree\Binary_Search_Tree\Binary_Search_Tree.cpp">
+      <Filter>src\Tree\Binary_Search_Tree</Filter>
     </ClCompile>
-    <ClCompile Include="Graph\Search.cpp">
-      <Filter>src\Graph</Filter>
+    <ClCompile Include="src\Tree\Heap\Heap.cpp">
+      <Filter>src\Tree\Heap</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>src</Filter>
+    <ClCompile Include="src\Tree\Heap\Priority_Queue.cpp">
+      <Filter>src\Tree\Heap</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Base\Base.h">
+    <ClInclude Include="src\Base\Base.h">
       <Filter>src\Base</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion_Algorithm\Five_Queen_Problem.h">
-      <Filter>src\Recursion_Algorithm</Filter>
+    <ClInclude Include="src\Graph\Graph.h">
+      <Filter>src\Graph</Filter>
     </ClInclude>
-    <ClInclude Include="Recursion_Algorithm\Recursion_Algorithm.h">
-      <Filter>src\Recursion_Algorithm</Filter>
+    <ClInclude Include="src\Graph\Search.h">
+      <Filter>src\Graph</Filter>
     </ClInclude>
-    <ClInclude Include="Search_Algorithm\Search_Algorithm.h">
-      <Filter>src\Search_Algorithm</Filter>
-    </ClInclude>
-    <ClInclude Include="Search_Algorithm\BinarySearch.h">
-      <Filter>src\Search_Algorithm</Filter>
-    </ClInclude>
-    <ClInclude Include="Search_Algorithm\LinearSearch.h">
-      <Filter>src\Search_Algorithm</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\Simple_Data_Structure.h">
-      <Filter>src\Simple_Data_Structure</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\Queue\Queue.h">
-      <Filter>src\Simple_Data_Structure\Queue</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\Stack\Stack.h">
-      <Filter>src\Simple_Data_Structure\Stack</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Sorting_Algorithm.h">
-      <Filter>src\Sorting_Algorithm</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\FrequencySort.h">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\HeapSort.h">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\MergeSort.h">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Complicated_Sorting\QuickSort.h">
-      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\BubbleSort.h">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\InsertionSort.h">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\SelectionSort.h">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Sorting_Algorithm\Simple_Sorting\ShellSort.h">
-      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_Data_Structure\Practical_Data_Structure.h">
-      <Filter>src\Practical_Data_Structure</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_Data_Structure\Set\ListSet.h">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_Data_Structure\Set\Set.h">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_Data_Structure\Set\SortedListSet.h">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_Data_Structure\Set\BitVectorSet.h">
-      <Filter>src\Practical_Data_Structure\Set</Filter>
-    </ClInclude>
-    <ClInclude Include="Practical_Data_Structure\String\String.h">
-      <Filter>src\Practical_Data_Structure\String</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_Structure\Linked_Structure.h">
-      <Filter>src\Linked_Structure</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.h">
-      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.h">
-      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_Structure\Array_Based_Linear_List\AllNode.h">
-      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_Structure\Pointer_Based_Linear_List\PllNode.h">
-      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.h">
-      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
-    </ClInclude>
-    <ClInclude Include="Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h">
-      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
-    </ClInclude>
-    <ClInclude Include="Hashing\Hashing.h">
+    <ClInclude Include="src\Hashing\Hashing.h">
       <Filter>src\Hashing</Filter>
     </ClInclude>
-    <ClInclude Include="Hashing\ClosedHash\ClosedHash.h">
-      <Filter>src\Hashing\ClosedHash</Filter>
-    </ClInclude>
-    <ClInclude Include="Hashing\ChainHash\ChainHash.h">
+    <ClInclude Include="src\Hashing\ChainHash\ChainHash.h">
       <Filter>src\Hashing\ChainHash</Filter>
     </ClInclude>
-    <ClInclude Include="Tree\Binary_Search_Tree\Binary_Search_Tree.h">
-      <Filter>src\Tree\Binary_Search_Tree</Filter>
+    <ClInclude Include="src\Hashing\ClosedHash\ClosedHash.h">
+      <Filter>src\Hashing\ClosedHash</Filter>
     </ClInclude>
-    <ClInclude Include="Tree\Tree.h">
+    <ClInclude Include="src\Linked_Structure\Linked_Structure.h">
+      <Filter>src\Linked_Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Linked_Structure\Array_Based_Linear_List\AllNode.h">
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Linked_Structure\Array_Based_Linear_List\Array_Based_Linear_List.h">
+      <Filter>src\Linked_Structure\Array_Based_Linear_List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Linked_Structure\Circular_Doubly_Linked_List\CdllNode.h">
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Linked_Structure\Circular_Doubly_Linked_List\Doubly_Linked_List.h">
+      <Filter>src\Linked_Structure\Circular_Doubly_Linked_List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Linked_Structure\Pointer_Based_Linear_List\PllNode.h">
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Linked_Structure\Pointer_Based_Linear_List\Pointer_Based_Linear_List.h">
+      <Filter>src\Linked_Structure\Pointer_Based_Linear_List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Practical_Data_Structure\Practical_Data_Structure.h">
+      <Filter>src\Practical_Data_Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Practical_Data_Structure\Set\BitVectorSet.h">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Practical_Data_Structure\Set\ListSet.h">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Practical_Data_Structure\Set\Set.h">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Practical_Data_Structure\Set\SortedListSet.h">
+      <Filter>src\Practical_Data_Structure\Set</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Practical_Data_Structure\String\String.h">
+      <Filter>src\Practical_Data_Structure\String</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Recursion_Algorithm\Five_Queen_Problem.h">
+      <Filter>src\Recursion_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Recursion_Algorithm\Recursion_Algorithm.h">
+      <Filter>src\Recursion_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Search_Algorithm\BinarySearch.h">
+      <Filter>src\Search_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Search_Algorithm\LinearSearch.h">
+      <Filter>src\Search_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Search_Algorithm\Search_Algorithm.h">
+      <Filter>src\Search_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\Simple_Data_Structure.h">
+      <Filter>src\Simple_Data_Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\Deque\Deque.h">
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\Deque\DequeNode.h">
+      <Filter>src\Simple_Data_Structure\Deque</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\LinkedQueue\LinkedQueue.h">
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\LinkedQueue\LinkedQueueNode.h">
+      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\LinkedStack\LinkedStack.h">
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\LinkedStack\LinkedStackNode.h">
+      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\Queue\Queue.h">
+      <Filter>src\Simple_Data_Structure\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Simple_Data_Structure\Stack\Stack.h">
+      <Filter>src\Simple_Data_Structure\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Sorting_Algorithm.h">
+      <Filter>src\Sorting_Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Complicated_Sorting\FrequencySort.h">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Complicated_Sorting\HeapSort.h">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Complicated_Sorting\MergeSort.h">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Complicated_Sorting\QuickSort.h">
+      <Filter>src\Sorting_Algorithm\Complicated_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Simple_Sorting\BubbleSort.h">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Simple_Sorting\InsertionSort.h">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Simple_Sorting\SelectionSort.h">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sorting_Algorithm\Simple_Sorting\ShellSort.h">
+      <Filter>src\Sorting_Algorithm\Simple_Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tree\Tree.h">
       <Filter>src\Tree</Filter>
     </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\Deque\DequeNode.h">
-      <Filter>src\Simple_Data_Structure\Deque</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\Deque\Deque.h">
-      <Filter>src\Simple_Data_Structure\Deque</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueue.h">
-      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\LinkedQueue\LinkedQueueNode.h">
-      <Filter>src\Simple_Data_Structure\LinkedQueue</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStack.h">
-      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
-    </ClInclude>
-    <ClInclude Include="Simple_Data_Structure\LinkedStack\LinkedStackNode.h">
-      <Filter>src\Simple_Data_Structure\LinkedStack</Filter>
-    </ClInclude>
-    <ClInclude Include="Tree\Heap\Heap.h">
-      <Filter>src\Tree\Heap</Filter>
-    </ClInclude>
-    <ClInclude Include="Tree\Heap\Priority_Queue.h">
-      <Filter>src\Tree\Heap</Filter>
-    </ClInclude>
-    <ClInclude Include="Tree\AVL_Tree\AVL_Tree.h">
+    <ClInclude Include="src\Tree\AVL_Tree\AVL_Tree.h">
       <Filter>src\Tree\AVL_Tree</Filter>
     </ClInclude>
-    <ClInclude Include="Tree\AVL_Tree\AVL_TreeNode.h">
+    <ClInclude Include="src\Tree\AVL_Tree\AVL_TreeNode.h">
       <Filter>src\Tree\AVL_Tree</Filter>
     </ClInclude>
-    <ClInclude Include="Graph\Graph.h">
-      <Filter>src\Graph</Filter>
+    <ClInclude Include="src\Tree\Binary_Search_Tree\Binary_Search_Tree.h">
+      <Filter>src\Tree\Binary_Search_Tree</Filter>
     </ClInclude>
-    <ClInclude Include="Graph\Search.h">
-      <Filter>src\Graph</Filter>
+    <ClInclude Include="src\Tree\Heap\Heap.h">
+      <Filter>src\Tree\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tree\Heap\Priority_Queue.h">
+      <Filter>src\Tree\Heap</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
