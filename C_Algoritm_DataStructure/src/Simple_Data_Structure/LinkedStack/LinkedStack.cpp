@@ -141,3 +141,19 @@ void LinkedStack_Main() {
 		}
 	} ENDLOOP:;
 }
+
+LinkedStack MakeLinkedStack_s() {
+	return MakeLinkedStack();
+}
+
+int Push_s(LinkedStack* stack, Data value) {
+	return Push(stack, value);
+}
+
+int Pop_s(LinkedStack* stack, Data* value) {
+	return Pop(stack, value);
+}
+
+void Terminate_s(LinkedStack* stack) {
+	Terminate(stack);
+}

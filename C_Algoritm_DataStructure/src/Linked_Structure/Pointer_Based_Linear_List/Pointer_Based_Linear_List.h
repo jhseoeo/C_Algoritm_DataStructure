@@ -33,6 +33,9 @@ static void RemoveRear(Ptr_LinearList* list);
 // Delete the node that pointed by cursor
 static void RemoveCursor(Ptr_LinearList* list);
 
+// Get the size of list
+static int Length(Ptr_LinearList* list);
+
 // Delete all nodes of list
 static void Clear(Ptr_LinearList* list);
 
@@ -60,6 +63,7 @@ Ptr_LinearList MakePtrLinearList_p();
 void InsertRear_p(Ptr_LinearList* list, Data x);
 void RemoveCursor_p(Ptr_LinearList* list);
 PllNode* MoveCur_p(Ptr_LinearList* list, Data x);
+int Length_p(Ptr_LinearList* list);
 void PrintAll_p(const Ptr_LinearList &list);
 void Terminate_p(Ptr_LinearList* list);
 

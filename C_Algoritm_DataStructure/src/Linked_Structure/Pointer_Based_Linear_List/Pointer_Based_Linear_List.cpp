@@ -72,6 +72,10 @@ static void RemoveCursor(Ptr_LinearList* list) {
 	}
 }
 
+static int Length(Ptr_LinearList* list) {
+	return list->size;
+}
+
 static void Clear(Ptr_LinearList* list) {
 	while (list->head != NULL) {
 		RemoveFront(list);
@@ -181,6 +185,10 @@ void RemoveCursor_p(Ptr_LinearList* list) {
 
 PllNode* MoveCur_p(Ptr_LinearList* list, Data x) {
 	return MoveCur(list, x);
+}
+
+int Length_p(Ptr_LinearList* list) {
+	return Length(list);
 }
 
 void PrintAll_p(const Ptr_LinearList& list) {

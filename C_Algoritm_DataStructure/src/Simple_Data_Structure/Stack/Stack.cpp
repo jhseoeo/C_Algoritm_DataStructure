@@ -127,23 +127,3 @@ void Stack_Main() {
 		}
 	} ENDLOOP:;
 }
-
-Stack MakeStack_s(int size) {
-	return MakeStack(size);
-}
-
-int Push_s(Stack* stack, Data value) {
-	return Push_s(stack, value);
-}
-
-int Pop_s(Stack* stack, Data* value) {
-	return Pop_s(stack, value);
-}
-
-int isEmpty_s(const Stack* stack) {
-	return isEmpty(stack);
-}
-
-void Terminate_s(Stack* stack) {
-	return Terminate(stack);
-}

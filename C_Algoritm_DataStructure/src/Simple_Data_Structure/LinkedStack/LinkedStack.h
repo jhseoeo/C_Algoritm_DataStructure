@@ -45,4 +45,10 @@ static LinkedStack MakeLinkedStack();
 // The main function to test linked stack.
 void LinkedStack_Main();
 
+
+LinkedStack MakeLinkedStack_s();
+int Push_s(LinkedStack* stack, Data value);
+int Pop_s(LinkedStack* stack, Data* value);
+void Terminate_s(LinkedStack* stack);
+
 #endif

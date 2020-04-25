@@ -135,19 +135,3 @@ void Queue_Main() {
 		}
 	} ENDLOOP:;
 }
-
-Queue MakeQueue_q(int size) {
-	return MakeQueue(size);
-}
-
-int Enque_q(Queue* que, Data value) {
-	return Enque_q(que, value);
-}
-
-int Deque_q(Queue* que, Data* value) {
-	return Deque(que, value);
-}
-
-void Terminate_q(Queue* que) {
-	Terminate(que);
-}

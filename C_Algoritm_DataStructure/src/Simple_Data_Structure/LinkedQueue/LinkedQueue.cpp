@@ -22,6 +22,7 @@ static int Deque(LinkedQueue* que, Data* value) {
 		*value = que->front->data;
 		free(que->front);
 		que->front = que->rear = NULL;
+		que->size--;
 	} else {
 		LqueueNode* cur;
 		for (cur = que->front; cur->next != que->rear; cur = cur->next);
@@ -29,8 +30,8 @@ static int Deque(LinkedQueue* que, Data* value) {
 		cur->next = NULL;
 		free(que->rear);
 		que->rear = cur;
+		que->size--;
 	}
-	que->size--;
 	return 1;
 }
 
@@ -147,4 +148,20 @@ void LinkedQueue_Main() {
 		default: break;
 		}
 	} ENDLOOP:;
+}
+
+LinkedQueue MakeLinkedQueue_q() {
+	return MakeLinkedQueue();
+}
+
+int Enque_q(LinkedQueue* que, Data value) {
+	return Enque(que, value);
+}
+
+int Deque_q(LinkedQueue* que, Data* value) {
+	return Deque(que, value);
+}
+
+void Terminate_q(LinkedQueue* que) {
+	return Terminate(que);
 }

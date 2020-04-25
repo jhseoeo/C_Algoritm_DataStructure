@@ -1,64 +1,75 @@
 #include "Search.h"
 
-static int ResetVisitInfo(Graph* g) {
+static void ResetVisitInfo(Graph* g) {
 	for (int i = 0; i < g->numV; i++) {
-		g->visitInfo[i] = 0;
+		g->visitInfo[i] = FALSE;
 	}
 }
 
 static int VisitVertex(Graph* g, VertexType v) {
-	if (g->visitInfo[v] == 0) {
-		g->visitInfo[v] = 1;
+	if (g->visitInfo[v] == FALSE) {
+		g->visitInfo[v] = TRUE;
+		printf("%c ", v + 'A');
 		return TRUE;
 	}
 	return FALSE;
 }
 
-static void DFS_exec(Graph* g, VertexType v) {
-	PllNode* ptr = g->adjList[v].head;
-	if (ptr != NULL) {
-		if (VisitVertex(g, (VertexType)ptr->data) == TRUE) {
-			DFS_exec(g, (VertexType)ptr->data);
-		}
-		ptr = ptr->next;
-	}
-}
-
-static void DFS_exec(Graph* g, VertexType v) {
-	printf("%c ", v + 'A');
-
-	PllNode* ptr = g->adjList[v].head;
-	while (ptr != NULL) {
-		if (VisitVertex(g, (VertexType)ptr->data) == TRUE) {
-			DFS_exec(g, (VertexType)ptr->data);
-		}
-		ptr = ptr->next;
-	}
-}
-
 void Depth_First_Search(Graph* g, VertexType Sv) {
+	LinkedStack stack = MakeLinkedStack_s();
+	int visitV = Sv;
+	int nextV;
+
 	VisitVertex(g, Sv);
-	DFS_exec(g, Sv);
-}
+	Push_s(&stack, Sv);
 
+	while (g->adjList[visitV].size != 0) {
+		int visitFlag = FALSE;
 
-static void BFS_exec(Graph* g, VertexType v) {
-	printf("%c ", v + 'A');
-
-	PllNode* ptr = g->adjList[v].head;
-	VertexType* Visited = (VertexType*)malloc(g->adjList[v].size * sizeof(VertexType));
-	int idx = 0;
-	while(ptr != NULL) {
-		if (VisitVertex(g, (VertexType)ptr->data) == TRUE) {
-			Visited[idx++] = 
+		for (PllNode* ptr = g->adjList[visitV].head; ptr != NULL; ptr = ptr->next) {
+			nextV = ptr->data;
+			if (VisitVertex(g, (VertexType)nextV) == TRUE) {
+				Push_s(&stack, visitV);
+				visitV = nextV;
+				visitFlag = TRUE;
+				break;
+			}
 		}
-		ptr = ptr->next;
-	}
-	 
 
+		if (visitFlag == FALSE) {
+			if (stack.stk == NULL)
+				break;
+			else
+				Pop_s(&stack, &visitV);
+		}
+	}
+	
+	ResetVisitInfo(g);
+	Terminate_s(&stack);
 }
 
 void Breadth_First_Search(Graph* g, VertexType Sv) {
+	LinkedQueue queue = MakeLinkedQueue_q();
+	int visitV = Sv;
+	int nextV;
+
 	VisitVertex(g, Sv);
-	BFS_exec(g, Sv);
-}
+
+	while (g->adjList[visitV].size != 0) {
+		
+		for(PllNode* ptr = g->adjList[visitV].head; ptr != NULL; ptr = ptr->next) {
+			nextV = ptr->data;
+			if (VisitVertex(g, (VertexType)nextV) == TRUE) {
+				Enque_q(&queue, nextV);
+			}
+		}
+
+		if (queue.front == NULL)
+			break;
+		else
+			Deque_q(&queue, &visitV);
+	}
+
+	ResetVisitInfo(g);
+	Terminate_q(&queue);
+}				

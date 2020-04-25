@@ -1,4 +1,5 @@
 #include "Graph.h"
+#include "./Search.h"
 
 static Graph MakeGraph(int nodeSize) {
 	Graph graph;
@@ -8,9 +9,8 @@ static Graph MakeGraph(int nodeSize) {
 	graph.visitInfo = (int*)malloc(sizeof(int) * nodeSize);
 	for (int i = 0; i < nodeSize; i++) {
 		graph.adjList[i] = MakePtrLinearList_p();
-		graph.visitInfo[i] = 0;
+		graph.visitInfo[i] = FALSE;
 	}
-	
 	
 	return graph;
 }
@@ -73,6 +73,7 @@ void Graph_Main() {
 		printf("1. Add Edge\n");
 		printf("2. Remove Edge\n");
 		printf("3. Depth-First Search\n");
+		printf("4. Breadth-First Search\n");
 		printf("5. End\n");
 		printf(">> "); scanf("%d", &input); getchar(); printf("\n");
 
@@ -94,12 +95,14 @@ void Graph_Main() {
 			printf(">> "); scanf("%c", &temp1); getchar(); 
 			a1 = (VertexType)(temp1 - 'A');
 			Depth_First_Search(&graph, a1);
+			sleep(1500);
 			break;
 		case 4:
 			printf("Enter the starting point\n");
 			printf(">> "); scanf("%c", &temp1); getchar();
 			a1 = (VertexType)(temp1 - 'A');
 			Breadth_First_Search(&graph, a1);
+			sleep(1500);
 			break;
 		case 5:
 			Terminate(&graph);

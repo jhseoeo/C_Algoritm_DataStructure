@@ -45,8 +45,13 @@ static void Terminate(LinkedQueue* que);
 // Make an initialized stack.
 static LinkedQueue MakeLinkedQueue();
 
-
 // The main function to test linked queue.
 void LinkedQueue_Main();
+
+
+LinkedQueue MakeLinkedQueue_q();
+int Enque_q(LinkedQueue* que, Data value);
+int Deque_q(LinkedQueue* que, Data* value);
+void Terminate_q(LinkedQueue* que);
 
 #endif
