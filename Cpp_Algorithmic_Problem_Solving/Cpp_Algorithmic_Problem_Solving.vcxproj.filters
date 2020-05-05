@@ -13,36 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="리소스 파일\Chapter1">
-      <UniqueIdentifier>{0ca8ae3c-b373-438b-bc8d-df72e67c4a8a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="리소스 파일\Chapter1\001">
-      <UniqueIdentifier>{1df12a42-33a8-4e5e-97f6-916ebd6a883f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="src\Base.cpp">
+    <ClCompile Include="src\001.cpp">
       <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="src\Chapter1\Chapter1.cpp">
-      <Filter>리소스 파일\Chapter1</Filter>
+    <ClCompile Include="src\002.cpp">
+      <Filter>리소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="src\Chapter1\001\001.cpp">
-      <Filter>리소스 파일\Chapter1\001</Filter>
+    <ClCompile Include="src\003.cpp">
+      <Filter>리소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Base.h">
+    <ClInclude Include="src\001.h">
       <Filter>리소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="src\Chapter1\Chapter1.h">
-      <Filter>리소스 파일\Chapter1</Filter>
+    <ClInclude Include="src\002.h">
+      <Filter>리소스 파일</Filter>
     </ClInclude>
-    <ClInclude Include="src\Chapter1\001\001.h">
-      <Filter>리소스 파일\Chapter1\001</Filter>
+    <ClInclude Include="src\003.h">
+      <Filter>리소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

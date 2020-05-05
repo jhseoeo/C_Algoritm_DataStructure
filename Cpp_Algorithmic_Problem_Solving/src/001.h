@@ -3,6 +3,8 @@
     ID : FESTIVAL
 */
 
-#include "../../Base.h"
+#include <iostream>
+
+using namespace std;
 
 void p001();
