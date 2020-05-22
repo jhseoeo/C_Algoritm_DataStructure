@@ -2,6 +2,7 @@
 #include "001.h"
 #include "002.h"
 #include "003.h"
+#include "004.h"
 // Supposed to be added
 
 using namespace std;
@@ -13,6 +14,7 @@ int main() {
     cout << "1. 001 : FESTIVAL" << endl;
     cout << "2. 002 : BOGGLE" << endl;
     cout << "3. 003 : PICNIC" << endl;
+    cout << "4. 004 : BOARDCOVER" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;
@@ -28,6 +30,9 @@ int main() {
             break;
         case 3:
             p003();
+            break;
+        case 4:
+            p004();
             break;
     // Supposed to added
         default:

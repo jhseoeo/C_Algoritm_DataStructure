@@ -2,7 +2,7 @@
 
 #define BOARD_SIZE 5
 
-const char BOARD[BOARD_SIZE][BOARD_SIZE] = {
+const char BOARD[BOARD_SIZE][BOARD_SIZE] = { // 5x5 alphabet board
 	{'U', 'R', 'L', 'P', 'M'},
 	{'X', 'P', 'R', 'E', 'T'},
 	{'G', 'I', 'A', 'E', 'T'},
@@ -19,7 +19,7 @@ static bool hasWord(int x, int y, string word) {
 		if (word.length() == 1) return true;
 		string afword = word.substr(1);
 		
-		bool result = hasWord(x - 1, y - 1, afword) || hasWord(x, y - 1, afword) || hasWord(x + 1, y - 1, afword) ||
+		bool result = hasWord(x - 1, y - 1, afword) || hasWord(x, y - 1, afword) || hasWord(x + 1, y - 1, afword) || // execute recursion at adjacent alphabet
 					  hasWord(x - 1, y, afword) || hasWord(x + 1, y, afword) || 
 					  hasWord(x + 1, y + 1, afword) || hasWord(x, y + 1, afword) || hasWord(x - 1, y + 1, afword);
 		return result;
@@ -29,6 +29,6 @@ static bool hasWord(int x, int y, string word) {
 }
 
 void p002() {
-	string word = "PRETTY";
+	string word = "PRETTY"; // word that we have to find from board.
 	cout << hasWord(1, 1, word) << endl;
 }

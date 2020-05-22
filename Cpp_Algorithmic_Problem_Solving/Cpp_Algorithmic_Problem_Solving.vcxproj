@@ -141,12 +141,16 @@
     <ClCompile Include="src\001.cpp" />
     <ClCompile Include="src\002.cpp" />
     <ClCompile Include="src\003.cpp" />
+    <ClCompile Include="src\004.cpp" />
+    <ClCompile Include="src\005.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\001.h" />
     <ClInclude Include="src\002.h" />
     <ClInclude Include="src\003.h" />
+    <ClInclude Include="src\004.h" />
+    <ClInclude Include="src\005.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
