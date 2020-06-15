@@ -1,3 +1,6 @@
+#ifndef P002
+#define P002
+
 /*
 	Problem 002
 	ID : BOGGLE
@@ -12,3 +15,5 @@
 using namespace std;
 
 void p002();
+
+#endif

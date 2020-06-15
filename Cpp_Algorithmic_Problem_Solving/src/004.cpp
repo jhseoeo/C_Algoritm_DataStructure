@@ -1,8 +1,8 @@
 #include "004.h"
 
-static int ROTATION[4][3][2] = {	// information of rotating
-	{{0, 0}, {1, 0}, {0, 1}},		// this rotation assumes that top left blocks are already filled
-	{{0, 0}, {0, 1}, {1, 1}},		// filling forwarded 
+static const int ROTATION[4][3][2] = {	// information of rotating
+	{{0, 0}, {1, 0}, {0, 1}},		    // this rotation assumes that top left blocks are already filled
+	{{0, 0}, {0, 1}, {1, 1}},		    // filling forwarded 
 	{{0, 0}, {1, 0}, {1, 1}},
 	{{0, 0}, {1, 0}, {1, -1}}
 };

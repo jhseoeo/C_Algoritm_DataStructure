@@ -1,3 +1,6 @@
+#ifndef P005
+#define P005
+
 /*
 	Problem 005
 	ID : CLOCKSYNK
@@ -16,3 +19,5 @@
 using namespace std;
 
 void p005();
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef P004
+#define P004
+
 /*
 	Problem 004
 	ID : BOARDCOVER
@@ -15,3 +18,5 @@
 using namespace std;
 
 void p004();
+
+#endif

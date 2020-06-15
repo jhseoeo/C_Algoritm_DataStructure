@@ -1,3 +1,6 @@
+#ifndef P003
+#define P003
+
 /*
 	Problem 003
 	ID : PICNIC
@@ -15,3 +18,5 @@
 using namespace std;
 
 void p003();
+
+#endif P003

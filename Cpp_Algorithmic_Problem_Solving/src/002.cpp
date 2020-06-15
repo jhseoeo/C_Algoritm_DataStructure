@@ -2,7 +2,7 @@
 
 #define BOARD_SIZE 5
 
-const char BOARD[BOARD_SIZE][BOARD_SIZE] = { // 5x5 alphabet board
+static const char BOARD[BOARD_SIZE][BOARD_SIZE] = { // 5x5 alphabet board
 	{'U', 'R', 'L', 'P', 'M'},
 	{'X', 'P', 'R', 'E', 'T'},
 	{'G', 'I', 'A', 'E', 'T'},

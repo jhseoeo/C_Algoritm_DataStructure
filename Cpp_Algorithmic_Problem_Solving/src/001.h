@@ -1,3 +1,6 @@
+#ifndef P001
+#define P001
+
 /*
     Problem 001 
     ID : FESTIVAL
@@ -13,3 +16,5 @@
 using namespace std;
 
 void p001();
+
+#endif
