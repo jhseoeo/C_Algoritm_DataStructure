@@ -1,4 +1,19 @@
-#include "004.h"
+/*
+	Problem 004
+	ID : BOARDCOVER
+
+	There is a HxW size game board, consist of black and white space
+	H and W is given value.
+	We should cover all white space with L shape 3-spacing block.
+	We can rotate blocks but cannot duplicate, out, and cover black one.
+*/
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include "Problems.h"
+
+using namespace std;
 
 static const int ROTATION[4][3][2] = {	// information of rotating
 	{{0, 0}, {1, 0}, {0, 1}},		    // this rotation assumes that top left blocks are already filled

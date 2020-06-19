@@ -1,10 +1,5 @@
 #include <iostream>
-#include "001.h"
-#include "002.h"
-#include "003.h"
-#include "004.h"
-#include "005.h"
-#include "006.h"
+#include "Problems.h"
 // Supposed to be added
 
 using namespace std;
@@ -13,11 +8,13 @@ int main() {
     int n;
 
     cout << "Enter the number of chapter that you want to test" << endl;
-    cout << "1. 001 : FESTIVAL" << endl;
-    cout << "2. 002 : BOGGLE" << endl;
-    cout << "3. 003 : PICNIC" << endl;
-    cout << "4. 004 : BOARDCOVER" << endl;
-    cout << "5. 005 : CLOCKSYNK" << endl;
+    cout << "001 : FESTIVAL" << endl;
+    cout << "002 : BOGGLE" << endl;
+    cout << "003 : PICNIC" << endl;
+    cout << "004 : BOARDCOVER" << endl;
+    cout << "005 : CLOCKSYNK" << endl;
+    cout << "006 : QUADTREE" << endl;
+    cout << "007 : FENCE" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;
@@ -39,8 +36,13 @@ int main() {
             break;
         case 5:
             p005();
+            break; 
+        case 6:
+            p006();
             break;
-
+        case 7:
+            p007();
+            break;
 
     // Supposed to added
         default:

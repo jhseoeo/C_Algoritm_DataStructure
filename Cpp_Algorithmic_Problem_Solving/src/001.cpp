@@ -1,4 +1,17 @@
-#include "./001.h"
+/*
+    Problem 001
+    ID : FESTIVAL
+
+    Entered number of days that can borrow hall, 
+    number of days that festival will be held, 
+    and numbers of price for borrow hall each date.
+    return minimum average price for borrow halls continously.
+*/
+
+#include <iostream>
+#include "Problems.h"
+
+using namespace std;
 
 // First trial of problem 1 
 void p001() {

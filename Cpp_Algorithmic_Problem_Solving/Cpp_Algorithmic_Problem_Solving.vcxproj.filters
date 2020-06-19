@@ -39,27 +39,15 @@
     <ClCompile Include="src\006.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="src\007.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\001.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\002.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\003.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\004.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\005.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="src\AutoInput.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="src\006.h">
+    <ClInclude Include="src\Problems.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

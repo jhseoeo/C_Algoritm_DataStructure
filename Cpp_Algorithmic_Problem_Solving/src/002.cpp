@@ -1,4 +1,16 @@
-#include "002.h"
+/*
+	Problem 002
+	ID : BOGGLE
+
+	From given 5x5 alphabet board,
+	finding letters by moving adjacent alphabet one by one.
+*/
+
+#include <iostream>
+#include <string>
+#include "Problems.h"
+
+using namespace std;
 
 #define BOARD_SIZE 5
 
