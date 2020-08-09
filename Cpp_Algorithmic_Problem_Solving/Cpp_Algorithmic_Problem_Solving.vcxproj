@@ -143,6 +143,7 @@
     <ClCompile Include="src\003.cpp" />
     <ClCompile Include="src\004.cpp" />
     <ClCompile Include="src\005.cpp" />
+    <ClCompile Include="src\008.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\AutoInput.cpp" />
     <ClCompile Include="src\006.cpp" />
