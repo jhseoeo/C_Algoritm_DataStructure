@@ -15,6 +15,7 @@ int main() {
     cout << "005 : CLOCKSYNK" << endl;
     cout << "006 : QUADTREE" << endl;
     cout << "007 : FENCE" << endl;
+    cout << "008 : FANMEETING" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;
@@ -42,6 +43,9 @@ int main() {
             break;
         case 7:
             p007();
+            break;
+        case 8:
+            p008();
             break;
 
     // Supposed to added

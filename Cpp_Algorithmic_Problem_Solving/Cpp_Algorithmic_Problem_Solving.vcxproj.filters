@@ -33,9 +33,6 @@
     <ClCompile Include="src\005.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="src\AutoInput.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="src\006.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -43,6 +40,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="src\008.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="src\009.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

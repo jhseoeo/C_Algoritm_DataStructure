@@ -9,11 +9,14 @@ using namespace std;
 
 class AutomatedInput {
 public:
-	void set(string str);
+	void set(string str) {
+		asd << str;
+	}
 
 	template <class T>
-	void operator>>(T& n) {
+	AutomatedInput& operator>>(T& n) {
 		this->asd >> n;
+		return *this;
 	}
 
 private:

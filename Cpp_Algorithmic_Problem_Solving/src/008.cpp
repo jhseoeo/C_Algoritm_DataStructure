@@ -2,7 +2,7 @@
 	Problem 008
 	ID : FANMEETING
 
-	
+	Count all cases that males don't meet
 */
 
 #include <iostream>
@@ -13,39 +13,76 @@
 
 using namespace std;
 
-vector<int> & convertInt(string s) { // convert entered string into vectorized number
-	vector<int> num((unsigned int)s.size());
 
-	for (int i = 0; i < (unsigned int)s.size(); i++) {
-		num[i] = (s[i] == 'F' ? 0 : 1);
+/*
+vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
+	int an = A.size(), bn = B.size();
+	if(an < bn) return karatsuba(B, a);
+
+	if(an == 0 || bn == 0) return vector<int>();
+	if(an <= 50) return multyply (a,b);
+
+	int half = an / 2;
+	vector<int> a0(a.begin(), a.begin() + half);
+	vector<int> a1(a.begin() + half, a.end());
+	vector<int> b0(b.begin(), b.begin() + min<int>(b.size(), half));
+	vector<int> b1(b.begin() + min<int>(b.size(), half), b.end());
+	vector<int> z2 = karatsuba(a1, b1);
+	vector<int> z0 = karatsuba(a0, b0);
+
+	addTo(a0, a1, 0); addTo(b0, b1, 0);
+	vector<int> z1 = karatsuba(a0, b0);
+	subFrom(z1, z0);
+	subFrom(z1, z2);
+
+	vector<int> ret;
+	addTo(ret, z0, 0);
+	addTo(ret, z1, half);
+	addTo(ret, z2, half+half);
+	return ret;
+}
+*/
+// Originally, it should be used Karatsuba Algorithm. 
+// I used common multiplying algorithm instead of it because of readability.
+vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
+	vector<int> C(int(A.size() + B.size()-1));
+	
+	for (int i = 0; i < B.size(); i++) {
+		for (int j = 0; j < A.size(); j++) {
+			C[i + j] += A[j] * B[i];
+		}
 	}
 
-	return num;
+	for (int i = 0; i < C.size(); i++) {
+		cout << C[i];
+	}
+
+	cout << endl;
+	return C;
 }
 
-int changeInt(vector<int>& v) { // change vectorized number into integer
-	int num = 0, mult = 1; // mult is multfly coefficient
+int getHugCnt(string m, string f) {	
+	vector<int> M(m.size()), F(f.size());
+	for (int i = 0; i < m.size(); i++) M[i] = (m[i] == 'M');
+	for (int i = 0; i < f.size(); i++) F[f.size() - i - 1] = (f[i] == 'M');
 
-	for (int i = 0; i < (unsigned int)v.size(); i++) {
-		num += v[i] * mult;
-		mult *= 10;
+	for (int i = 0; i < M.size(); i++) {
+		cout << M[i];
+	}
+	cout << " * ";
+	for (int i = 0; i < F.size(); i++) {
+		cout << F[i];
+	}
+	cout << " = ";
+
+	int hugCnt = 0;
+	vector<int> Z = karatsuba(M, F);
+	for (int i = M.size() - 1; i < F.size(); i++) {
+		if (Z[i] == 0)
+			hugCnt++;
 	}
 
-	return num;
-}
-
-int getHugCnt(string m, string f) {
-	vector<int> G; int L;
-	if (m.size() > f.size()) {
-		G = convertInt(m);
-		L = changeInt(convertInt(m));
-	}
-
-	int cnt = 0;
-	for (int i = L - 1; i < G.size() - L + 1; i++) {
-		if (G[i] * L == 0)
-			cnt++;
-	}
+	return hugCnt;
 }
 
 void p008() {
@@ -53,13 +90,13 @@ void p008() {
 	Input.set(
 		"4 "
 		"FFFMMM "
-		"MMMFFF"
-		"FFFFF"
-		"FFFFFFFFFF"
-		"FFFFM"
-		"FFFFFMMMMF"
-		"MFMFMFFFMMMFMF"
-		"MMFFFFFMFFFMFFFFFFMFFFMFFFFMFMMFFFFFFF"
+		"MMMFFF "
+		"FFFFF "
+		"FFFFFFFFFF "
+		"FFFFM "
+		"FFFFFMMMMF "
+		"MFMFMFFFMMMFMF "
+		"MMFFFFFMFFFMFFFFFFMFFFMFFFFMFMMFFFFFFF "
 	);
 
 	int T;
@@ -68,10 +105,9 @@ void p008() {
 
 	for (int trial = 0; trial < T; trial++) {
 		string Mem, Fan;
-		Input >> Mem;
-		Input >> Fan;
+		Input >> Mem >> Fan;
 		
-		result[trial] = getHugCnt();
+		result[trial] = getHugCnt(Mem, Fan);
 	}
 
 	for (int i = 0; i < T; i++) {
