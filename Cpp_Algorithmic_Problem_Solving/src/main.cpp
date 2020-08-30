@@ -16,7 +16,8 @@ int main() {
     cout << "006 : QUADTREE" << endl;
     cout << "007 : FENCE" << endl;
     cout << "008 : FANMEETING" << endl;
-	cout << "010 : WILDCARD" << endl;
+    cout << "009 : JUMPGAME" << endl;
+    cout << "010 : WILDCARD" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;
@@ -48,7 +49,10 @@ int main() {
         case 8:
             p008();
             break;
-		case 10:
+        case 9:
+            p009();
+            break;
+        case 10:
             p010();
             break;
 

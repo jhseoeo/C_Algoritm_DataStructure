@@ -12,13 +12,16 @@
 
 using namespace std;
 
+int cache[101][101];
 
 bool match(const string &w, const string &s) {
 	int pos = 0;
-	while(pos < w.size() && pos < s.size() && w[pos] == s[pos] || w[pos] == '?') pos++;
+	while(pos < w.size() && pos < s.size() && (w[pos] == '?' || w[pos] == s[pos])) pos++;
 	
 	if (pos == w.size()) {
 		return pos == s.size();
+
+
 	} else if(w[pos] == '*') {
 		for(int skip = 0; skip + pos < s.size(); skip++) {
 			if(match(w.substr(pos+1), s.substr(pos+skip)))
@@ -37,6 +40,7 @@ void p010() {
 		"3 "
 		"help heap helpp "
 		"*p* "
+		"3 "
 		"help papa hello "
 		"*bb* "
 		"1 "

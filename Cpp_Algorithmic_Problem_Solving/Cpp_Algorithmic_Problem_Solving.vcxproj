@@ -145,6 +145,7 @@
     <ClCompile Include="src\005.cpp" />
     <ClCompile Include="src\008.cpp" />
     <ClCompile Include="src\009.cpp" />
+    <ClCompile Include="src\010.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\006.cpp" />
     <ClCompile Include="src\007.cpp" />
