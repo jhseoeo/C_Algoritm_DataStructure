@@ -8,7 +8,7 @@
 
 #include <iostream>
 #include <string>
-#include "Problems.h"
+#include "../Problems.h"
 
 using namespace std;
 

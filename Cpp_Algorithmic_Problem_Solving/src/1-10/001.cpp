@@ -9,7 +9,7 @@
 */
 
 #include <iostream>
-#include "Problems.h"
+#include "../Problems.h"
 
 using namespace std;
 

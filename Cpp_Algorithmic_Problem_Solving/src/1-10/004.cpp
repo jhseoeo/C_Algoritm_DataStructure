@@ -11,7 +11,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "Problems.h"
+#include "../Problems.h"
 
 using namespace std;
 

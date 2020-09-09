@@ -12,8 +12,8 @@
 
 #include <iostream>
 #include <vector>
-#include "Problems.h"
-#include "AutoInput.h"
+#include "../Problems.h"
+#include "../AutoInput.h"
 
 using namespace std;
 

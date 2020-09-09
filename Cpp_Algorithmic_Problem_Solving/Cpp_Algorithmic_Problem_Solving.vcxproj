@@ -138,19 +138,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\001.cpp" />
-    <ClCompile Include="src\002.cpp" />
-    <ClCompile Include="src\003.cpp" />
-    <ClCompile Include="src\004.cpp" />
-    <ClCompile Include="src\005.cpp" />
-    <ClCompile Include="src\008.cpp" />
-    <ClCompile Include="src\009.cpp" />
-    <ClCompile Include="src\010.cpp" />
+    <ClCompile Include="src\1-10\001.cpp" />
+    <ClCompile Include="src\1-10\002.cpp" />
+    <ClCompile Include="src\1-10\003.cpp" />
+    <ClCompile Include="src\1-10\004.cpp" />
+    <ClCompile Include="src\1-10\005.cpp" />
+    <ClCompile Include="src\1-10\008.cpp" />
+    <ClCompile Include="src\1-10\009.cpp" />
+    <ClCompile Include="src\1-10\010.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\006.cpp" />
-    <ClCompile Include="src\007.cpp" />
+    <ClCompile Include="src\1-10\006.cpp" />
+    <ClCompile Include="src\1-10\007.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\1-10\_1_10.h" />
     <ClInclude Include="src\AutoInput.h" />
     <ClInclude Include="src\Problems.h" />
   </ItemGroup>

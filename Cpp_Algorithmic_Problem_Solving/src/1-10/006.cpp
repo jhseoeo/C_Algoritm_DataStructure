@@ -9,8 +9,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "AutoInput.h"
-#include "Problems.h"
+#include "../AutoInput.h"
+#include "../Problems.h"
 
 using namespace std;
 

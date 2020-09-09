@@ -2,17 +2,16 @@
 	Problem 008
 	ID : FANMEETING
 
-	Count all cases that males don't meet
+	Count all cases that males don't meet each other.
 */
 
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Problems.h"
-#include "AutoInput.h"
+#include "../Problems.h"
+#include "../AutoInput.h"
 
 using namespace std;
-
 
 /*
 vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
@@ -43,16 +42,18 @@ vector<int> karatsuba(const vector<int>& A, const vector<int>& B) {
 }
 */
 // Originally, it should be used Karatsuba Algorithm. 
-// I used common multiplying algorithm instead of it because of readability.
+// I used common multiplying algorithm instead of it just because of readability.
 vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
 	vector<int> C(int(A.size() + B.size()-1));
 	
+	// Don't consider carrying
 	for (int i = 0; i < B.size(); i++) {
 		for (int j = 0; j < A.size(); j++) {
 			C[i + j] += A[j] * B[i];
 		}
 	}
 
+	// multiplying two vectorized number
 	for (int i = 0; i < C.size(); i++) {
 		cout << C[i];
 	}
@@ -63,20 +64,17 @@ vector<int> karatsuba(const vector<int>& A, const vector<int>& B) {
 
 int getHugCnt(string m, string f) {	
 	vector<int> M(m.size()), F(f.size());
+
+	//Male is 1, female is 0 on this algorithm.
 	for (int i = 0; i < m.size(); i++) M[i] = (m[i] == 'M');
+
+	// Reverse digit of operand.
 	for (int i = 0; i < f.size(); i++) F[f.size() - i - 1] = (f[i] == 'M');
 
-	for (int i = 0; i < M.size(); i++) {
-		cout << M[i];
-	}
-	cout << " * ";
-	for (int i = 0; i < F.size(); i++) {
-		cout << F[i];
-	}
-	cout << " = ";
-
 	int hugCnt = 0;
-	vector<int> Z = karatsuba(M, F);
+
+	// number of 0 on specific area of the result is exactly same with number of cases that males don't meet each other.
+	vector<int> Z = karatsuba(M, F); 
 	for (int i = M.size() - 1; i < F.size(); i++) {
 		if (Z[i] == 0)
 			hugCnt++;

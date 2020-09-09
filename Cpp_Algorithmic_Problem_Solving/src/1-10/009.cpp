@@ -8,8 +8,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Problems.h"
-#include "AutoInput.h"
+#include "../Problems.h"
+#include "../AutoInput.h"
 
 using namespace std;
 
@@ -23,7 +23,7 @@ const int BOARD[7][7] = {
 	{1, 5, 2, 9, 4, 7, -1}
 };
 
-int board[7][7];
+int board[7][7]; // variables for memoization
 
 bool jump(int n, int x, int y) {
 	if (x == n - 1 && y == n - 1)
@@ -33,12 +33,13 @@ bool jump(int n, int x, int y) {
 
 	int& ret = board[x][y];
 	if (ret == -1) {
+		// applying memoization. restore result on variables and use it later.
 		ret = jump(n, x + BOARD[x][y], y) || jump(n, x, y + BOARD[x][y]);
 	} 
 
 	return ret;
 
-	// version that memoization not used
+	// version that memoization is not used
 	// return jump(n, x + BOARD[x][y], y) || jump(n, x, y + BOARD[x][y]);
 }
 

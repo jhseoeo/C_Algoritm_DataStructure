@@ -11,7 +11,7 @@
 #include <iostream>
 #include <set>
 #include <algorithm>
-#include "Problems.h"
+#include "../Problems.h"
 
 using namespace std;
 
