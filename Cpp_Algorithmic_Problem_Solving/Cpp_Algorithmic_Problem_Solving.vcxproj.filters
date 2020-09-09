@@ -48,6 +48,9 @@
     <ClCompile Include="src\1-10\010.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="src\11-20\011.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\AutoInput.h">
@@ -57,6 +60,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="src\1-10\_1_10.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="src\11-20\_11_20.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

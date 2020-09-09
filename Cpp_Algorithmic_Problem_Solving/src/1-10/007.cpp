@@ -1,11 +1,6 @@
 /*
 	Problem 007
 	ID : FENCE
-
-	Entering the number of fences, 
-	and lengths of each fences from user.
-	Then getting largest area of rectangle
-	that can be created from fences.
 */
 
 #include <algorithm>

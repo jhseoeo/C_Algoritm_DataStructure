@@ -146,12 +146,14 @@
     <ClCompile Include="src\1-10\008.cpp" />
     <ClCompile Include="src\1-10\009.cpp" />
     <ClCompile Include="src\1-10\010.cpp" />
+    <ClCompile Include="src\11-20\011.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\1-10\006.cpp" />
     <ClCompile Include="src\1-10\007.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\1-10\_1_10.h" />
+    <ClInclude Include="src\11-20\_11_20.h" />
     <ClInclude Include="src\AutoInput.h" />
     <ClInclude Include="src\Problems.h" />
   </ItemGroup>

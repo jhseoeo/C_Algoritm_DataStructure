@@ -1,9 +1,6 @@
 /*
 	Problem 006
 	ID : CLOCKSYNK
-
-	Entered quad-tree form from user,
-	return an upside down quad tree entered.
 */
 
 #include <iostream>

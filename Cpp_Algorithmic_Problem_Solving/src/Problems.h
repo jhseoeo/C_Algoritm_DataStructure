@@ -6,5 +6,6 @@
 #define PROBLEMS_H
 
 #include "./1-10/_1_10.h"
+#include "./11-20/_11_20.h"
 
 #endif

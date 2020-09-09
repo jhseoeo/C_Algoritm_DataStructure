@@ -14,9 +14,9 @@ public:
 	}
 
 	template <class T>
-	AutomatedInput& operator>>(const T& n) {
+	AutomatedInput &operator>>(T& n) {
 		this->asd >> n;
-		return this;
+		return *this;
 	}
 
 private:

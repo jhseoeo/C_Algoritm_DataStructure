@@ -1,11 +1,9 @@
 /*
 	Problem 010
 	ID : WILDCARD
-	
-	
 */
 
-#include <iostreasm>
+#include <iostream>
 #include <string>
 #include "../Problems.h"
 #include "../AutoInput.h"
@@ -16,28 +14,28 @@ using namespace std;
 // declare 101x101 array because maximum input is 100(length of string). 
 int cache[101][101];
 
-bool match(const string& w, const string& s,
-	const int &wl, const int &sl) {
+bool match(const string& w, const string& s,	// w is wildcard pattern, and s is actual string.
+	const int &wl, const int &sl) {				// wl, sl are current point of string, indicating where they are for memoization.
 
-	int& ret = cache[wl][sl];
-	if (ret != -1) return ret;
+	int& ret = cache[wl][sl];					
+	if (ret != -1) return ret;					// if value is stored, return stored value.
 
 	if (w.size() == 1 && w[0] == '*')
-		return ret = 1;
+		return ret = 1;							// if wildcard pattern is composed of only one *, return true.
 
 	if (!w.empty() && !s.empty()) {
 		if (w[0] == s[0] || w[0] == '?') {
-			return match(w.substr(1), s.substr(1), wl+1, sl+1);
-		} else if (w[0] == '*') {
+			return match(w.substr(1), s.substr(1), wl+1, sl+1); // sequently apply recursion
+		} else if (w[0] == '*') {	// when * is exist
 			for (int i = 0; i < s.size(); i++) {
 				if (match(w.substr(1), s.substr(i), wl+1, sl+i))
-					return ret = 1;
-			}
+					return ret = 1;				// if wildcard pattern after * is correct, return true
+ 			}
 		}
 	} else if (w.empty() && s.empty()) {
-		return ret = 1;
+		return ret = 1; // when both string are empty.
 	}
-	return ret = 0;
+	return ret = 0; // 
 }
  
 void p010() {

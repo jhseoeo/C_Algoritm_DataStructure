@@ -1,8 +1,6 @@
 /*
 	Problem 008
 	ID : JUMPGAME
-
-	
 */
 
 #include <iostream>

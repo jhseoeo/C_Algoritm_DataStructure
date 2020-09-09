@@ -1,8 +1,6 @@
 /*
 	Problem 008
 	ID : FANMEETING
-
-	Count all cases that males don't meet each other.
 */
 
 #include <iostream>
