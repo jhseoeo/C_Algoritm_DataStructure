@@ -12,9 +12,9 @@ using namespace std;
 
 // variables for memoization.
 // declare 101x101 array because maximum input is 100(length of string). 
-int cache[101][101];
+static int cache[101][101];
 
-bool match(const string& w, const string& s,	// w is wildcard pattern, and s is actual string.
+static bool match(const string& w, const string& s,	// w is wildcard pattern, and s is actual string.
 	const int &wl, const int &sl) {				// wl, sl are current point of string, indicating where they are for memoization.
 
 	int& ret = cache[wl][sl];					

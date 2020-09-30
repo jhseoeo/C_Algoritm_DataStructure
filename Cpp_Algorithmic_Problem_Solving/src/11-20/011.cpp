@@ -9,9 +9,9 @@
 
 using namespace std;
 
-const int SIZE = 5;
+static const int SIZE = 5;
 
-int cache[5][5] = {
+static int cache[5][5] = {
 	{-1, -1, -1, -1, -1},
 	{-1, -1, -1, -1, -1},
 	{-1, -1, -1, -1, -1},
@@ -19,14 +19,14 @@ int cache[5][5] = {
 	{-1, -1, -1, -1, -1}
 }; // array variable for memoization.
 
-/*int triangle[5][5] = {
+/*static int triangle[5][5] = {
 	{6, -1, -1, -1, -1},
 	{1, 2, -1, -1, -1},
 	{3, 7, 4, -1, -1},
 	{9, 4, 1, 7, -1},
 	{2, 7, 5, 9, 4}
 };*/	// board 
-int triangle[5][5] = {
+static int triangle[5][5] = {
 		{1, -1, -1, -1, -1},
 		{2, 4, -1, -1, -1},
 		{8, 16, 8, -1, -1},
@@ -34,7 +34,7 @@ int triangle[5][5] = {
 		{128, 256, 128, 256, 128}
 };
 
-int findPath(int y, int x) {
+static int findPath(int y, int x) {
 	int& res = cache[y][x];
 
 	if (res != -1)				 

@@ -11,7 +11,7 @@
 
 using namespace std;
 
-const int BOARD[7][7] = {
+static const int BOARD[7][7] = {
 	{2, 5, 1, 6, 1, 4, 1},
 	{6, 1, 1, 2, 2, 9, 3},
 	{7, 2, 3, 2, 1, 3, 1},
@@ -21,9 +21,9 @@ const int BOARD[7][7] = {
 	{1, 5, 2, 9, 4, 7, -1}
 };
 
-int board[7][7]; // variables for memoization
+static int board[7][7]; // variables for memoization
 
-bool jump(int n, int x, int y) {
+static bool jump(int n, int x, int y) {
 	if (x == n - 1 && y == n - 1)
 		return true;
 	else if (x >= n || y >= n)

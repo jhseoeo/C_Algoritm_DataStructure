@@ -8,6 +8,7 @@ void p011p020() {
     cout << "Enter the number of chapter that you want to test" << endl;
     cout << "1. 011 : TRIANGLEPATH" << endl;
     cout << "2. 012 : LIS" << endl;
+    cout << "3. 013 : JLIS" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -21,6 +22,9 @@ void p011p020() {
         break;
     case 2:
         p012();
+        break;
+    case 3:
+        p013();
         break;
     default:
         break;

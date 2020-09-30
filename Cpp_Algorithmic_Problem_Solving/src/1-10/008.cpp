@@ -12,7 +12,7 @@
 using namespace std;
 
 /*
-vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
+static vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
 	int an = A.size(), bn = B.size();
 	if(an < bn) return karatsuba(B, a);
 
@@ -41,7 +41,7 @@ vector<int> karatsuba(const vector<int>& A, const vector<int>& B) {
 */
 // Originally, it should be used Karatsuba Algorithm. 
 // I used common multiplying algorithm instead of it just because of readability.
-vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
+static vector<int> karatsuba(const vector<int>& A, const vector<int>& B) { 
 	vector<int> C(int(A.size() + B.size()-1));
 	
 	// Don't consider carrying
@@ -60,7 +60,7 @@ vector<int> karatsuba(const vector<int>& A, const vector<int>& B) {
 	return C;
 }
 
-int getHugCnt(string m, string f) {	
+static int getHugCnt(string m, string f) {	
 	vector<int> M(m.size()), F(f.size());
 
 	//Male is 1, female is 0 on this algorithm.
