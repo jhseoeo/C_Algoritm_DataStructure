@@ -9,6 +9,7 @@ void p011p020() {
     cout << "1. 011 : TRIANGLEPATH" << endl;
     cout << "2. 012 : LIS" << endl;
     cout << "3. 013 : JLIS" << endl;
+    cout << "4. 014 : PI" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -25,6 +26,9 @@ void p011p020() {
         break;
     case 3:
         p013();
+        break;
+    case 4:
+        p014();
         break;
     default:
         break;

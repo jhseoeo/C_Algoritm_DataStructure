@@ -10,27 +10,26 @@
 
 using namespace std;
 
-int A[101], B[101];
-int cache[101][101];
+static int A[101], B[101];	// A, B is each string.
+static int cache[101][101]; // cache is 2-dimension array to remember each string index.
 
-int jlis(int idxA, int idxB) {
-	int& ret = cache[idxA][idxB];
+static int jlis(int idxA, int idxB) {
+	int& ret = cache[idxA+1][idxB+1];	// memoization
 	if (ret != -1) return ret;
 
-	int a = (idxA == -1 ? -1 : A[idxA]);
+	int a = (idxA == -1 ? -1 : A[idxA]);	// to handle size -1 (zero-base)
 	int b = (idxB == -1 ? -1 : B[idxB]);
 
-	ret = 2;
+	ret = 0;
 
 	int m = max(a, b);
 
-
-	for (int i = idxA + 1; A[i] != -1; i++) {
+	for (int i = idxA + 1; A[i] != -1; i++) { // finding next term of jlis from sequence A
 		if (m < A[i])
 			ret = max(ret, jlis(i, idxB) + 1);
 	}
-	for (int i = idxB + 1; B[i] != -1; i++) {
-		if (m > B[i])
+	for (int i = idxB + 1; B[i] != -1; i++) { // finding next term of jlis from sequence B
+		if (m < B[i])
 			ret = max(ret, jlis(idxA, i) + 1);
 	}
 	return ret;
@@ -41,19 +40,19 @@ void p013() {
 
 	AutomatedInput Input;
 	Input.set(
-		"1 "
+		"3 "
 
 		"3 3 "
 		"1 2 4 "
 		"3 4 7 "
 
-		//"3 3 "
-		//"1 2 3 "
-		//"4 5 6 "
+		"3 3 "
+		"1 2 3 "
+		"4 5 6 "
 
-		//"5 3 "
-		//"10 20 30 1 2 "
-		//"10 20 30 "
+		"5 3 "
+		"10 20 30 1 2 "
+		"10 20 30 "
 	);
 
 	int T;
