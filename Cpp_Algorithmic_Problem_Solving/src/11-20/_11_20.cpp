@@ -10,6 +10,7 @@ void p011p020() {
     cout << "2. 012 : LIS" << endl;
     cout << "3. 013 : JLIS" << endl;
     cout << "4. 014 : PI" << endl;
+    cout << "5. 015 : QUANTIZATION" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -29,6 +30,9 @@ void p011p020() {
         break;
     case 4:
         p014();
+        break;
+    case 5:
+        p015();
         break;
     default:
         break;
