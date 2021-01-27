@@ -11,6 +11,10 @@ void p011p020() {
     cout << "3. 013 : JLIS" << endl;
     cout << "4. 014 : PI" << endl;
     cout << "5. 015 : QUANTIZATION" << endl;
+    cout << "6. 016 : TILING2" << endl;
+    cout << "7. 017 : TRIPATHCNT" << endl;
+    cout << "8. 018 : ASYMTILING" << endl;
+    cout << "9. 019 : POLY" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -33,6 +37,18 @@ void p011p020() {
         break;
     case 5:
         p015();
+        break;
+    case 6:
+        p016();
+        break;
+    case 7:
+        p017();
+        break;
+    case 8:
+        p018();
+        break;
+    case 9:
+        p018();
         break;
     default:
         break;

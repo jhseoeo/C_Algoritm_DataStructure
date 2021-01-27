@@ -149,10 +149,14 @@
     <ClCompile Include="src\1-10\_1_10.cpp" />
     <ClCompile Include="src\11-20\011.cpp" />
     <ClCompile Include="src\11-20\012.cpp" />
+    <ClCompile Include="src\11-20\018.cpp" />
+    <ClCompile Include="src\11-20\019.cpp" />
     <ClCompile Include="src\11-20\_11_20.cpp" />
     <ClCompile Include="src\11-20\013.cpp" />
     <ClCompile Include="src\11-20\014.cpp" />
     <ClCompile Include="src\11-20\015.cpp" />
+    <ClCompile Include="src\11-20\016.cpp" />
+    <ClCompile Include="src\11-20\017.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\1-10\006.cpp" />
     <ClCompile Include="src\1-10\007.cpp" />

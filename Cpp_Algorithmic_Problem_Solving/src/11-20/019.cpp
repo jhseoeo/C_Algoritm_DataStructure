@@ -1,0 +1,50 @@
+/*
+	Problem 019
+	ID : POLY
+*/
+
+#include <iostream>
+#include "../Problems.h"
+#include "../AutoInput.h"
+
+using namespace std;
+
+static const int MOD = 10000000;
+
+static int cache[101][101];
+
+static int poly(int n, int upper) {
+
+}
+
+void p019() {
+
+	AutomatedInput Input;
+	Input.set(
+		"3 "
+		"2 "
+		"4 "
+		"92 "
+	);
+
+	int T;
+	Input >> T;
+	int* result = new int[T];
+
+	for (int trial = 0; trial < T; trial++) {
+		for (int i = 0; i < 101; i++)
+			for(int j = 0; j < 101; j++)
+				cache[i][j] = -1;
+
+		int n;
+		Input >> n;
+
+		result[trial] = poly(n, 0);
+	}
+
+	for (int i = 0; i < T; i++) {
+		cout << result[i] << endl;
+	}
+
+	delete[] result;
+}

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "Cpp_Algorithmic_Problem_Solving"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}
