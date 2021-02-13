@@ -45,11 +45,11 @@ void p018() {
 		Input >> n;
 		int res = tiling(n);
 
-		if (n % 2 == 1)
-			res = (res - tiling(n / 2) + MOD) % MOD;
-		else {
-			res = (res - tiling(n / 2) + MOD) % MOD;
-			res = (res - tiling(n / 2 - 1) + MOD) % MOD;
+		if (n % 2 == 1) // size of rectangle is even number
+			res = (res - tiling(n / 2) + MOD) % MOD;	// subtract asymmetric case from every case of number.
+		else {			// size of rectangle is odd number
+			res = (res - tiling(n / 2) + MOD) % MOD;		
+			res = (res - tiling(n / 2 - 1) + MOD) % MOD;	// subtract asymmetric case from every case of number.
 		}
 
 		result[trial] = res;

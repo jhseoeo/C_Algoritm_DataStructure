@@ -10,6 +10,7 @@ int main() {
     cout << "Enter the number of chapter that you want to test" << endl;
     cout << "1. 1 - 10" << endl;
     cout << "2. 11 - 20" << endl;
+    cout << "3. 21 - 30" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;
@@ -22,6 +23,9 @@ int main() {
             break;
         case 2:
             p011p020();
+            break;
+        case 3:
+            p021p030();
             break;
     // Supposed to added
         default:

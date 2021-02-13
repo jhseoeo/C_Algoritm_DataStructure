@@ -15,6 +15,7 @@ void p011p020() {
     cout << "7. 017 : TRIPATHCNT" << endl;
     cout << "8. 018 : ASYMTILING" << endl;
     cout << "9. 019 : POLY" << endl;
+    cout << "10. 020 : NUMB3RS" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -48,7 +49,10 @@ void p011p020() {
         p018();
         break;
     case 9:
-        p018();
+        p019();
+        break;
+    case 10:
+        p020();
         break;
     default:
         break;
