@@ -159,8 +159,12 @@
     <ClCompile Include="src\11-20\016.cpp" />
     <ClCompile Include="src\11-20\017.cpp" />
     <ClCompile Include="src\21-30\021.cpp" />
+    <ClCompile Include="src\21-30\024.cpp" />
     <ClCompile Include="src\21-30\_21_30.cpp" />
     <ClCompile Include="src\21-30\022.cpp" />
+    <ClCompile Include="src\21-30\023.cpp" />
+    <ClCompile Include="src\21-30\025.cpp" />
+    <ClCompile Include="src\21-30\026.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\1-10\006.cpp" />
     <ClCompile Include="src\1-10\007.cpp" />
