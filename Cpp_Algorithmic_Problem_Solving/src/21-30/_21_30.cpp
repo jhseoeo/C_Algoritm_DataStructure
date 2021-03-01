@@ -12,6 +12,9 @@ void p021p030() {
     cout << "4. 024 : KLIS" << endl;
     cout << "5. 025 : DRAGON" << endl;
     cout << "6. 026 : ZIMBABWE" << endl;
+    cout << "7. 027 : RESTORE" << endl;
+    cout << "8. 028 : NUMBERGAME" << endl;
+    cout << "9. 029 : BLOCKGAME" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -38,6 +41,16 @@ void p021p030() {
     case 6:
         p026();
         break;
+    case 7:
+        p027();
+        break;
+    case 8:
+        p028();
+        break;
+    case 9:
+        p029();
+        break;
+
     default:
         break;
     }
