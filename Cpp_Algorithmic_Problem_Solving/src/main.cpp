@@ -11,6 +11,7 @@ int main() {
     cout << "1. 1 - 10" << endl;
     cout << "2. 11 - 20" << endl;
     cout << "3. 21 - 30" << endl;
+    cout << "4. 31 - 40" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;
@@ -26,6 +27,9 @@ int main() {
             break;
         case 3:
             p021p030();
+            break;
+        case 4:
+            p031p040();
             break;
     // Supposed to added
         default:

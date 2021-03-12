@@ -15,6 +15,7 @@ void p021p030() {
     cout << "7. 027 : RESTORE" << endl;
     cout << "8. 028 : NUMBERGAME" << endl;
     cout << "9. 029 : BLOCKGAME" << endl;
+    cout << "10. 030 : SHUSI" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -49,6 +50,9 @@ void p021p030() {
         break;
     case 9:
         p029();
+        break;
+    case 10:
+        p030();
         break;
 
     default:
