@@ -35,7 +35,7 @@ void p001() {
             for(int i = 0; i + (S - 1) < D; i++) { // set each starting point of continous days.
                 double result = 0;
                 for(int j = 0; j < S; j++) {
-                    result += (double)Dates[i + j]; 
+                    result += Dates[i + j] * 1.0; 
                 }
                 result = result / S; // getting average cost.
 

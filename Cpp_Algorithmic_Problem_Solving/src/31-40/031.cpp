@@ -17,11 +17,11 @@ static int length[50];
 // chances to jump song a to b
 static double chances[50][50];
 // number of songs
-int n;
+static int n;
 // minutes to jum
-int m;
+static int m;
 // number of favorite songs
-int f;
+static int f;
 
 // get probabillity by recursion
 static double getProb(const int &song, int crnt, int minute) {

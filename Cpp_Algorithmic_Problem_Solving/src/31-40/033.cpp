@@ -11,17 +11,26 @@
 
 using namespace std;
 
-int length;
-
-vector<int> strs;
-
-int concat() {
+static int concat(const vector<int> &strs) {
 	int res = 0;
 	vector<int> ss = strs;
 
-	while (ss.size() <= 1) {
+	while (ss.size() > 1) {
 
+		// get sum of two shortest strings and delete them
+		int sum = ss[0] + ss[1];
+		res += sum;
+		ss.erase(ss.begin(), ss.begin() + 2);
+
+		// re-insert the sum into array
+		int idx;
+		for (idx = 0; idx < ss.size(); idx++)
+			if (ss[idx] > sum)
+				break;
+		ss.insert(ss.begin() + idx, sum);
 	}
+
+	return res;
 }
 
 void p033() {
@@ -40,6 +49,17 @@ void p033() {
 	Input >> T;
 
 	for (int trial = 0; trial < T; trial++) {
-		Input >> length
+		
+		int length;
+		Input >> length;
+
+		vector<int> strs(length);
+		for (int i = 0; i < length; i++) {
+			Input >> strs[i];
+		}
+
+		sort(strs.begin(), strs.end());
+
+		cout << concat(strs) << endl;
 	}
 }
