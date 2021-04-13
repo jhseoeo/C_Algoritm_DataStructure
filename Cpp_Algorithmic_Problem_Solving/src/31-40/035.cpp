@@ -11,30 +11,34 @@
 #include "../AutoInput.h"
 
 using namespace std;
-
+// Y, X board size
 static int boardY, boardX;
-
+// empty places of the board
+static int wholePiece;
+// size of unit block 
+static int blockPiece;
+// board
 static bool board[10][10];
-
+// information of blocks for the every rotating
 static vector<vector<pair<int, int>>> rotations;
 
+// fill rotations vector
 static void initialize(const vector<pair<int, int>> &init) {
+	
+	// initialize rotations vector
 	rotations.clear();
 	rotations.push_back(init);
 
 	for (int rot = 0; rot < 3; rot++) {
-		
-		int maxy, minx = 999;
-		for (int i = 0; i < rotations[rot].size(); i++) {
-			if (rotations[rot][i].second <= minx){
-				maxy = 0;
-				if (rotations[rot][i].first >= maxy) {
-					maxy = rotations[rot][i].first;
-					minx = rotations[rot][i].second;
-				}
-			}
-		}
+		// finding left bottom block
+		int maxy = -999, minx = 999;
+		for (int i = 0; i < rotations[rot].size(); i++)
+			minx = min(minx, rotations[rot][i].second);
+		for (int i = 0; i < rotations[rot].size(); i++)
+			if (rotations[rot][i].second == minx)
+			 	maxy = max(maxy, rotations[rot][i].first);
 
+		// apply rotating
 		vector<pair<int, int>> newRot;
 		for (int i = 0; i < rotations[rot].size(); i++) {
 			newRot.push_back(
@@ -44,45 +48,83 @@ static void initialize(const vector<pair<int, int>> &init) {
 
 		rotations.push_back(newRot);
 	}
+	// removing duplication
 	sort(rotations.begin(), rotations.end());
 	rotations.erase(unique(rotations.begin(), rotations.end()), rotations.end());
 }
 
+// check if the block can be placed on given position
+// compare with board, all blocks differ with delta, it is placable or deplacable
+// returns true when block is placable or deplacale
 static bool putBlock(int y, int x,
-					 const vector<pair<int, int>> &block, bool delta) {
-
-	for(int i = 0; i < block.size(); i++) {
-		int dy = block[i].first;
-		int dx = block[i].second;
+					 const vector<pair<int, int>> &rotate, bool delta) {
+	// check if it is placable / deplacable
+	for(int i = 0; i < rotate.size(); i++) {
+		int dy = y + rotate[i].first;
+		int dx = x + rotate[i].second;
 
 		if (dx < 0 || dx >= boardX || dy >= boardY) {
 			return false;
 		}
 
-		if (board[y + dy][x + dx] == delta) {
+		if (board[dy][dx] == delta) {
 			return false;
 		}
 	}
 
-	for (int i = 0; i < block.size(); i++) {
-		int dy = block[i].first;
-		int dx = block[i].second;
+	// place / deplace the block
+	for (int i = 0; i < rotate.size(); i++) {
+		int dy = rotate[i].first;
+		int dx = rotate[i].second;
 		
 		board[y + dy][x + dx] = delta;
 	}
 
-	return false;
+	return true;
 }
 
-int best;
-static int generate(int left) {
+static int huristic = 0;
+static int generate(int leftBlocks) {
+	int ret = 0;
 
-	return 0;
+	if (leftBlocks < blockPiece)
+		return ret;
+
+	// finding left bottom value that is not covered yet
+	int y = -1, x = -1;
+	for (int i = 0; i < boardY; i++) {
+		for (int j = 0; j < boardX; j++) {
+			if (board[i][j]) {
+				y = i;
+				x = j;
+				break;
+			}
+		}
+		if (x != -1)
+			break;
+	}
+
+	if (x == -1)
+		return ret;
+
+	// place block and next recursion
+	for (int i = 0; i < rotations.size(); i++) {
+		if(putBlock(y, x, rotations[i], false)) { 
+			ret = max(ret, generate(leftBlocks - blockPiece) + 1);
+			putBlock(y, x, rotations[i], true);
+		}
+	}
+	// temporarily place current pos and next recursion
+	board[y][x] = false;
+	ret = max(ret, generate(leftBlocks - 1));
+	board[y][x] = true;
+
+	return ret;
 }
 
 void p035() {
 	AutomatedInput Input;
-	Input.set(
+	Input.set( 
 		"2 "
 		"4 7 2 3 "
 		"##.##.. "
@@ -110,21 +152,24 @@ void p035() {
 		int yy, xx;
 		Input >> boardY >> boardX >> yy >> xx;
 
-		int emptyPlaces = 0;
+		wholePiece = 0;
+		blockPiece = 0;
 
+		// getting board state
 		for (int i = 0; i < boardY; i++) {
 			string tmp;
 			Input >> tmp;
 			for (int j = 0; j < boardX; j++) {
 				if (tmp[j] == '#') {
-					board[i][j] = true;
-					emptyPlaces++;
-				} else {
 					board[i][j] = false;
+				} else {
+					board[i][j] = true;
+					wholePiece++;
 				}
 			}
 		}	
 
+		// getting block state
 		vector<pair<int, int>> asd;
 		int defy, defx; bool first = false;
 		for (int i = 0; i < yy; i++) {
@@ -132,6 +177,7 @@ void p035() {
 			Input >> tmp;
 			for (int j = 0; j < xx; j++) {
 				if(tmp[j] == '#') {
+					blockPiece++;
 					if(!first) {
 						defy = i;
 						defx = j;
@@ -144,8 +190,9 @@ void p035() {
 			}
 		}
 
+		huristic = wholePiece / blockPiece;
 		initialize(asd);
 
-		cout << generate(emptyPlaces) << endl;
+		cout << generate(wholePiece) << endl;
 	}
 }

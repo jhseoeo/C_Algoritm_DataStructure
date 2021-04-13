@@ -12,42 +12,48 @@
 #include "../AutoInput.h"
 
 using namespace std;
-
-int numPeople, numFoods;
-
-static vector<int> eatable[20];
-
-int huristic = 0;
+// number of people
+static int numPeople;
+// number of foods
+static int numFoods;
+// list of people who are edible foods 
+static vector<int> ediable[20];
+// huristic value
+static int huristic = 0;
+// get huristic value
 static void getHuristic() {
 	int satisfied = 0;
 	for (int i = 0; i < numFoods; i++) {
-		for (int j = 0; j < eatable[i].size(); j++) {
-			satisfied |= (1 << eatable[i][j]);
+		for (int j = 0; j < ediable[i].size(); j++) {
+			satisfied |= (1 << ediable[i][j]);
 		}
 
+		// all the people are satisfied, finish the loop
 		if (satisfied == (1 << numPeople) - 1)
 			break;
 		else
 			huristic++;
 	}
 }
-
+// find minimum value
 static int find(const int stateSatisfied, int startSearchFrom, int depth) {
-
+	// when all the people are satisfied
 	if (stateSatisfied == (1 << numPeople) - 1)
 		return 0;
-
+	// when the depth of recursion become larger than huristic limit
 	if (depth >= huristic)
 		return 999999999;
-
+	// when the starting index of foods are larger than number of foods
 	if (startSearchFrom >= numFoods)
 		return 999999999;
 
 	int ret = 999999999;
+	// finding minimum value
 	for (int i = startSearchFrom; i < numFoods; i++) {
 		int newState = stateSatisfied;
-		for (int j = 0; j < eatable[i].size(); j++) {
-			newState |= (1 << eatable[i][j]);
+		// applying satisfaction
+		for (int j = 0; j < ediable[i].size(); j++) {
+			newState |= (1 << ediable[i][j]);
 		}
 
 		ret = min(ret, find(newState, i+1, depth+1) + 1);
@@ -85,21 +91,23 @@ void p036() {
 		
 		map<string, int> nameNumber;
 		string nameTmp;
+		// entering names 
 		for (int i = 0; i < numPeople; i++) {
 			Input >> nameTmp;
 			nameNumber.insert({ nameTmp, i });
 		}
-
+		// entering foods ediable
 		for (int i = 0; i < numFoods; i++) {
-			int numPeopleEatableFood;
-			Input >> numPeopleEatableFood;
-			for (int j = 0; j < numPeopleEatableFood; j++) {
+			int numPeopleEdibleFood;
+			Input >> numPeopleEdibleFood;
+			for (int j = 0; j < numPeopleEdibleFood; j++) {
 				Input >> nameTmp;
-				eatable[i].push_back(nameNumber[nameTmp]);
+				ediable[i].push_back(nameNumber[nameTmp]);
 			}
 		}
 
-		sort(eatable, eatable + numFoods, 
+		// sort foods vector by size
+		sort(ediable, ediable + numFoods, 
 			[](const vector<int>& a, const vector<int>& b) {return a.size() > b.size(); });
 
 		getHuristic();

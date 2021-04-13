@@ -12,6 +12,7 @@ void p031p040() {
     cout << "4. 034 : MINASTIRITH" << endl;
     cout << "5. 035 : BOARDCOVER2" << endl;
     cout << "6. 036 : ALLERGY" << endl;
+    cout << "7. 037 : KAKURO2" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -37,6 +38,9 @@ void p031p040() {
         break;
     case 6:
         p036();
+        break;
+    case 7:
+        p037();
         break;
     default:
         break;
