@@ -17,7 +17,7 @@ static enum class Direction { HORIZONTAL, VERTICAL };
 // two types of color. BLACK one and WHITE one.
 static enum class Color { BLACK, WHITE, };
 // hint type. consists with pair type that indicates position and direction
-typedef pair<pair<int, int>, Direction> Hint;
+using Hint = pair<pair<int, int>, Direction>;
 // list of hints
 static vector<Hint> Hints;
 // sum of all number for each hints
