@@ -11,5 +11,6 @@ void p036();
 void p037();
 void p038();
 void p039();
+void p040();
 
 void p031p040();
