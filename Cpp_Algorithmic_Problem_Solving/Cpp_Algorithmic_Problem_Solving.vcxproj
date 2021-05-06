@@ -180,6 +180,9 @@
     <ClCompile Include="src\31-40\032.cpp" />
     <ClCompile Include="src\31-40\034.cpp" />
     <ClCompile Include="src\31-40\038.cpp" />
+    <ClCompile Include="src\41-50\042.cpp" />
+    <ClCompile Include="src\41-50\_41_50.cpp" />
+    <ClCompile Include="src\41-50\041.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\1-10\006.cpp" />
     <ClCompile Include="src\1-10\007.cpp" />
@@ -189,6 +192,7 @@
     <ClInclude Include="src\11-20\_11_20.h" />
     <ClInclude Include="src\21-30\_21_30.h" />
     <ClInclude Include="src\31-40\_31_40.h" />
+    <ClInclude Include="src\41-50\_41_50.h" />
     <ClInclude Include="src\AutoInput.h" />
     <ClInclude Include="src\Problems.h" />
   </ItemGroup>
