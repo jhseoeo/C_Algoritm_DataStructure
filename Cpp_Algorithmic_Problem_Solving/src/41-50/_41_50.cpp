@@ -8,6 +8,7 @@ void p041p050() {
     cout << "Enter the number of chapter that you want to test" << endl;
     cout << "1. 041 : RATIO" << endl;
     cout << "2. 042 : FOSSIL" << endl;
+    cout << "3. 043 : PASS486" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -19,9 +20,11 @@ void p041p050() {
     case 1:
         p041();
         break;
-
     case 2:
         p042();
+        break;
+    case 3:
+        p043();
         break;
 
     default:
