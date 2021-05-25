@@ -5,93 +5,59 @@
 
 #include <iostream>
 #include <vector>
-#include <set>
+#include <map>
 #include <algorithm>
 #include <cmath>
 #include "../Problems.h"
 #include "../AutoInput.h"
 
 using namespace std;
-
-static const int MAXNUM = 10000000;
-
-static const int MAXPRIME = 3163;
-
-static bool numb[MAXPRIME];
-
-static vector<int> primes;
-
+// maximum number
+static const int MAXNUM = 10000001;
+// minimum factor of given number
+static int minFactors[MAXNUM];
+// how many the number is powered by minFactors 
+static int minFactorsPower[MAXNUM];
+// nuber of factors
 static int numFactors[MAXNUM];
-
+// 
 static void Initialize() {
-	memset(numb, true, sizeof(numb));
-	numb[0] = numb[1] = 0;
-	int cur = 2;
-	while (cur < MAXPRIME) {
-		if (numb[cur]) {
-			for (int i = cur * cur; i < MAXPRIME; i += cur) {
-				numb[i] = false;
-			}
-			primes.push_back(cur);
-		}
-		cur++;
-	}
-
-	memset(numFactors, 0, sizeof(numFactors));
+	// initialize arrays
+	memset(minFactors, 0, sizeof(minFactors));
+	memset(minFactorsPower, 0, sizeof(minFactorsPower));
+	minFactors[0] = 1;
+	minFactorsPower[1] = 0;
 	numFactors[1] = 1;
+
+	// getting factors of every numbers on area 
 	for (int i = 2; i < MAXNUM; i++) {
-		int p = -1, l;
-		for (int j = 0; j < primes.size(); j++) {
-			if (i % primes[j] == 0) {
-				p = i / primes[j];
-				l = primes[j];
-				break;
+		if (minFactors[i] == 0) {
+			minFactors[i] = i;
+			minFactorsPower[i] = 1;
+			for (int j = i * i; j < MAXNUM; j += i) {
+				if(minFactors[j] == 0) {
+					minFactors[j] = i;
+					minFactorsPower[j] = minFactorsPower[j / i] + 1;
+				}
 			}
 		}
+	}
 
-		if (p == -1) {
-			numFactors[i] = 2;
-			continue;
-		}
-
-		int times;
-		for (times = 0; p % l == 0; times++) {
-			p /= l;
-		}
-	
-		numFactors[i] = numFactors[i / l] * (times + 2) / (times + 1);
-
+	// calculate factors of every numbers on area 
+	for (int i = 2; i < MAXNUM; i++) {
+		int p = i / minFactors[i];
+		int k = i / minFactors[i];
+		numFactors[i] = numFactors[k] / minFactorsPower[i] * (minFactorsPower[i] + 1);
 	}
 }
 
-static int getNumFactors(int n) {
-	vector<int> factors(MAXPRIME);
-
-	for (int i = primes.size() - 1; n > 1 && i >= 0;) {
-		if (n % primes[i] == 0) {
-			n /= primes[i];
-			factors[primes[i]]++;
-			//cout << n << " " << primes[i] << " " << factors[primes[i]] << endl;
-		} else 
-			i--;
-	}
-
-	if (n != 1) factors[0]++;
-
-	int ret = 1;
-	for (int i = 2; i < MAXPRIME; i++) {
-		ret *= (factors[i] + 1);
-	}
-	
-	return ret;
-}
-
+// counting the number of factors in given area
 static int Process(int low, int high, int numDivisor) {
 	int ret = 0;
 	for (int i = low; i <= high; i++) {
-		if (numFactors[i] == numDivisor)
+		if (numFactors[i] == numDivisor) {
 			ret++;
-		//cout << i << " ";
+		}
 	}
 	return ret;
 }
@@ -109,12 +75,10 @@ void p043() {
 	int T;
 	Input >> T;
 
-
 	for (int trial = 0; trial < T; trial++) {
 		int numDivisor, low, high;
 		Input >> numDivisor >> low >> high;
 
 		cout << Process(low, high, numDivisor) << endl;
 	}
-	cout << "го©ю";
 }
