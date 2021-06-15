@@ -183,6 +183,7 @@
     <ClCompile Include="src\41-50\042.cpp" />
     <ClCompile Include="src\41-50\043.cpp" />
     <ClCompile Include="src\41-50\044.cpp" />
+    <ClCompile Include="src\41-50\045.cpp" />
     <ClCompile Include="src\41-50\_41_50.cpp" />
     <ClCompile Include="src\41-50\041.cpp" />
     <ClCompile Include="src\main.cpp" />
