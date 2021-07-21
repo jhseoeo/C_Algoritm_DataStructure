@@ -6,6 +6,8 @@ void Problem_1() {
     cout << "Enter the number of chapter that you want to run" << endl;
     cout << "1. 1-1" << endl;
     cout << "2. 1-2" << endl;
+    cout << "3. 1-3" << endl;
+    cout << "4. 1-4" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -19,6 +21,12 @@ void Problem_1() {
         break;
     case 2:
         solution_1_2();
+        break;
+    case 3:
+        solution_1_3();
+        break;
+    case 4:
+        solution_1_4();
         break;
     default:
         break;

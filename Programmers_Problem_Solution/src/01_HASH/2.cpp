@@ -6,12 +6,12 @@
 using namespace std;
 
 // returns comp starts with str
-static bool startswith(const string &str, const string& comp) {
+static bool startswith(const string& str, const string& comp) {
     if (str.size() > comp.size()) return false;
 
     for (size_t i = 0; i < str.size(); i++)
         if (comp[i] != str[i]) return false;
-    
+
     return true;
 }
 

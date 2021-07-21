@@ -6,6 +6,8 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\01_HASH\Problems.cpp" />
     <ClCompile Include="src\01_HASH\2.cpp" />
+    <ClCompile Include="src\01_HASH\3.cpp" />
+    <ClCompile Include="src\01_HASH\4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\01_HASH\Problems.h" />

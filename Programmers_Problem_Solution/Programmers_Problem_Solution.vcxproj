@@ -22,6 +22,8 @@
     <ClCompile Include="src\01_HASH\1.cpp" />
     <ClCompile Include="src\01_HASH\2.cpp" />
     <ClCompile Include="src\01_HASH\Problems.cpp" />
+    <ClCompile Include="src\01_HASH\3.cpp" />
+    <ClCompile Include="src\01_HASH\4.cpp" />
     <ClCompile Include="src\AutoInput.h" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
