@@ -11,6 +11,7 @@ void p041p050() {
     cout << "3. 043 : PASS486" << endl;
     cout << "4. 044 : POTION" << endl;
     cout << "5. 045 : PINBALL" << endl;
+    cout << "6. 046 : TRESURE" << endl;
 
     // Supposed to added
     cout << ">>> ";
@@ -34,7 +35,9 @@ void p041p050() {
     case 5:
         p045();
         break;
-
+    case 6:
+        p046();
+        break;
     default:
         break;
     }

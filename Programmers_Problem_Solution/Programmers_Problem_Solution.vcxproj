@@ -19,16 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\01_HASH\1.cpp" />
-    <ClCompile Include="src\01_HASH\2.cpp" />
-    <ClCompile Include="src\01_HASH\Problems.cpp" />
-    <ClCompile Include="src\01_HASH\3.cpp" />
-    <ClCompile Include="src\01_HASH\4.cpp" />
+    <ClCompile Include="src\01_HASH\1_1.cpp" />
+    <ClCompile Include="src\01_HASH\1_2.cpp" />
+    <ClCompile Include="src\01_HASH\Problems1.cpp" />
+    <ClCompile Include="src\01_HASH\1_3.cpp" />
+    <ClCompile Include="src\01_HASH\1_4.cpp" />
+    <ClCompile Include="src\02_STACKQUEUE\2_1.cpp" />
+    <ClCompile Include="src\02_STACKQUEUE\Problems2.cpp" />
+    <ClCompile Include="src\02_STACKQUEUE\2_2.cpp" />
     <ClCompile Include="src\AutoInput.h" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\01_HASH\Problems.h" />
+    <ClInclude Include="src\01_HASH\Problems1.h" />
+    <ClInclude Include="src\02_STACKQUEUE\Problems2.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

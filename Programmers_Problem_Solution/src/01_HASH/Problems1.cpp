@@ -1,4 +1,4 @@
-#include "Problems.h"
+#include "Problems1.h"
 
 void Problem_1() {
     int n;
