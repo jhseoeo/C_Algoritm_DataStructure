@@ -25,8 +25,10 @@
     <ClCompile Include="src\01_HASH\1_3.cpp" />
     <ClCompile Include="src\01_HASH\1_4.cpp" />
     <ClCompile Include="src\02_STACKQUEUE\2_1.cpp" />
+    <ClCompile Include="src\02_STACKQUEUE\2_3.cpp" />
     <ClCompile Include="src\02_STACKQUEUE\Problems2.cpp" />
     <ClCompile Include="src\02_STACKQUEUE\2_2.cpp" />
+    <ClCompile Include="src\02_STACKQUEUE\2_4.cpp" />
     <ClCompile Include="src\AutoInput.h" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>

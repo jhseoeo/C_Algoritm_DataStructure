@@ -22,12 +22,12 @@ void Problem_2() {
     case 2:
         solution_2_2();
         break;
-    //case 3:
-    //    solution_1_3();
-    //    break;
-    //case 4:
-    //    solution_1_4();
-    //    break;
+    case 3:
+        solution_2_3();
+        break;
+    case 4:
+        solution_2_4();
+        break;
     default:
         break;
     }
