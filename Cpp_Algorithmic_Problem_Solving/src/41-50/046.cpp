@@ -17,47 +17,13 @@ using point = struct {
 	double x, y;
 };
 
+using polygon = vector<point>;
+
 // island polygon
-vector<point> island;
+polygon island;
 
-// 
-vector<vector<point>> polygons;
-
-// rectangle polygon
-vector<point> rectangle;
-
-static bool equals(double a, double b) {
-	return fabs(a - b) < 0.00001;
-}
-
-
-// check if a point is inside of given polygon
-static bool isInside(const vector<point>& poly, point p) {
-	int crosses = 0;
-	for (size_t i = 0; i < poly.size(); i++) {
-		int j = (i + 1) % poly.size();
-		if ((poly[i].y > p.y) != (poly[j].y > p.y)) {
-			double atX = (poly[j].x - poly[i].x) * (p.y - poly[i].y) /
-						 (poly[j].y - poly[i].y) + poly[i].x;
-			if (p.x < atX)
-				crosses++;
-		}
-	}
-
-	return crosses % 2 > 0;
-}
-
-//
-static bool isInside(const vector<point>& island, const vector<point> poly) {
-	double x = (poly[0].x + poly[1].x + poly[2].x) / 3.0;
-	double y = (poly[0].y + poly[1].y + poly[2].y) / 3.0;
-
-	return isInside(island, {x, y});
-}
-
-
-//
-static double getArea(const vector<point>& poly) {
+// return area of polygon
+static double getArea(const polygon& poly) {
 	double ret = 0;
 	for (size_t i = 0; i < poly.size(); i++) {
 		int j = (i + 1) % poly.size();
@@ -67,62 +33,66 @@ static double getArea(const vector<point>& poly) {
 	return fabs(ret) / 2.0;
 }
 
-//
-static vector<point> getMeets(const vector<point>& rect, const point& p1, const point& p2) {
-	vector<point> result;
-	double A, B, E;
-	double C, D, F;
-	A = p2.y - p1.y;
-	B = p2.x - p1.x;
-	E = A * p1.x + B * p1.y;
+// return positives when the vector b is located in more counter-clock wised direction than a based on p
+static double ccw(const point& p, const point& a, const point& b) {
+	point a1 = { a.x - p.x, a.y - p.y };
+	point b1 = { b.x - p.x, b.y - p.y };
+	int k1 = a1.x * b1.y;
+	int k2 = a1.y * b1.x;
+	return a1.x * b1.y - a1.y * b1.x;
+}
 
-	for (int i = 0; i < 4; i++) {
-		int j = (i + 1) % 4;
-		C = rect[j].y - rect[i].y;
-		D = rect[j].x - rect[i].x;
-		F = C * rect[i].x + D * rect[i].y;
+// return intersection point of two vectors
+point IntersectionPoint1(const point& p1, const point& p2, const point& p3, const point& p4) {
+	return {
+		((p1.x * p2.y - p1.y * p2.x) * (p3.x - p4.x) - (p1.x - p2.x) * (p3.x * p4.y - p3.y * p4.x)) / ((p1.x - p2.x) * (p3.y - p4.y) - (p1.y - p2.y) * (p3.x - p4.x)),
+		((p1.x * p2.y - p1.y * p2.x) * (p3.y - p4.y) - (p1.y - p2.y) * (p3.x * p4.y - p3.y * p4.x)) / ((p1.x - p2.x) * (p3.y - p4.y) - (p1.y - p2.y) * (p3.x - p4.x))
+	};
+}
 
-		double DE = (A * D) - (B * C);
+// cut polygon by vector(a to b)
+static polygon cutPoly(polygon& p, const point& a, const point& b) {
+	int n = p.size();
 
-		if (DE != 0) {
-			double X = ((E * D) - (B * F)) / DE;
-			double Y = ((A * F) - (E * C)) / DE;
+	// prerocesssing
+	// record whether each points of polygon are inside of halfplane
+	vector<bool> inside(n);
+	for (int i = 0; i < n; i++)
+		inside[i] = ccw(a, b, p[i]) >= 0;
 
-			if (p1.x < X && X < p2.x || p2.x < X && X < p1.x) {
-				result.push_back({ X, Y });
-			}
+
+	polygon ret;
+	for (int i = 0; i < n; i++) {
+		int j = (i + 1) % n;
+		// add points inside of halfplane
+		if (inside[i]) ret.push_back(p[i]);
+		// add intersection of two vectors
+		if (inside[i] != inside[j]) {
+			point ps = IntersectionPoint1(p[i], p[j], a, b);
+			ret.push_back(ps);
 		}
 	}
-
-	return result;
+	return ret;
 }
 
-
-//
-static void getPolygons() {
-	vector<point> semi;
-
-	for (size_t i = 0; i < island.size(); i++) {
-		int j = (i - 1) % island.size();
-		vector<point> meets = getMeets(rectangle, island[j], island[i]);
-	}
-}
-
-//
+// cut polygon by four vectors of rectangle
 static double solution(double x1, double y1, double x2, double y2) {
-	rectangle.push_back({ x1, y1 });
-	rectangle.push_back({ x1, y2 });
-	rectangle.push_back({ x2, y2 });
-	rectangle.push_back({ x2, y1 });	// make rectangle
-	getPolygons();						// initialize
-
-	return 0;
+	point a = { x1, y1 },
+		b = { x2, y1 },
+		c = { x2, y2 },
+		d = { x1, y2 };
+	// cut polygon by each vectors of rectangle
+	polygon ret = cutPoly(island, a, b);
+	ret = cutPoly(ret, b, c);
+	ret = cutPoly(ret, c, d);
+	ret = cutPoly(ret, d, a);
+	return getArea(ret);
 }
 
 void p046() {
 	AutomatedInput Input;
 	Input.set(
-		"1 "
+		"2 "
 		"26 34 76 72 15 "
 		"41 52 "
 		"50 71 "
@@ -139,11 +109,11 @@ void p046() {
 		"82 79 "
 		"68 45 "
 		"61 58 "
-		//"50 20 70 80 4 "
-		//"86 50 "
-		//"30 10 "
-		//"90 50 "
-		//"30 90 "
+		"50 20 70 80 4 "
+		"86 50 "
+		"30 10 "
+		"90 50 "
+		"30 90 "
 	);
 
 	int T;

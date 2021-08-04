@@ -187,6 +187,7 @@
     <ClCompile Include="src\41-50\_41_50.cpp" />
     <ClCompile Include="src\41-50\041.cpp" />
     <ClCompile Include="src\41-50\046.cpp" />
+    <ClCompile Include="src\41-50\047.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\1-10\006.cpp" />
     <ClCompile Include="src\1-10\007.cpp" />
