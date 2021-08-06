@@ -8,5 +8,6 @@ void p043();
 void p044();
 void p045();
 void p046();
+void p047();
 
 void p041p050();
