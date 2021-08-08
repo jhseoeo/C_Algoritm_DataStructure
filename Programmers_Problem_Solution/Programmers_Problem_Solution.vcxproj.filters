@@ -17,10 +17,15 @@
     <ClCompile Include="src\03_HEAP\3_1.cpp" />
     <ClCompile Include="src\03_HEAP\3_2.cpp" />
     <ClCompile Include="src\03_HEAP\3_3.cpp" />
+    <ClCompile Include="src\04_SORT\Problems4.cpp" />
+    <ClCompile Include="src\04_SORT\4_1.cpp" />
+    <ClCompile Include="src\04_SORT\4_2.cpp" />
+    <ClCompile Include="src\04_SORT\4_3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\01_HASH\Problems1.h" />
     <ClInclude Include="src\02_STACKQUEUE\Problems2.h" />
     <ClInclude Include="src\03_HEAP\Problems3.h" />
+    <ClInclude Include="src\04_SORT\Problems4.h" />
   </ItemGroup>
 </Project>
