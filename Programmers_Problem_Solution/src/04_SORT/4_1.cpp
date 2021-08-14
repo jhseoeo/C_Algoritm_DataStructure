@@ -6,7 +6,7 @@
 
 using namespace std;
 
-vector<int> solution(vector<int> array, vector<vector<int>> commands) {
+static vector<int> solution(vector<int> array, vector<vector<int>> commands) {
     vector<int> answer;
 
     for (size_t i = 0; i < commands.size(); i++) {

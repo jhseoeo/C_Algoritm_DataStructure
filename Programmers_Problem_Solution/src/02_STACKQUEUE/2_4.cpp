@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int getMaxAppr(const set<int>& exists, int n) {
+static int getMaxAppr(const set<int>& exists, int n) {
     int ret = -1;
     for (const int iter : exists)
         if (iter < n)   ret = iter;
@@ -15,7 +15,7 @@ int getMaxAppr(const set<int>& exists, int n) {
     return ret;
 }
 
-vector<int> solution(vector<int> prices) {
+static vector<int> solution(vector<int> prices) {
     size_t size = prices.size();
     vector<int> answer(size), idxLoc(10000);
     set<int> exists;
