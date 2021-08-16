@@ -4,6 +4,7 @@
 #include "./03_HEAP/Problems3.h"
 #include "./04_SORT/Problems4.h"
 #include "./05_BRUTEFORCE/Problems5.h"
+#include "./06_GREEDY/Problems6.h"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ int main() {
     cout << "3. Problem 3 - Heap" << endl;
     cout << "4. Problem 4 - Sort" << endl;
     cout << "5. Problem 5 - Brute-Foce" << endl;
+    cout << "6. Problem 6 - Greedy Algorithm" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;
@@ -37,6 +39,9 @@ int main() {
         break;
     case 5:
         Problem_5();
+        break;
+    case 6:
+        Problem_6();
         break;
         // Supposed to added
     default:

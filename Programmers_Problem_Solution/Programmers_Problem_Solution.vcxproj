@@ -41,6 +41,11 @@
     <ClCompile Include="src\05_BRUTEFORCE\5_1.cpp" />
     <ClCompile Include="src\05_BRUTEFORCE\5_2.cpp" />
     <ClCompile Include="src\05_BRUTEFORCE\5_3.cpp" />
+    <ClCompile Include="src\06_GREEDY\Problems6.cpp" />
+    <ClCompile Include="src\06_GREEDY\6_1.cpp" />
+    <ClCompile Include="src\06_GREEDY\6_2.cpp" />
+    <ClCompile Include="src\06_GREEDY\6_3.cpp" />
+    <ClCompile Include="src\06_GREEDY\6_4.cpp" />
     <ClCompile Include="src\AutoInput.h" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
@@ -50,6 +55,7 @@
     <ClInclude Include="src\03_HEAP\Problems3.h" />
     <ClInclude Include="src\04_SORT\Problems4.h" />
     <ClInclude Include="src\05_BRUTEFORCE\Problems5.h" />
+    <ClInclude Include="src\06_GREEDY\Problems6.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
