@@ -5,6 +5,7 @@
 #include "./04_SORT/Problems4.h"
 #include "./05_BRUTEFORCE/Problems5.h"
 #include "./06_GREEDY/Problems6.h"
+#include "./07_DP/Problems7.h"
 
 using namespace std;
 
@@ -18,6 +19,7 @@ int main() {
     cout << "4. Problem 4 - Sort" << endl;
     cout << "5. Problem 5 - Brute-Foce" << endl;
     cout << "6. Problem 6 - Greedy Algorithm" << endl;
+    cout << "7. Problem 7 - Dynamic Programming" << endl;
     // Supposed to added
     cout << ">>> ";
     cin >> n;

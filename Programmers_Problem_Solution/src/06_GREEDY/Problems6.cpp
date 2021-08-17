@@ -30,12 +30,12 @@ void Problem_6() {
      case 4:
         solution_6_4();
         break;
-    //case 5:
-    //    solution_6_5();
-    //    break;
-    //case 6:
-    //    solution_6_6();
-    //    break;
+    case 5:
+        solution_6_5();
+        break;
+    case 6:
+        solution_6_6();
+        break;
     default:
         break;
     }

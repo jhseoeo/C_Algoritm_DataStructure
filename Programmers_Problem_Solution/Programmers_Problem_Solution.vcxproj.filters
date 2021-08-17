@@ -30,6 +30,10 @@
     <ClCompile Include="src\06_GREEDY\6_2.cpp" />
     <ClCompile Include="src\06_GREEDY\6_3.cpp" />
     <ClCompile Include="src\06_GREEDY\6_4.cpp" />
+    <ClCompile Include="src\06_GREEDY\6_5.cpp" />
+    <ClCompile Include="src\06_GREEDY\6_6.cpp" />
+    <ClCompile Include="src\07_DP\Problems7.cpp" />
+    <ClCompile Include="src\07_DP\7_1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\01_HASH\Problems1.h" />
@@ -38,5 +42,6 @@
     <ClInclude Include="src\04_SORT\Problems4.h" />
     <ClInclude Include="src\05_BRUTEFORCE\Problems5.h" />
     <ClInclude Include="src\06_GREEDY\Problems6.h" />
+    <ClInclude Include="src\07_DP\Problems7.h" />
   </ItemGroup>
 </Project>
