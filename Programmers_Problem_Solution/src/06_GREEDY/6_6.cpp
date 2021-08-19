@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int solution(vector<vector<int>> routes) {
+static int solution(vector<vector<int>> routes) {
     int answer = 0; int n = routes.size();
     sort(routes.begin(), routes.end(), [](const vector<int>& a, const vector<int>& b) { return a[1] < b[1]; });
     vector<bool> crossed(n);

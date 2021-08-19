@@ -19,15 +19,15 @@ void Problem_7() {
     case 1:
         solution_7_1();
         break;
-    //case 2:
-    //    solution_7_2();
-    //    break;
-    //case 3:
-    //    solution_7_3();
-    //    break;
-    //case 4:
-    //    solution_7_4();
-    //    break;
+    case 2:
+        solution_7_2();
+        break;
+    case 3:
+        solution_7_3();
+        break;
+    case 4:
+        solution_7_4();
+        break;
     default:
         break;
     }

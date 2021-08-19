@@ -50,6 +50,9 @@
     <ClCompile Include="src\06_GREEDY\6_6.cpp" />
     <ClCompile Include="src\07_DP\Problems7.cpp" />
     <ClCompile Include="src\07_DP\7_1.cpp" />
+    <ClCompile Include="src\07_DP\7_2.cpp" />
+    <ClCompile Include="src\07_DP\7_3.cpp" />
+    <ClCompile Include="src\07_DP\7_4.cpp" />
     <ClCompile Include="src\AutoInput.h" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>

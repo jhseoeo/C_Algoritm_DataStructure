@@ -45,6 +45,9 @@ int main() {
     case 6:
         Problem_6();
         break;
+    case 7:
+        Problem_7();
+        break;
         // Supposed to added
     default:
         break;
